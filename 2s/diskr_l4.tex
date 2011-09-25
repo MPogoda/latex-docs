@@ -1,0 +1,179 @@
+\documentclass{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{geometry}
+\geometry{left=4cm}
+
+\title{Доказательство}
+\author{Michael Pogoda}
+\date{\today}
+
+\pdfinfo{%
+  /Title    (l4)
+  /Author   (Michael Pogoda)
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+
+\begin{document}
+\begin{center}
+{\Large Доказательство теорем теории L4\\}
+\textit{Клини}\\
+\textit{Связки: $\rightarrow, \&, \lor, \neg$}\\
+\end{center}
+\textbf{Правило вывода:}~$\mathcal{MP}$\\
+\textbf{Схемы аксиом:}
+\begin{enumerate}
+\item[$\mathcal{A}$1:] $A\rightarrow\left(B\rightarrow A\right)$
+\item[$\mathcal{A}$2:] $\bigl(A\rightarrow\left(B\rightarrow C\right)\bigr)\rightarrow\bigl(\left(A\rightarrow B\right)\rightarrow\left(A\rightarrow C\right)\bigr)$
+\item[$\mathcal{A}$3:] $A\&B\rightarrow A$
+\item[$\mathcal{A}$4:] $A\&B\rightarrow B$
+\item[$\mathcal{A}$5:] $A\rightarrow\bigl(B\rightarrow\left(A\&B\right)\bigr)$
+\item[$\mathcal{A}$6:] $A\rightarrow\left(A\lor B\right)$
+\item[$\mathcal{A}$7:] $B\rightarrow\left(A\lor B\right)$
+\item[$\mathcal{A}$8:] $\left(A\rightarrow C\right)\rightarrow\Bigl(\bigl(B\rightarrow C\bigr)\rightarrow\bigl(\left(A\lor B\right)\bigr)\rightarrow C\bigr)\Bigr)$
+\item[$\mathcal{A}$9:] $\left(A\rightarrow B\right)\rightarrow\bigl(\left(A\rightarrow\neg B\right)\rightarrow\neg A\bigr)$
+\item[$\mathcal{A}$10:] $\neg\neg A\rightarrow A$
+\end{enumerate}
+\textbf{Теоремы:}
+\begin{enumerate}
+\item[$\mathcal{T}$1:] $\vdash A\rightarrow A$
+
+\begin{tabular}{llr}
+1. & $\Bigl(A\rightarrow\bigl(\left(A\rightarrow A\right)\rightarrow A\bigr)\Bigr)\rightarrow\Bigl(\bigl(A\rightarrow\left(A\rightarrow A\right)\bigr)\rightarrow\bigl(A\rightarrow A\bigr)\Bigr)$ & $\mathcal{A}$2\\
+2. & $A\rightarrow\bigl(\left(A\rightarrow A\right)\rightarrow A\bigr)$ & $\mathcal{A}$1\\
+3. & $\bigl(A\rightarrow\left(A\rightarrow A\right)\bigr)\rightarrow\bigl(A\rightarrow A\bigr)$ & $\mathcal{MP}$ 2, 1\\
+4. & $A\rightarrow\left(A\rightarrow A\right)$ & $\mathcal{A}$1\\
+5. & $A\rightarrow A$ & $\mathcal{MP}$ 4, 3
+\end{tabular}
+
+\item[$\mathcal{T}$2:] $\Gamma, A\vdash B\Leftrightarrow\Gamma\vdash A\rightarrow B$ \textit{(Метатеорема о дедукции)}
+\item[$\mathcal{T}$3:] $A\rightarrow B, B\rightarrow C\vdash A\rightarrow C \Leftrightarrow$
+
+$\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow A\rightarrow B, B\rightarrow C, A \vdash C$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $B\rightarrow C$ & \textit{Г}2\\
+3. & $A$ & \textit{Г}3\\
+4. & $B$ & $\mathcal{MP}$ 3, 1\\
+5. & $C$ & $\mathcal{MP}$ 4, 2
+\end{tabular}
+\vfill
+\item[$\mathcal{T}$4:] $\vdash\left(A\rightarrow B\right)\rightarrow\left(\neg B\rightarrow\neg A\right) \Leftrightarrow$
+
+$\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow A\rightarrow B\vdash \neg B\rightarrow \neg A$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $\bigl(A\rightarrow B\bigr)\rightarrow\bigl(\left(A\rightarrow\neg B\right)\rightarrow\neg A\bigr)$ & $\mathcal{A}$9\\
+3. & $\left(A\rightarrow\neg B\right)\rightarrow\neg A$ & $\mathcal{MP}$ 1, 2\\
+4. & $\neg B\rightarrow\left(A\rightarrow\neg B\right)$ & $\mathcal{A}$1\\
+5. & $\neg B\rightarrow\neg A$ & $\mathcal{T}$3 4, 3
+\end{tabular}
+\item[$\mathcal{T}$5:] $B, \neg B\vdash C$
+
+\begin{tabular}{llr}
+1. & $B$ & \textit{Г}1\\
+2. & $\neg B$ & \textit{Г}2\\
+3. & $\bigl(\neg C\rightarrow B\bigr)\rightarrow\bigl(\left(\neg C\rightarrow\neg B\right)\rightarrow\neg\neg C\bigr)$ & $\mathcal{A}$9\\
+4. & $B\rightarrow\left(\neg C\rightarrow B\right)$ & $\mathcal{A}$1\\
+5. & $\neg C\rightarrow B$ & $\mathcal{MP}$ 1, 4\\
+6. & $\left(\neg C\rightarrow\neg B\right)\rightarrow\neg\neg C$ & $\mathcal{MP}$ 5, 3\\
+7. & $\neg B\rightarrow\left(\neg C\rightarrow\neg B\right)$ & $\mathcal{A}$1\\
+8. & $\neg C\rightarrow\neg B$ & $\mathcal{MP}$ 2, 7\\
+9. & $\neg\neg C$ & $\mathcal{MP}$ 8, 6\\
+10. & $\neg\neg C\rightarrow C$ & $\mathcal{A}$10\\
+11. & $C$ & $\mathcal{MP}$ 9, 10
+\end{tabular}
+\item[$\mathcal{T}$6:] $\vdash B\rightarrow\neg\neg B$
+
+\begin{tabular}{llr}
+1. & $\bigl(\neg B\rightarrow\neg B\bigr)\rightarrow\bigl(\left(\neg B\rightarrow\neg\neg B\right)\rightarrow\neg\neg B\bigr)$ & $\mathcal{A}$9\\
+2. & $\neg B\rightarrow\neg B$ & $\mathcal{T}$1\\
+3. & $\left(\neg B\rightarrow\neg\neg B\right)\rightarrow\neg\neg B$ & $\mathcal{MP}$ 2, 1\\
+4. & $\left(\neg B\rightarrow B\right)\rightarrow\left(\neg B\rightarrow\neg\neg B\right)$ & $\mathcal{T}$4\\
+5. & $B\rightarrow\left(\neg B\rightarrow B\right)$ & $\mathcal{A}$1\\
+6. & $B\rightarrow\left(\neg B\rightarrow\neg\neg B\right)$ & $\mathcal{T}$3 5, 4\\
+7. & $B\rightarrow\neg\neg B$ & $\mathcal{T}$3 6, 3
+\end{tabular}
+\item[$\mathcal{T}$7:] $\vdash\neg B\rightarrow\left(B\rightarrow C\right)\Leftrightarrow$
+
+$\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow\neg B\vdash B\rightarrow C\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow\neg B, B\vdash C$
+
+\begin{tabular}{llr}
+1. & $\neg B$ & \textit{Г}1\\
+2. & $B$ & \textit{Г}2\\
+3. & $C$ & $\mathcal{T}$5 2, 1
+\end{tabular}
+\item[\textit{Лемма к }$\mathcal{T}$8:] $\vdash B\rightarrow\bigl(\left(B\rightarrow C\right)\rightarrow C\bigr)\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow$
+
+$\Leftrightarrow B\vdash\left(B\rightarrow C\right)\rightarrow C\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow B, B\rightarrow C\vdash C$
+
+\begin{tabular}{llr}
+1. & $B$ & \textit{Г}1\\
+2. & $B\rightarrow C$ & \textit{Г}2\\
+3. & $C$ & $\mathcal{MP}$ 1, 2
+\end{tabular}
+
+\item[$\mathcal{T}$8:] $\vdash B\rightarrow\bigl(\neg C\rightarrow\neg\left(B\rightarrow C\right)\bigr)$
+
+\begin{tabular}{llr}
+1. & $B\rightarrow\bigl(\left(B\rightarrow C\right)\rightarrow C\bigr)$ & \textit{Лемма}\\
+2. & $\bigl(\left(B\rightarrow C\right)\rightarrow C\bigr)\rightarrow\bigl(\neg C\rightarrow\neg\left(B\rightarrow C\right)\bigr)$ & $\mathcal{T}$4\\
+3. & $B\rightarrow\bigl(\neg C\rightarrow\neg\left(B\rightarrow C\right)\bigr)$ & $\mathcal{T}$3 1, 2
+\end{tabular}
+\item[$\mathcal{T}$9:] $\vdash\neg B\rightarrow\bigl(\neg C\rightarrow\neg\left(B\lor C\right)\bigr)\Leftrightarrow$
+
+$\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow \neg B\vdash\neg C\rightarrow\neg\left(B\lor C\right)$
+
+\begin{tabular}{llr}
+1. & $\neg B$ & \textit{Г}1\\
+2. & $\Bigl(B\rightarrow C\Bigr)\rightarrow\Bigl(\bigl(C\rightarrow C\bigr)\rightarrow\bigl(\left(B\lor C\right)\rightarrow C\bigr)\Bigr)$ & $\mathcal{A}$8\\
+3. & $\neg B\rightarrow\left(B\rightarrow C\right)$ & $\mathcal{T}$7\\
+4. & $B\rightarrow C$ & $\mathcal{MP}$ 1, 3\\
+5. & $\bigl(C\rightarrow C\bigr)\rightarrow\bigl(\left(B\lor C\right)\rightarrow C\bigr)$ & $\mathcal{MP}$ 4, 2\\
+6. & $C\rightarrow C$ & $\mathcal{T}$1\\
+7. & $\left(B\lor C\right)\rightarrow C$ & $\mathcal{MP}$ 6, 5\\
+8. & $\bigl(\left(B\lor C\right)\rightarrow C\bigr)\rightarrow\bigl(\neg C\rightarrow\neg\left(B\lor C\right)\bigr)$ & $\mathcal{T}$4\\
+9. & $\neg C\rightarrow\neg\left(B\lor C\right)$ & $\mathcal{MP}$ 7, 8
+\end{tabular}
+\item[\textit{Лемма к }$\mathcal{T}$10:] $A\rightarrow\neg\neg B\vdash A\rightarrow B\Leftrightarrow$ \textit{ОТМД} $\Leftrightarrow A\rightarrow\neg\neg B, A\vdash B$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow\neg\neg B$ & \textit{Г}1\\
+2. & $A$ & \textit{Г}2\\
+3. & $\neg\neg B$ & $\mathcal{MP}$ 2, 1\\
+4. & $\neg\neg B\rightarrow B$ & $\mathcal{A}$10\\
+5. & $B$ & $\mathcal{MP}$ 3, 4
+\end{tabular}
+
+\item[$\mathcal{T}$10:] $\vdash\bigl(\neg B\rightarrow A\bigr)\rightarrow\bigl(\left(B\rightarrow A\right)\rightarrow A\bigr)\Leftrightarrow$
+
+$\Leftrightarrow$ \textit{ОМТД} $\Leftrightarrow\neg B\rightarrow A\vdash\left(B\rightarrow A\right)\rightarrow A\Leftrightarrow$
+
+$\Leftrightarrow$ \textit{ОТМД} $\Leftrightarrow\neg B\rightarrow A, B\rightarrow A\vdash A$
+
+\begin{tabular}{llr}
+1. & $\neg B\rightarrow A$ & \textit{Г}1\\
+2. & $B\rightarrow A$ & \textit{Г}2\\
+3. & $\left(\neg B\rightarrow A\right)\rightarrow\left(\neg A\rightarrow\neg\neg B\right)$ & $\mathcal{T}$4\\
+4. & $\neg A\rightarrow\neg\neg B$ & $\mathcal{MP}$ 1, 3\\
+5. & $\neg A\rightarrow B$ & \textit{Лемма} 4\\
+6. & $\left(B\rightarrow A\right)\rightarrow\left(\neg A\rightarrow\neg B\right)$ & $\mathcal{T}$4\\
+7. & $\neg A\rightarrow\neg B$ & $\mathcal{MP}$ 2, 6\\
+8. & $\bigl(\neg A\rightarrow B\bigr)\rightarrow\bigl(\left(\neg A\rightarrow\neg B\right)\rightarrow\neg\neg A\bigr)$ & $\mathcal{A}$9\\
+9. & $\left(\neg A\rightarrow\neg B\right)\rightarrow\neg\neg A$ & $\mathcal{MP}$ 5, 8\\
+10. & $\neg\neg A$ & $\mathcal{MP}$ 7, 9\\
+11. & $\neg\neg A\rightarrow A$ & $\mathcal{A}$10\\
+12. & $A$ & $\mathcal{MP}$ 10, 11
+\end{tabular}
+
+\end{enumerate}
+
+\end{document}

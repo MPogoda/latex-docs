@@ -1,0 +1,268 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[russian]{babel}
+
+\author{Погода Михаил}
+\title{Доказательство теорем в теории L2}
+\begin{document}
+\paragraph{$\mathcal{MO}$:} $A\rightarrow B=\neg\left(A\&\neg B\right)$
+\paragraph{Схемы аксиом:}
+\begin{itemize}
+\item[$\mathcal{A}$1]: $A\rightarrow A\&A$
+\item[$\mathcal{A}$2]: $A\&B\rightarrow A$
+\item[$\mathcal{A}$3]: $\left(A\rightarrow B\right)\rightarrow\bigl(\neg\left(B\&C\right)\rightarrow\neg\left(C\&A\right)\bigr)$
+\end{itemize}
+\paragraph{Правило вывода:} $\mathcal{MP}$
+\paragraph{Теоремы}
+\begin{itemize}
+\item[$\mathcal{T}$1]: $A\rightarrow B, B\rightarrow C\vdash\neg\left(\neg C\&A\right)$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $B\rightarrow C$ & \textit{Г}2\\
+3. & $\neg\left(B\&\neg C\right)$ &$\mathcal{MO}$ 2\\
+4. & $\left(A\rightarrow B\right)\rightarrow\bigl(\neg\left(B\&\neg C\right)\rightarrow\neg\left(\neg C\&A\right)\bigr)$ & $\mathcal{A}$3\\
+5. & $\neg\left(B\& C\right)\rightarrow\neg\left(\neg C\& A\right)$ & $\mathcal{MP}$ 1, 4\\
+6. & $\neg\left(\neg C\& A\right)$ & $\mathcal{MP}$ 3, 5
+\end{tabular}
+\item[$\mathcal{T}$2]: $\vdash\neg\left(\neg A\& A\right)$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow A\& A$ & $\mathcal{A}$1\\
+2. & $A\& A\rightarrow A$ & $\mathcal{A}$2\\
+3. & $\neg\left(\neg A\& A\right)$ & $\mathcal{T}$1
+\end{tabular}
+\item[$\mathcal{T}$3]: $\vdash \neg\neg A\rightarrow A$
+
+\begin{tabular}{llr}
+1. & $\vdash\neg\left(\neg\neg A\&\neg A\right)$ & $\mathcal{T}$2\\
+2. & $\neg\neg A\rightarrow A$ &$\mathcal{MO}$ 1
+\end{tabular}
+\item[$\mathcal{T}$4]: $\vdash\neg\left(A\& B\right)\rightarrow\left(B\rightarrow\neg A\right)$
+
+\begin{tabular}{llr}
+1. & $\neg\neg A\rightarrow A$ & $\mathcal{T}$3\\
+2. & $\left(\neg\neg A\rightarrow A\right)\rightarrow\bigl(\neg\left(A\& B\right)\rightarrow\neg\left(B\&\neg\neg A\right)\bigr)$ & $\mathcal{A}$3\\
+3. & $\neg\left(A\& B\right)\rightarrow\neg\left(B\&\neg\neg A\right)$ & $\mathcal{MP}$ 1, 2\\
+4. & $\neg\left(A\& B\right)\rightarrow\left(B\rightarrow\neg A\right)$ &$\mathcal{MO}$ 3
+\end{tabular}
+\item[$\mathcal{T}$5]: $\vdash A\rightarrow\neg\neg A$
+
+\begin{tabular}{llr}
+1. & $\neg\left(\neg A\& A\right)\rightarrow\left(A\rightarrow\neg\neg A\right)$ & $\mathcal{T}$4\\
+2. & $\neg\left(\neg A\& A\right)$ & $\mathcal{T}$2\\
+3. & $A\rightarrow\neg\neg A$ & $\mathcal{MP}$ 1, 2
+\end{tabular}
+\item[$\mathcal{T}$6]: $\vdash\left(A\rightarrow B\right)\rightarrow\left(\neg B\rightarrow\neg A\right)$
+
+\begin{tabular}{llr}
+1. & $\neg\left(A\&\neg B\right)\rightarrow\left(\neg B\rightarrow\neg A\right)$ & $\mathcal{T}$4\\
+2. & $\left(A\rightarrow B\right)\rightarrow\left(\neg B\rightarrow\neg A\right)$ &$\mathcal{MO}$ 1
+\end{tabular}
+\item[$\mathcal{T}$7]: $\neg A\rightarrow\neg B\vdash B\rightarrow A$
+
+\begin{tabular}{llr}
+1. & $\neg A\rightarrow \neg B$ & \textit{Г}1\\
+2. & $\neg\left(\neg B\& B\right)$ & $\mathcal{T}$2\\
+3. & $\left(\neg A\rightarrow\neg B\right)\rightarrow\bigl(\neg\left(\neg B\& B\right)\rightarrow\neg\left(B\&\neg A\right)\bigr)$ & $\mathcal{A}$3\\
+4. & $\neg\left(\neg B\& B\right)\rightarrow\neg\left(B\&\neg A\right)$ & $\mathcal{MP}$ 1, 3\\
+5. & $\neg\left(B\&\neg A\right)$ & $\mathcal{MP}$ 2, 4\\
+6. & $B\rightarrow A$ &$\mathcal{MO}$ 5
+\end{tabular}
+\item[$\mathcal{T}$8]: $A\rightarrow B\vdash C\& A\rightarrow B\& C$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $\left(A\rightarrow B\right)\rightarrow\bigl(\neg\left(B\& C\right)\rightarrow\neg\left(C\& A\right)\bigr)$ & $\mathcal{A}$3\\
+3. & $\neg\left(B\& C\right)\rightarrow\neg\left(C\& A\right)$ & $\mathcal{MP}$ 1, 2\\
+4. & $C\& A\rightarrow B\& C$ & $\mathcal{T}$7 3
+\end{tabular}
+\item[$\mathcal{T}$9]: $A\rightarrow B, B\rightarrow C, C\rightarrow D\vdash A\rightarrow D$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $B\rightarrow C$ & \textit{Г}2\\
+3. & $C\rightarrow D$ & \textit{Г}3\\
+4. & $\left(C\rightarrow D\right)\rightarrow\left(\neg D\rightarrow\neg C\right)$ & $\mathcal{T}$6\\
+5. & $\neg D\rightarrow\neg C$ & $\mathcal{MP}$ 3, 4\\
+6. & $\left(\neg D\rightarrow\neg C\right)\rightarrow\bigl(\neg\left(\neg C\& A\right)\rightarrow\neg\left(A\&\neg D\right)\bigr)$ & $\mathcal{A}$3\\
+7. & $\neg\left(\neg C\& A\right)\rightarrow\neg\left(A\&\neg D\right)$ & $\mathcal{MP}$ 5, 6\\
+8. & $\neg\left(\neg C\& A\right)$ & $\mathcal{T}$1 1, 2\\
+9. & $\neg\left(A\&\neg D\right)$ & $\mathcal{MP}$ 7, 8\\
+10. & $A\rightarrow D$ &$\mathcal{MO}$ 9
+\end{tabular}
+\item[$\mathcal{T}$10]: $\vdash A\rightarrow A$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow A\& A$ & $\mathcal{A}$1\\
+2. & $A\& A\rightarrow A\& A\& A$ & $\mathcal{T}$8 1\\
+3. & $A\& A\& A\rightarrow A$ & $\mathcal{A}$2\\
+4. & $A\rightarrow A$ & $\mathcal{T}$9 1, 2, 3
+\end{tabular}
+\item[$\mathcal{T}$11]: $\vdash A\& B\rightarrow B\& A$
+
+\begin{tabular}{llr}
+1. & $B\rightarrow B$ & $\mathcal{T}$10\\
+2. & $A\& B\rightarrow B\& A$ & $\mathcal{T}$8 1
+\end{tabular}
+\item[$\mathcal{T}$12]: $A\rightarrow B,B\rightarrow C\vdash A\rightarrow C$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $B\rightarrow C$ & \textit{Г}2\\
+3. & $B\rightarrow B$ & $\mathcal{T}$10\\
+4. & $A\rightarrow C$ & $\mathcal{T}$9 1, 2, 3
+\end{tabular}
+\item[$\mathcal{T}$13]: $A\rightarrow B,C\rightarrow D\vdash A\& C\rightarrow B\& D$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $C\rightarrow D$ & \textit{Г}2\\
+3. & $A\& C\rightarrow D\& A$ & $\mathcal{T}$8 2\\
+4. & $D\& A\rightarrow B\& D$ & $\mathcal{T}$8 1\\
+5. & $A\& C\rightarrow B\& D$ & $\mathcal{T}$12 3, 4
+\end{tabular}
+
+\item[$\mathcal{T}$14]: $B\rightarrow C\vdash A\& B\rightarrow A\& C$
+
+\begin{tabular}{llr}
+1. & $B\rightarrow C$ & \textit{Г}1\\
+2. & $A\& B\rightarrow C\& A$ & $\mathcal{T}$8\\
+3. & $C\& A\rightarrow A\& C$ & $\mathcal{T}$11\\
+4. & $A\& B\rightarrow A\& C$ & $\mathcal{T}$12
+\end{tabular}
+
+\item[Лемма к $\mathcal{T}$15]: $\vdash\left(A\& B\right)\& C\rightarrow A\&\left(B\& C\right)$
+
+\begin{tabular}{llr}
+1. & $\left(A\& B\right)\& C\rightarrow A\& B$ & $\mathcal{A}$2\\
+2. & $A\& B\rightarrow A$ & $\mathcal{A}$2\\
+3. & $B\& A\rightarrow A\& B$ & $\mathcal{T}$11\\
+4. & $B\& A\rightarrow B$ & $\mathcal{A}$2\\
+5. & $\left(A\& B\right)\& C\rightarrow A$ & $\mathcal{T}$12 1, 2\\
+6. & $A\& B\rightarrow B\& A$ & $\mathcal{T}$11\\
+7. & $\left(A\& B\right)\& C\rightarrow B$ & $\mathcal{T}$9 1, 6, 4\\
+8. & $\left(A\& B\right)\& C\rightarrow C\&\left(A\&B\right)$ & $\mathcal{T}$11\\
+9. & $C\&\left(A\&B\right)\rightarrow C$ & $\mathcal{A}$2\\
+10. & $\left(A\&B\right)\&C\rightarrow C$ & $\mathcal{T}$12 7,8\\
+11. & $\bigl(\left(A\&B\right)\&C\bigr)\&\bigl(\left(A\&B\right)\&C\bigr)\rightarrow B\&C$ & $\mathcal{T}$13 7, 10\\
+12. & $\left(A\&B\right)\&C\rightarrow\bigl(\left(A\&B\right)\&C\bigr)\&\bigl(\left(A\&B\right)\&C\bigr)$ & $\mathcal{A}$1\\
+13. & $\left(A\&B\right)\&C\rightarrow B\&C$ & $\mathcal{T}$12 11, 12\\
+14. & $\bigl(\left(A\&B\right)\&C\bigr)\&\bigl(\left(A\&B\right)\&C\bigr)\rightarrow A\&\left(B\&C\right)$ & $\mathcal{T}$13 13, 5\\
+15. & $\left(A\&B\right)\&C\rightarrow A\&\left(B\&C\right)$ & $\mathcal{T}$12 14, 12
+\end{tabular}
+\item[$\mathcal{T}$15]: $\vdash\bigl(A\rightarrow\left(B\rightarrow C\right)\bigr)\rightarrow\left(A\& B\rightarrow C\right)$
+
+\begin{tabular}{llr}
+1. & $\left(B\rightarrow C\right)\rightarrow\left(B\rightarrow C\right)$ & $\mathcal{T}$10\\
+2. & $\left(B\rightarrow C\right)\rightarrow\neg\left(B\&\neg C\right)$ & $\mathcal{MO}$ 1\\
+3. & $\bigl(\left(B\rightarrow C\right)\rightarrow\neg\left(B\&\neg C\right)\bigr)\rightarrow$ & \\
+ & \hfill $\rightarrow\bigl(\neg\neg\left(B\&\neg C\right)\rightarrow\neg\left(B\rightarrow C\right)\bigr)$ & $\mathcal{T}$6\\
+4. & $\neg\neg\left(B\&\neg C\right)\rightarrow\neg\left(B\rightarrow C\right)$ & $\mathcal{MP}$ 2, 3\\
+5. & $\left(B\&\neg C\right)\rightarrow\neg\neg\left(B\&\neg C\right)$ & $\mathcal{T}$5\\
+6. & $\left(B\&\neg C\right)\rightarrow\neg\left(B\rightarrow C\right)$ & $\mathcal{T}$12 4,5\\
+7. & $A\&\left(B\&\neg C\right)\rightarrow A\&\neg\left(B\rightarrow C\right)$ & $\mathcal{T}$14 6\\
+8. & $\bigl(A\&\left(B\&\neg C\right)\rightarrow A\&\neg\left(B\rightarrow C\right)\bigr)\rightarrow$ & \\
+ & \hfill$\rightarrow\Bigr(\neg\bigl(A\&\neg\left(B\rightarrow C\right)\bigr)\rightarrow\neg\bigl(A\&\left(B\&\neg C\right)\bigr)\Bigr)$ & $\mathcal{T}$6\\
+9. & $\neg\bigl(A\&\neg\left(B\rightarrow C\right)\bigr)\rightarrow\neg\bigl(A\&\left(B\&\neg C\right)\bigr)$ & $\mathcal{MP}$ 7, 8\\
+10. & $A\&\left(B\&\neg C\right)\rightarrow A\&\neg\left(B\rightarrow C\right)$ & $\mathcal{T}$7 9\\
+11. & $\left(A\&B\right)\&\neg C\rightarrow A\&\left(B\&\neg C\right)$ & \textit{Лемма}\\
+12. & $\left(A\&B\right)\&\neg C\rightarrow A\&\neg\left(B\rightarrow C\right)$ & $\mathcal{T}$12 10, 11\\
+13. & $\Bigl(\bigl(\left(A\&B\right)\&\neg C\bigr)\rightarrow\bigl(A\&\neg\left(B\rightarrow C\right)\bigr)\Bigr)\rightarrow$ & \\
+ & \hfill$\rightarrow\Bigl(\neg\bigl(A\&\neg\left(B\rightarrow C\right)\bigr)\rightarrow\neg\bigl(\left(A\&B\right)\&\neg C\bigr)\Bigr)$ & $\mathcal{T}$6\\
+14. & $\neg\bigl(A\&\neg\left(B\rightarrow C\right)\bigr)\rightarrow\neg\bigl(\left(A\&B\right)\&\neg C\bigr)$ & $\mathcal{MP}$ 12, 13\\
+15. & $\bigl(A\rightarrow\left(B\rightarrow C\right)\bigr)\rightarrow\neg\bigl(\left(A\&B\right)\&\neg C\bigr)$ & $\mathcal{MO}$ 14\\
+16. & $\bigl(A\rightarrow\left(B\rightarrow C\right)\bigr)\rightarrow\left(A\&B\rightarrow C\right)$ & $\mathcal{MO}$ 15
+\end{tabular}
+\vfill
+\item[Лемма к $\mathcal{T}$15$^*$]: $\vdash A\&\left(B\&C\right)\rightarrow\left(A\&B\right)\&C$
+
+\begin{tabular}{llr}
+1. & $A\&\left(B\&C\right)\rightarrow A$ & $\mathcal{A}$2\\
+2. & $A\&\left(B\&C\right)\rightarrow\left(B\&C\right)\&A$ & $\mathcal{T}$11\\
+3. & $\left(B\&C\right)\&A\rightarrow B\&C$ & $\mathcal{A}$2\\
+4. & $B\&C\rightarrow B$ & $\mathcal{A}$2\\
+5. & $A\&\left(B\&C\right)\rightarrow B$ & $\mathcal{T}$9 2, 3, 4\\
+6. & $\bigl(A\&\left(B\&C\right)\bigr)\&\bigl(A\&\left(B\&C\right)\bigr)\rightarrow A\&B$ & $\mathcal{T}$13 1, 5\\
+7. & $A\&\left(B\&C\right)\rightarrow\bigl(A\&\left(B\&C\right)\bigr)\&\bigl(A\&\left(B\&C\right)\bigr)$ & $\mathcal{A}$1\\
+8. & $A\&\left(B\&C\right)\rightarrow A\&B$ & $\mathcal{T}$12 7, 6\\
+9. & $B\&C\rightarrow C\&B$ & $\mathcal{T}$11\\
+10. & $C\&B\rightarrow C$ & $\mathcal{A}$2\\
+11. & $B\&C\rightarrow C$ & $\mathcal{T}$12 9, 10\\
+12. & $A\&\left(B\&C\right)\rightarrow C$ & $\mathcal{T}$9 2, 3, 11\\
+13. & $\bigl(A\&\left(B\&C\right)\bigr)\&\bigl(A\&\left(B\&C\right)\bigr)\rightarrow \left(A\&B\right)\&C$ & $\mathcal{T}$13 8, 12\\
+14. & $A\&\left(B\&C\right)\rightarrow\left(A\&B\right)\&C$ & $\mathcal{T}$12 7, 13
+\end{tabular}
+
+\item[$\mathcal{T}$15$^*$]: $\vdash\left(A\& B\rightarrow C\right)\rightarrow\bigl(A\rightarrow\left(B\rightarrow C\right)\bigr)$
+
+\begin{tabular}{llr}
+1. & $A\&\left(B\&\neg C\right)\rightarrow\left(A\&B\right)\&\neg C$ & \textit{Лемма}\\
+2. & $A\rightarrow A$ & $\mathcal{T}$10\\
+3. & $\neg\neg\left(B\&\neg C\right)\rightarrow\left(B\&\neg C\right)$ & $\mathcal{T}$3\\
+4. & $\bigl(A\&\neg\neg\left(B\&\neg C\right)\bigr)\rightarrow\bigl(A\&\left(B\&\neg C\right)\bigr)$ & $\mathcal{T}$13 2, 3\\
+5. & $\bigl(A\&\neg\neg\left(B\&\neg C\right)\bigr)\rightarrow\bigl(\left(A\&B\right)\&\neg C\bigr)$ & $\mathcal{T}$12 5, 1\\
+6. & $\Bigl(\bigl(A\&\neg\neg\left(B\&\neg C\right)\bigr)\rightarrow\bigl(\left(A\&B\right)\&\neg C\bigr)\Bigr)\rightarrow$ & \\
+ & \hfill$\rightarrow\Bigl(\neg\bigl(\left(A\&B\right)\&\neg C\bigr)\rightarrow\neg\bigl(A\&\neg\neg\left(B\&\neg C\right)\bigr)\Bigr)$ & $\mathcal{T}$6\\
+7. & $\neg\bigl(\left(A\&B\right)\&\neg C\bigr)\rightarrow\neg\bigl(A\&\neg\neg\left(B\&\neg C\right)\bigr)$ & $\mathcal{MP}$ 5, 6\\
+8. & $\bigl(\left(A\& B\right)\rightarrow C\bigr)\rightarrow\neg\bigl(A\&\neg\neg\left(B\&\neg C\right)\bigr)$ & $\mathcal{MO}$ 7\\
+9. & $\bigl(\left(A\& B\right)\rightarrow C\bigr)\rightarrow\bigl(A\rightarrow\neg\left(B\&\neg C\right)\bigr)$ & $\mathcal{MO}$ 8\\
+10. & $\bigl(\left(A\& B\right)\rightarrow C\bigr)\rightarrow\bigl(A\rightarrow\left(B\rightarrow C\right)\bigr)$ & $\mathcal{MO}$ 9\\
+\end{tabular}
+
+\item[$\mathcal{T}$16]: $A\rightarrow B,A\rightarrow\left(B\rightarrow C\right)\vdash A\rightarrow C$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $A\rightarrow\left(B\rightarrow C\right)$ & \textit{Г}2\\
+3. & $A\& A\rightarrow A\& B$ & $\mathcal{T}$14 1\\
+4. & $A\rightarrow A\& A$ & $\mathcal{A}$1\\
+5. & $A\rightarrow A\& B$ & $\mathcal{T}$12 4, 3\\
+6. & $\bigl(A\rightarrow\left(B\rightarrow C\right)\bigr)\rightarrow\left(A\& B\rightarrow C\right)$ & $\mathcal{T}$15\\
+7. & $A\& B\rightarrow C$ & $\mathcal{MP}$ 2, 6\\
+8. & $A\rightarrow C$ & $\mathcal{T}$12 5, 7
+\end{tabular}
+\item[$\mathcal{T}$17]: $\vdash A\rightarrow\left(B\rightarrow A\&B\right)$
+
+\begin{tabular}{llr}
+1. & $\left(A\& B\rightarrow A\& B\right)\rightarrow\bigl(A\rightarrow\left(B\rightarrow A\& B\right)\bigr)$ & $\mathcal{T}$15$^*$\\
+2. & $A\& B\rightarrow A\& B$ & $\mathcal{T}$10\\
+3. & $A\rightarrow\left(B\rightarrow A\& B\right)$ & $\mathcal{MP}$ 1, 2
+\end{tabular}
+\vfill
+\item[$\mathcal{T}$18]: $\vdash A\rightarrow\left(B\rightarrow A\right)$
+
+\begin{tabular}{llr}
+1. & $\left(A\& B\rightarrow A\right)\rightarrow\bigl(A\rightarrow\left(B\rightarrow A\right)\bigr)$ & $\mathcal{T}$15$^*$\\
+2. & $A\& B\rightarrow A$ & $\mathcal{A}$2\\
+3. & $A\rightarrow\left(B\rightarrow A\right)$ & $\mathcal{MP}$ 1, 2
+\end{tabular}
+
+\item[$\mathcal{T}$19]: $\Gamma,A\vdash B\Rightarrow\Gamma\vdash A\rightarrow B$
+\item[$\mathcal{T}$20]: $\vdash\left(\neg A\rightarrow A\right)\rightarrow A$
+
+\begin{tabular}{llr}
+1. & $\neg A\rightarrow\neg A\&\neg A$ & $\mathcal{A}$1\\
+2. & $\left(\neg A\rightarrow\neg A\&\neg A\right)\rightarrow\bigl(\neg\left(\neg A\&\neg A\right)\rightarrow\neg\neg A\bigr)$ & $\mathcal{T}$6\\
+3. & $\neg\left(\neg A\&\neg A\right)\rightarrow\neg\neg A$ & $\mathcal{MP}$ 1, 2\\
+4. & $\left(\neg A\rightarrow A\right)\rightarrow\neg\neg A$ & $\mathcal{MO}$ 3\\
+5. & $\neg\neg A\rightarrow A$ & $\mathcal{T}$3\\
+6. & $\left(\neg A\rightarrow A\right)\rightarrow A$ & $\mathcal{T}$12 4, 5
+\end{tabular}
+\item[$\mathcal{T}$21]: $A\rightarrow B,\neg A\rightarrow B\vdash B$
+
+\begin{tabular}{llr}
+1. & $A\rightarrow B$ & \textit{Г}1\\
+2. & $\neg A\rightarrow B$ & \textit{Г}2\\
+3. & $B\rightarrow\neg\neg B$ & $\mathcal{T}$5\\
+4. & $\neg A\rightarrow\neg\neg B$ & $\mathcal{T}$12 2, 3\\
+5. & $\neg B\rightarrow A$ & $\mathcal{T}$7 4\\
+6. & $\neg B\rightarrow B$ & $\mathcal{T}$12 5, 1\\
+7. & $\left(\neg B\rightarrow B\right)\rightarrow B$ & $\mathcal{T}$20\\
+8. & $B$ & $\mathcal{MP}$ 6, 7
+\end{tabular}
+\end{itemize}
+
+\end{document}

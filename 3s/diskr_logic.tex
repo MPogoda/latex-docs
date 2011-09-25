@@ -1,0 +1,155 @@
+\documentclass[titlepage,10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{indentfirst}
+
+\usepackage{geometry}
+\geometry{left=2cm}
+\geometry{bottom=2cm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{Расчётная работа по дискретной математике}
+\date{\today}
+\author{Погода Михаил, КМ-92}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{ПОСТАНОВКА ЗАДАЧИ}
+\paragraph{Область определения: }
+\textit{люди, предметы, страны.}
+\paragraph{Высказывания: }
+\begin{enumerate}
+\item Закон гласит, что продажа оружия недружественным странам, осуществляемая любым американским гражданином, является преступлением.
+\item В государстве Н., враждебным по отношению к Америке, имеются некоторые ракеты, и все ракеты этого государства были проданы ему полковником У., который является американским гражданином.
+\end{enumerate}
+\paragraph{Вывод: }
+полковник У. совершил преступление.
+
+\section{ФОРМАЛИЗАЦИЯ ЗАДАЧИ}
+\subsection{Области определения}
+\begin{itemize}
+\item $x\in X$ --- люди;
+\item $y\in Y$ --- предметы;
+\item $z\in Z$ --- страны.
+\end{itemize}
+\subsection{Предикаты}
+\begin{tabular}{ll}
+$\mathcal{W}\left(y\right)$: &  предмет $y$ является оружие;\\
+$\mathcal{E}\left(z\right)$: &  $z$ является недружественной страной по отношению к Америке;\\
+$\mathcal{A}\left(x\right)$: & человек $x$ является американский гражданин;\\
+$\mathcal{S}\left(x,y,z\right)$: & человек $x$ продал предмет $y$ стране $z$;\\
+$\mathcal{C}\left(x\right)$: & человек $x$ совершил преступление.
+\end{tabular}
+\subsection{Посылки}
+\begin{enumerate}
+\item $\forall x\forall y\forall z \bigl( \mathcal{A} \left(x\right) \& \mathcal{W} \left(y\right) \& \mathcal{E} \left(z\right) \& \mathcal{S}\left(x,y,z\right)\rightarrow\mathcal{C}\left(x\right)\bigr)$
+\item $\mathcal{E}\bigl(\text{Н.}\bigr) \& \mathcal{W}\bigl(\text{Ракеты}\bigr) \& \mathcal{S}\bigl(\text{Полковник У., Ракеты, Н.}\bigr) \& \mathcal{A}\bigl(\text{Полковник У.}\bigr)$
+\end{enumerate}
+\subsection{Вывод}
+$\mathcal{C}\bigl(\text{Полковник У.}\bigr)$
+
+\section{НЕФОРМАЛЬНОЕ ДОКАЗАТЕЛЬСТВО (метод редукции)}
+Предположим, что все посылки истинны, а вывод ложен.
+В таком случае справедлива следующая запись:
+\begin{enumerate}
+\item $\Bigl|\forall x\forall y\forall z \bigl( \mathcal{A} \left(x\right) \& \mathcal{W} \left(y\right) \& \mathcal{E} \left(z\right) \& \mathcal{S}\left(x,y,z\right)\rightarrow\mathcal{C}\left(x\right)\bigr)\Bigr| = T$
+\item $\Bigl|\mathcal{E}\bigl(\text{Н.}\bigr) \& \mathcal{W}\bigl(\text{Ракеты}\bigr) \& \mathcal{S}\bigl(\text{Полковник У., Ракеты, Н.}\bigr) \& \mathcal{A}\bigl(\text{Полковник У.}\bigr)\Bigr| = T$
+\item[В.] $\Bigl|\mathcal{C}\bigl(\text{Полковник У.}\bigr)\Bigr| = F$
+\end{enumerate}
+Отсюда, на интерпретации
+$\begin{cases}
+x = \text{Полковник У.;}\\
+y = \text{Ракеты;}\\
+z = \text{Н..}
+\end{cases}$ первая посылка имеет вид $\bigl|T \rightarrow F\bigr|=F\not = T$.
+
+Полученное противоречие доказывает неверность предположения, из чего следует, что вывод истинен, а не ложен.
+
+\section{ДОКАЗАТЕЛЬСТВО ЛОГИЧЕСКОГО СЛЕДОВАНИЯ В\\ ИСЧИСЛЕНИИ ПРЕДИКАТОВ ПЕРВОГО ПОРЯДКА\\ (построение формального вывода)}
+\begin{enumerate}
+\item $\forall x\forall y\forall z \bigl( \mathcal{A} \left(x\right) \& \mathcal{W} \left(y\right) \& \mathcal{E} \left(z\right) \& \mathcal{S}\left(x,y,z\right)\rightarrow\mathcal{C}\left(x\right)\bigr)$\hfill Г1
+\item $\mathcal{E}\bigl(\text{Н.}\bigr) \& \mathcal{W}\bigl(\text{Ракеты}\bigr) \& \mathcal{S}\bigl(\text{Полковник У., Ракеты, Н.}\bigr) \& \mathcal{A}\bigl(\text{Полковник У.}\bigr)$ \hfill Г2
+\item $\forall y\forall z \big( \mathcal{A} \left(t\right) \& \mathcal{W} \left(y\right) \& \mathcal{E} \left(z\right) \& \mathcal{S} \left(t, y, z\right) \rightarrow \mathcal{C} \left(t\right)\bigr)$ \hfill УК 1
+\item $\forall z \big( \mathcal{A} \left(t\right) \& \mathcal{W} \left(k\right) \& \mathcal{E} \left(z\right) \& \mathcal{S} \left(t, k, z\right) \rightarrow \mathcal{C} \left(t\right)\bigr)$ \hfill УК 3
+\item $\mathcal{A} \left(t\right) \& \mathcal{W} \left(k\right) \& \mathcal{E} \left(\zeta\right) \& \mathcal{S} \left(t, k, \zeta\right) \rightarrow \mathcal{C} \left(t\right)$ \hfill УК 4
+\item $\mathcal{C}\bigl(\text{Полковник У.}\bigr)$ \hfill GMP 2, 5
+\end{enumerate}
+
+\section{ДОКАЗАТЕЛЬСТВО МЕТОДОМ РЕЗОЛЮЦИЙ}
+\subsection{Множество дизъюнктов для данного логического следования}
+\begin{enumerate}
+\item $\forall x\forall y\forall z \bigl( \mathcal{A} \left(x\right) \& \mathcal{W} \left(y\right) \& \mathcal{E} \left(z\right) \& \mathcal{S}\left(x,y,z\right)\rightarrow\mathcal{C}\left(x\right)\bigr) =
+\forall x\forall y\forall z \bigl( \neg{\mathcal{A}}\left(x\right) \lor \neg{\mathcal{W}}\left(y\right) \lor \neg{\mathcal{E}}\left(z\right) \lor \neg\mathcal{S}\left(x, y, z\right) \lor \mathcal{C}\left(x\right)\bigr)$
+\item $\mathcal{E}\bigl(\text{Н.}\bigr) \& \mathcal{W}\bigl(\text{Ракеты}\bigr) \& \mathcal{S}\bigl(\text{Полковник У., Ракеты, Н.}\bigr) \& \mathcal{A}\bigl(\text{Полковник У.}\bigr) = \begin{cases}
+\mathcal{A}\bigl(\text{Полковник У.}\bigr)\\
+\mathcal{W}\bigl(\text{Ракеты}\bigr)\\
+\mathcal{E}\bigl(\text{Н.}\bigr)\\
+\mathcal{S}\bigl(\text{Полковник У., Ракеты, Н.}\bigr) \end{cases}$
+\item[$\neg$В.] $\neg\mathcal{C}\bigl(\text{Полковник У.}\bigr)$
+\end{enumerate}
+\subsection{Применение метода резолюций}
+\begin{enumerate}
+\item $\neg\mathcal{A}\left(x\right) \lor \neg\mathcal{W}\left(y\right) \lor \neg\mathcal{E}\left(z\right) \lor \neg\mathcal{S}\left(x, y, z\right) \lor \mathcal{C}\left(x\right)$
+\item $\mathcal{A}\bigl(\text{Полковник У.}\bigr)$
+\item $\mathcal{W}\bigl(\text{Ракеты}\bigr)$
+\item $\mathcal{E}\bigl(\text{Н.}\bigr)$
+\item $\mathcal{S}\bigl(\text{Полковник У., Ракеты, Н.}\bigr)$
+\item $\neg\mathcal{C}\bigl(\text{Полковник У.}\bigr)$
+\item $\neg\mathcal{W}\left(y\right) \lor \neg\mathcal{E}\left(z\right) \lor \neg\mathcal{S}\bigl(\text{Полковник У.}, y, z\bigr) \lor \mathcal{C}\bigl(\text{Полковник У.}\bigr)$ \hfill $\bigl\{\text{Полковник У.}/x\bigr\}$ \hfill Р 1,2
+\item $\neg\mathcal{E}\left(z\right) \lor \neg\mathcal{S}\bigl(\text{Полковник У., Ракеты}, z\bigr) \lor \mathcal{C}\bigl(\text{Полковник У.}\bigr)$ \hfill $\bigl\{\text{Ракеты}/y\bigr\}$ \hfill Р 7,3
+\item $\neg\mathcal{S}\bigl(\text{Полковник У., Ракеты, Н.}\bigr) \lor \mathcal{C}\bigl(\text{Полковник У.}\bigr)$ \hfill $\bigl\{\text{Н.}/z\bigr\}$ \hfill Р 8,4
+\item $\mathcal{C}\bigl(\text{Полковник У.}\bigr)$ \hfill Р 9,5
+\item $\square$ \hfill Р 10,6
+\end{enumerate}
+
+\newpage
+\section{ПОСТРОЕНИЕ ЛОГИЧЕСКОЙ ПРОГРАММЫ}
+\subsection{Логическая программа}
+\begin{verbatim}
+Predicates:
+A(x)
+W(y)
+E(z)
+S(x,y,z)
+C(x)
+
+Clauses:
+A(Полковник У.)
+W(Ракеты)
+E(Н.)
+S(Полковник У., Ракеты, Н.)
+C(x) :- A(x), W(y), E(z), S(x, y, z)
+
+Goal ?- C(Полковник У.)
+\end{verbatim}
+\subsection{Дерево логического вывода}
+\begin{center}
+\verb'not(C(Полковник У.))'\\
+\verb'|'\\
+\verb'C(x) :- A(x), W(y), E(z), S(x, y, z)'\\
+\verb'{Полковник У./x}'\\
+\verb'|'\\
+\verb':- A(Полковник У.), W(y), E(z), S(Полковник У., y, z)'\\
+\verb'|'\\
+\verb'A(Полковник У.)'\\
+\verb'|'\\
+\verb':- W(y), E(z), S(Полковник У., y, z)'\\
+\verb'{Ракеты/y}'\\
+\verb'|'\\
+\verb'W(Ракеты)'\\
+\verb':- E(z), S(Полковник У., Ракеты, z)'\\
+\verb'{Н./z}'\\
+\verb'|'\\
+\verb'E(Н.)'\\
+\verb':- S(Полковник У., Ракеты, Н.)'\\
+\verb'|'\\
+\verb'S(Полковник У., Ракеты, Н.)'\\
+\verb'|'\\
+$\square$
+
+\end{center}
+\end{document}

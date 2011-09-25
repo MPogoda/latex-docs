@@ -1,0 +1,193 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{center}
+\textbf{\huge Расчётная работа по математическому анализу}
+
+Студента группы КМ-92
+
+\textit{Погоды Михаила}
+\end{center}
+\section{Разложить в ряд Лорана}
+Функция:
+$$f\left(z\right) = \frac{2 z + 1}{z^2 + z -6}$$
+Окрестность:
+$$1 < \left| z - 1\right| < 4$$
+Разложим функцию $f\left(z\right)$ на простые дроби, получим:
+$$f\left(z\right) = \frac{1}{z+3} + \frac{1}{z-2}$$
+Разложим первую дробь в ряд Лорана в заданной окрестности:
+$$\frac{1}{z+3} = \frac{1}{\left(z-1\right)+4} = \frac14\times\frac{1}{1-\frac{-\left(z - 1\right)}{4}}$$
+т.\,к. $\left|\frac{z-1}{4}\right| < 1$ в выбранной окрестности, то воспользуемся формулой для суммы бесконечной геометрической прогрессии:
+$$\frac14\times\frac{1}{1-\frac{-\left(z-1\right)}{4}} = \frac14\left(1 - \frac{z-1}{4} + \frac{\left(z-1\right)^2}{4^2} - \frac{\left(z-1\right)^3}{4^3} + \dots + \left(-1\right)^n \left(\frac{z-1}{4}\right)^n\right)$$
+
+Разложим вторую дробь в ряд Лорана в заданной окрестности:
+$$\frac{1}{z-2} = \frac{1}{\left(z-1\right)-1} = \frac{1}{z-1}\times \frac{1}{1-\frac{1}{z-1}}$$
+т.\,к. $\left|\frac{1}{z-1}\right| < 1$ в заданной окрестности, то снова воспользуемся формулой для суммы бесконечной геометрической прогрессии:
+$$\frac{1}{z-1}\times\frac{1}{1-\frac{1}{z-1}} = \frac{1}{z-1}\left(1 + \frac{1}{z-1} + \frac{1}{\left(z-1\right)^2} + \dots + \frac{1}{\left(z-1\right)^n}\right)$$
+
+\subsection*{Ответ:}
+$$f\left(z\right) = \frac14\left(1 - \frac{z-1}{4} + \left(\frac{z-1}{4}\right)^2 - \dots\right) + \frac{1}{z-1}\left(1 + \frac{1}{z-1} + \left(\frac{1}{z-1}\right)^2+\dots\right) = $$
+$$= \frac14\sum\limits_{k = 0}^{\infty} {\left(-1\right)^k\left(\frac{z-1}{4}\right)^k} + \sum\limits_{k=-\infty}^{-1}{\left(z-1\right)^k}$$
+\newpage
+\section{Найти вычеты функции}
+Функция:
+$$f\left(z\right) = \frac{e^{2z}}{z-i}$$
+В точке $z = i$ имеем полюс первого порядка, т.\,е. вычет можно рассчитать так:
+$$\mathop{\text{Res}}\limits_{z=i} f\left(z\right) = \lim\limits_{z\to i} f\left(z\right)\left(z-i\right) = \lim\limits_{z\to i}e^{2z} = e^{2i} = \cos2 + i\sin2$$
+\subsection*{Ответ:}
+$$\mathop{\text{Res}}\limits_{z=i} f\left(z\right) = \cos2 + i\sin2$$
+\newpage
+\section{Решить интеграл}
+Интеграл:
+$$\int\limits_0^\infty \varphi\left(x\right) dx$$
+$$\varphi\left(x\right) = \frac{x^3 \sin{x}}{\left(1+x^2\right)^2}$$
+
+Докажем, что функция $\varphi\left(x\right)$ --- чётная:
+$$\varphi\left(-x\right) = \frac{\left(-x\right)^3 \sin{\left(-x\right)}}{\left(1+\left(-x\right)^2\right)^2} = -\frac{x^3\sin{x}}{\left(1+x^2\right)^2} = -\varphi\left(x\right)$$
+Поэтому справедливо следующее:
+$$\int\limits_0^\infty \varphi\left(x\right) dx = \frac12 \int\limits_{-\infty}^\infty \varphi\left(x\right)dx$$
+Введём вспомогательную функцию $$f\left(z\right) = \frac{z^3 e^{iz}}{\left(1+z^2\right)^2}$$
+Если $z = x$, то $\mathop{\text{Im}}f\left(x\right)$ совпадает с $\varphi\left(x\right)$
+
+При достаточно большом $R$ всередине контуре $C_R$ функция $g\left(x\right) = \frac{z^3}{\left(1+z^2\right)^2}$ удовлетворяет неравенству $$\left|g\left(z\right)\right| < \frac{R}{R^2 + 4R + 20}$$ и, соответственно, $\lim\limits_{R\to\infty}{g\left(z\right)} = 0$. Поэтому, по лемме Жордана:
+$$\lim\limits_{R\to\infty}{\inf\limits_{C_R}{f\left(z\right) dz}} = 0$$
+$\forall R > 1$ по теоремы про вычеты, имеем:
+$$\int\limits_R^R{f\left(x\right) dx} + \int\limits_{C_R}{f\left(z\right)dz} = 2\pi i \sigma$$
+$$\sigma = \mathop{\text{Res}}\limits_{z = i}{f\left(z\right)} = \lim\limits_{z\to i}{\frac{d}{dz}\left(\frac{z^3e^{iz}}{\left(z+i\right)^2}\right)} = \lim\limits_{z\to i}{\frac{\left(3z^2 e^{iz}+iz^3e^{iz}\right)\left(i+z\right)^2 - 2\left(i+z\right)z^3e^{iz}}{\left(i+z\right)^4}} =$$
+$$=\lim\limits_{z\to i}{\frac{iz^2e^{iz}\left(z^2+3\right)}{\left(i+z\right)^3}} = \frac{i^3e^{-1}\left(-1+3\right)}{\left(2i\right)^3} = \frac{1}{4e}$$
+В границе при $R\to\infty$, учтя $\lim\limits_{R\to\infty}\int\limits_{C_R}{f\left(z\right) dz} = 0$, получим:
+$$\int\limits_{-\infty}^\infty f\left(x\right) dx = -\frac{\pi i }{2e}$$
+Отделяя справа и слева вещественные и мнимые части, окончательно получим:
+$$\int\limits_{-\infty}^\infty f(x) dx = \frac{\pi}{2e} \Rightarrow \int\limits_0^\infty \frac{x^3\sin{x}}{(1+x^2)^2}dx = \frac{\pi}{4e}$$
+\subsection*{Ответ:}
+$$\int\limits_0^\infty \frac{ x^3 \sin{x} }{(1+x^2)^2}dx = \frac{\pi}{4e}$$
+\newpage
+\section{Разложить в ряд Тэйлора и найти область сходимости}
+Функция:
+$$f\left(z\right) = \frac{z^2}{\left(z+1\right)^2} = \left(\frac{z}{z+1}\right)^2 = \left(1 - \frac{1}{1-\left(-z\right)}\right)^2$$
+Как видно, эту функцию можно разложить только в окрестности $\left|z\right| < 1$:
+$$\left(1-1+z-z^2+z^3-\dots\right)^2 = \left(z-z^2+z^3-z^4+\dots\right)\left(z-z^2+z^3-z^4+\dots\right) =$$
+$$= z^2 - 2z^3 + 3z^4 - 4z^5 + \dots = \sum\limits_{n=2}^{\infty}\left(-1\right)^n\left(n-1\right)z^n$$
+\subsection*{Ответ:}
+$$f\left(z\right)=\sum\limits_{n=2}^{\infty}\left(-1\right)^n\left(n-1\right)z^n$$
+Область сходимости: $\left|z\right|<1$
+\newpage
+\section{Восстановить функцию по её части}
+Функция:
+$$f\left(x,y\right) = u\left(x,y\right) + iv\left(x,y\right)$$
+$$v\left(x,y\right) = x + y - 3$$
+$$f\left(0, 0\right) = 0$$
+
+Воспользуемся условиями Коши-Римана:
+$$
+\begin{cases}
+\frac{\partial u\left(x,y\right)}{\partial x} = \frac{\partial v\left(x,y\right)}{\partial y}\\
+\frac{\partial u\left(x,y\right)}{\partial y} = -\frac{\partial v\left(x,y\right)}{\partial x}
+\end{cases}
+$$
+
+$$\frac{\partial v\left(x,y\right)}{\partial y} = 1 = \frac{\partial u\left(x,y\right)}{\partial x}$$
+$$u\left(x,y\right) = \int\frac{\partial u\left(x,y\right)}{\partial x}dx = \int dx = x + C_1\left(y\right)$$
+$$-\frac{\partial v\left(x,y\right)}{\partial x} = -1 = \frac{\partial u\left(x,y\right)}{\partial y}$$
+$$u\left(x,y\right) = \int\frac{\partial u\left(x,y\right)}{\partial y} = -\int dy = -y + C_2\left(x\right)$$
+$$\Rightarrow u\left(x,y\right) = x - y + C$$
+
+найдём константу $C$ из начальных условий:
+$$0 = f\left(0,0\right) = u\left(0,0\right) + i v\left(0,0\right) = 0 - 0 + C + i\left(0 + 0 - 3\right) = C - 3i$$
+$$\Rightarrow C = 3i$$
+\subsection*{Ответ:}
+$$f\left(x,y\right) = \left(x - y + 3i\right) + i\left(x + y - 3\right)$$
+\newpage
+\section{Разложить на заданном промежутке функцию в ряд Фурье}
+\subsection{Разложить по синусам функцию}
+Функция:
+$$f\left(x\right) = x\left(l-x\right), x\in\left[0;l\right]$$
+Продолжим функцию $f\left(x\right)$ нечётным образом на промежуток $\left[-l;0\right]$.
+Данная функция $\forall x\in\left[-l;l\right]$ имеет в своём разложении только синусы.
+
+Найдём коэффициенты $b_n$.
+
+$$b_n = \frac{1}{l}\int\limits_{-l}^l f\left(x\right) \sin\frac{\pi n x}{l} dx = \text{в силу чётности} = \frac{2}{l}\int\limits_0^l f\left(x\right) \sin\frac{\pi n x}{l} dx =$$
+$$=2\int\limits_0^l x\sin\frac{\pi n x}{l} dx - \frac{2}{l}\int\limits_0^l x^2 \sin\frac{\pi n x}{l} dx$$
+$$\int\limits_0^l x \sin\frac{pi n x}{l} dx = -\frac{l}{\pi n}\int\limits_0^l x d\cos\frac{\pi n x}{l} = -\frac{l}{\pi n}\left(x\cos\frac{\pi n x}{l} \Bigr|_0^l - \int\limits_0^l \cos\frac{\pi n x}{l} dx \right) =$$
+$$= -\frac{l}{\pi n}\left(l\cos{\pi n} - \frac{l}{\pi n}\sin\frac{\pi n x}{l}\Bigr|_0^1\right) = -\frac{l^2}{\pi n}\left(-1\right)^n$$
+$$\int\limits_0^l x^2\sin\frac{\pi n x}{l} dx = -\frac{l}{\pi n}\int\limits_0^l x^2 d\cos\frac{\pi n x}{l} = -\frac{l}{\pi n}\left(x^2\cos\frac{\pi n x}{l}\Bigr|_0^l - 2\int\limits_0^l x\cos\frac{\pi n x}{l} dx\right)=$$
+$$=\frac{l}{\pi n}\left(\frac{2l}{\pi n}\int\limits_0^l x d\sin\frac{\pi n x}{l} - l^2\left(-1\right)^n\right) = \frac{l}{\pi n}\left(\frac{2 l}{\pi n}\left(x\sin\frac{\pi n x}{l}\Bigr|_0^l - \int\limits_0^l \sin\frac{\pi n x}{l} dx\right) - l^2\left(-1\right)^n\right)=$$
+$$= \frac{l}{\pi n}\left(\frac{2l^2}{\pi^2 n^2}\cos\frac{\pi n x}{l}\Bigr|_0^l - l^2\left(-1\right)^n\right) = \frac{l^3}{\pi n}\left(\frac{2}{\pi^2 n^2}\left(\left(-1\right)^n - 1\right) - \left(-1\right)^n\right)$$
+
+$$b_n = 2\int\limits_0^l x\sin\frac{\pi n x}{l} dx - \frac{2}{l}\int\limits_0^l x^2 \sin\frac{\pi n x}{l} dx = 2\left(-\frac{l^2}{\pi n}\left(-1\right)^n\right) - \frac{2}{l}\frac{l^3}{\pi n}\left(\frac{2}{\pi^2 n^2}\left(\left(-1\right)^n-1\right)-\left(-1\right)^n\right)=$$
+$$=\frac{4l^2}{\pi^3 n^3}\left(1-\left(-1\right)^n\right)$$
+
+Как видно, если $n = 2k$, то $b_n = 0$, тогда
+$$b_{2k+1} = \frac{8l^2}{\pi^3 \left(2k+1\right)^3}$$
+\subsubsection*{Ответ:}
+$$f\left(x\right) \sim \sum\limits_{k = 0}^\infty \frac{8l^2}{\pi^3 \left(2k+1\right)^3} \sin\frac{\pi \left(2k +1\right) x}{l}$$
+\newpage
+\subsection{Разложить функцию по синусам и по косинусам}
+$$f\left(x\right) = \begin{cases}
+x, x\in\left(0;1\right)\\
+1, x\in\left(1;2\right)
+\end{cases}
+$$
+\subsubsection{Разложения по косинусам}
+Продолжим функцию на промежуток $\left(-2;0\right)$ чётным образом.
+Т.\,к. на промежутке $\left(-2;2\right)$ функция будет чётная, то в её разложении в тригонометрический ряд Фурье будут только слагаемые с косинусами.
+$$a_n
+=
+\frac{1}{2} \int\limits_{-2}^2 f\left(x\right) \cos\frac{\pi n x}{2} dx =
+\int\limits_0^2 f\left(x\right) \cos\frac{\pi n x}{2} dx
+=
+\int\limits_0^1 x\cos\frac{\pi n x}{2} dx + \int\limits_1^2 \cos\frac{\pi n x}{2} dx = $$
+$$=\frac{2}{\pi n}\int\limits_0^1 x d\sin\frac{\pi n x}{2} + \frac{2}{\pi n}\left.\sin\frac{\pi n x}{2}\right|_1^2 = 
+\frac{2}{\pi n}\left(\left.x\sin\frac{\pi n x}{2}\right|_0^1 - \int\limits_0^1\sin\frac{\pi n x}{2} dx\right) - \frac{2}{\pi n}\sin\frac{\pi n}{2}
+=
+$$
+$$ =
+\frac{2^2}{\pi^2 n^2}\left.\cos\frac{\pi n x}{2}\right|_0^1 =
+\frac{2^2}{\pi^2 n^2}\left(\cos\frac{\pi n}{2} - 1\right)
+$$
+Рассмотрим два случая:
+\begin{itemize}
+\item $n = 2k$
+$$a_{2k} = \frac{2^2}{\pi^2 \left(2 k\right)^2}\left(\left(-1\right)^k - 1\right) = 
+\frac{1}{\pi^2 k^2}\left(\left(-1\right)^k - 1\right)$$
+\item $n = 2k - 1$
+$$a_{2k-1} = -\frac{4}{\pi^2 \left(2 k - 1\right)^2}$$
+\end{itemize}
+$$\frac{a_0}{2} = \frac12\left(\int\limits_0^1x dx + \int\limits_1^2 dx\right) = \frac12 \frac32 = \frac34$$
+\paragraph*{Ответ:}
+$$f\left(x\right) \sim \frac34 + \sum\limits_{k=1}^\infty{\left(\frac{\left(\left(-1\right)^k - 1\right)}{\pi^2 k^2} \cos{\pi k x} -\frac{4}{\pi^2 \left(2k - 1\right)^2}\cos\frac{\left(2k - 1\right) \pi x}{2}\right)}$$
+\subsubsection{Разложение по синусам}
+Продолжим функцию на промежуток $\left(-2;0\right)$ нечётным образом.
+Т.\,к. на промежутке $\left(-2;2\right)$ функция буде нечётная, то в её разложении в тригонометрический ряд Фурье будут только слагаемые с синусами.
+$$b_n = \frac12\int\limits_{-2}^2 f\left(x\right) \sin\frac{\pi n x}{2}dx = \int\limits_0^2 f\left(x\right) \sin\frac{\pi n x}{2} dx = 
+\int\limits_0^1 x\sin\frac{\pi n x}{2} dx + \int\limits_1^2 \sin\frac{\pi n x}{2} dx=$$
+$$
+= -\frac{2}{\pi n}\int\limits_0^1 x d\cos\frac{\pi n x}{2} - \left.\frac{2}{\pi n}\cos\frac{\pi n x}{2}\right|_1^2=$$
+$$= 
+-\frac{2}{\pi n}\left(\left.x\cos\frac{\pi n x}{2}\right|_0^1 - \int\limits_0^1\cos\frac{\pi n x}{2}\right) - \frac{2}{\pi n}\cos{\left(\pi n\right)} + \frac{2}{\pi n}\cos\frac{\pi n}{2}
+=$$
+$$=
+-\frac{2}{\pi n}\left(\cos\frac{\pi n}{2} - \left.\frac{2}{\pi n}\sin\frac{\pi n x}{2}\right|_0^1\right) - \frac{2}{\pi n}\left(-1\right)^n + \frac{2}{\pi n}\cos\frac{\pi n}{2}=
+$$
+$$=
+\frac{4}{\pi^2 n^2}\sin\frac{\pi n}{2} - \frac{2}{\pi n}\left(-1\right)^n
+$$
+Рассмотри два случая:
+\begin{itemize}
+\item $n = 2k$
+
+$$b_{2k} = -\frac{1}{\pi k}$$
+\item $n = 2k - 1$
+
+$$b_{2k - 1} = \frac{4\left(-1\right)^{k+1}}{\pi^2 \left(2k - 1\right)^2} + \frac{2}{\pi \left(2k - 1\right)}$$
+\end{itemize}
+\paragraph*{Ответ:}
+$$f\left(x\right) \sim \sum\limits_{k = 1}^\infty{\left(-\frac{1}{\pi k}\sin{\pi k x} + \left(\frac{4\left(-1\right)^{k+1}}{\pi^2 \left(2k - 1\right)^2} + \frac{2}{\pi \left(2k - 1\right)}\right)\sin\frac{\left(2k - 1\right)\pi x}{2}\right)}$$
+\end{document}

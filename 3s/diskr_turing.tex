@@ -1,0 +1,69 @@
+\documentclass[titlepage,paper=a4,pagesize,draft]{scrartcl}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+
+\author{Погода Михаил}
+\title{Расчётная работа по дискретной математике, 3 семестр}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Постановка задачи}
+Реализовать машину Тьюринга и нормальный алгоритм Маркова, переводящие слово из унарной системы исчисления в десятичную.
+\subsection{Примеры входных и выходных слов}
+\begin{tabular}{cc}
+Ввод & Вывод\\
+$||||||$ & $6$\\
+$||||||||||||||||$ & $16$\\
+$|$ & $1$
+\end{tabular}
+\section{Машина Тьюринга}
+\subsection{Краткое словесное описание алгоритма}
+Алгоритм реализован по следующей схеме:
+\begin{enumerate}
+\item сдвинуться в конец слова, перейти к пункту 2;
+\item двигаться влево от текущей позиции до тех пор, пока не увидим палочку (перейти к пункту 3) либо пустой символ (перейти к пункту 5);
+\item если встретили палочку, то заменяем её на ноль и движемся в конец слова, перейти к пункту 4;
+\item если в текущей позиции стоит цифра от 0 до 8, то заменяем её на одну больше и перейти к пункту 2; если встретили 9, то заменить её на 0, сдвинуться влево и повторить текущий пункт;
+\item двигаться вправо до первого ненулевого символа (останов алгоритма), затирая все нули.
+\end{enumerate}
+\subsection{Таблица состояний}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & $q_0$ & $q_1$ & $q_2$ & $q_3$\\
+\hline
+$|$ & $|\Rightarrow q_0$ & $0\Rightarrow q_2$ & & \\
+$0$ & $\lambda\Rightarrow q_0$ & $0\Leftarrow q_1$ & $0\Rightarrow q_2$ & $1\Leftarrow q_1$\\
+$1$ & $1 !$ & $1\Leftarrow q_1$ & $1\Rightarrow q_2$ & $2\Leftarrow q_1$\\
+$2$ & $2 !$ & $2\Leftarrow q_1$ & $2\Rightarrow q_2$ & $3\Leftarrow q_1$\\
+$3$ & $3 !$ & $3\Leftarrow q_1$ & $3\Rightarrow q_2$ & $4\Leftarrow q_1$\\
+$4$ & $4 !$ & $4\Leftarrow q_1$ & $4\Rightarrow q_2$ & $5\Leftarrow q_1$\\
+$5$ & $5 !$ & $5\Leftarrow q_1$ & $5\Rightarrow q_2$ & $6\Leftarrow q_1$\\
+$6$ & $6 !$ & $6\Leftarrow q_1$ & $6\Rightarrow q_2$ & $7\Leftarrow q_1$\\
+$7$ & $7 !$ & $7\Leftarrow q_1$ & $7\Rightarrow q_2$ & $8\Leftarrow q_1$\\
+$8$ & $8 !$ & $8\Leftarrow q_1$ & $8\Rightarrow q_2$ & $9\Leftarrow q_1$\\
+$9$ & $9 !$ & $9\Leftarrow q_1$ & $9\Rightarrow q_2$ & $0\Leftarrow q_3$\\
+$\lambda$ & $\lambda\Leftarrow q_1$ & $\lambda\Rightarrow q_0$ & $\lambda\Leftarrow q_3$ & \\
+\hline
+\end{tabular}
+\subsection{Примеры работы машины Тьюринга}
+\begin{enumerate}
+\item $\lambda\underline||||||\lambda\rightarrow(5\times q_0)\rightarrow\lambda||||||\underline\lambda\rightarrow(q_0)\rightarrow\lambda|||||\underline|\lambda\rightarrow(q_1)\rightarrow\lambda|||||0\underline\lambda\rightarrow(q_2)\rightarrow\lambda|||||\underline0\lambda\rightarrow(q_3)\rightarrow\lambda||||\underline|1\lambda\rightarrow(q_1)\rightarrow\lambda||||0\underline1\lambda\rightarrow(q_2)\rightarrow\lambda||||01\underline\lambda\rightarrow(q_2)\rightarrow\lambda||||0\underline1\lambda\rightarrow(q_3)\rightarrow\lambda||||\underline02\lambda\rightarrow(q_1)\rightarrow\lambda|||\underline|02\lambda\rightarrow(q_1)\rightarrow\lambda|||0\underline02\lambda\rightarrow(2\times q_2)\rightarrow\lambda|||002\underline\lambda\rightarrow(q_2)\rightarrow\lambda|||00\underline2\lambda\rightarrow(q_3)\rightarrow\lambda|||0\underline03\lambda\rightarrow(2\times q_1)\rightarrow\lambda||\underline|003\lambda\rightarrow(q_1)\rightarrow\lambda||0\underline003\lambda\rightarrow(3\times q_2)\rightarrow\lambda||0003\underline\lambda\rightarrow(q_2)\rightarrow\lambda||000\underline3\lambda\rightarrow(q_3)\rightarrow\lambda||00\underline04\lambda\rightarrow(3\times q_1)\rightarrow\lambda|\underline|0004\lambda\rightarrow(q_1)\rightarrow\lambda|0\underline0004\lambda\rightarrow(4\times q_2)\rightarrow\lambda|00004\underline\lambda\rightarrow(q_2)\rightarrow\lambda|0000\underline4\lambda\rightarrow(q_3)\rightarrow\lambda|000\underline05\lambda\rightarrow(4\times q_1)\rightarrow\lambda\underline|00005\lambda\rightarrow(q_2)\rightarrow\lambda0\underline00005\lambda\rightarrow(5\times q_2)\rightarrow\lambda000005\underline\lambda\rightarrow(q_2)\rightarrow\lambda00000\underline5\lambda\rightarrow(q_3)\rightarrow\lambda0000\underline06\lambda\rightarrow(5\times q_1)\rightarrow\underline\lambda000006\lambda\rightarrow(q_1)\rightarrow\lambda\underline000006\lambda\rightarrow(5\times q_0)\rightarrow\lambda\lambda\lambda\lambda\lambda\lambda\underline6\lambda\rightarrow(q_0)\rightarrow\lambda6\lambda$
+\end{enumerate}
+
+\section{Нормальный алгоритм Маркова}
+\begin{enumerate}
+\item $\aleph\lambda\rightarrow\xi$
+\item $\aleph x\rightarrow x\aleph, ~~~~~~0\leqslant x\leqslant9$
+\item $9\xi\rightarrow\xi0$
+\item $x\xi\rightarrow x+1, ~~~~~0\leqslant x\leqslant8$
+\item $\xi\rightarrow1$
+\item $|\lambda\rightarrow1$
+\item $|x\rightarrow x\aleph, ~~~~~0\leqslant x\leqslant9$
+\item $\lambda\rightarrow.$
+\end{enumerate}
+
+\end{document}

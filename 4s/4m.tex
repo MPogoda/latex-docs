@@ -1,0 +1,103 @@
+\documentclass[a4paper,10pt,notitlepage,pdftex,headsepline]{scrartcl}
+
+\usepackage{a4wide}
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+%for \includepdf
+%\usepackage{pdfpages}
+
+\author{Michael Pogoda}
+\title{4m}
+\date{\today}
+\begin{document}
+\section*{Метод касательных}
+Идея связана с методом простой итерации.
+
+$$x = \varphi \left( x\right)$$
+
+$$\varphi\left(x\right) = x - \frac{f\left(x\right)}{f^\prime\left(x\right)}$$
+
+Ограничения на $x$ и $f$ те же.
+
+\begin{align}
+ & x_{n+1} = x_n - \frac{f\left(x_n\right)}{f^\prime\left(x_n\right)} & \label{baseformula}
+\end{align}
+
+\subsection*{Докажем сходимость метода:}
+Вычислим $\varphi^\prime\left(x\right)$:
+
+$$\varphi^\prime\left(x\right) = 1- \frac{f^\prime\left(x\right)f^\prime\left(x\right) - f\left(x\right)f^{\prime\prime}\left(x\right)}{\left(\strut f^\prime\left(x\right)\right)^2} = \frac{f^{\prime\prime}\left(x\right) f \left( x \right)}{\left(\strut f^\prime \left( x \right) \right)^2}
+\Rightarrow \varphi^\prime\left(\bar{x}\right) = 0$$
+
+$$\left|\varphi^\prime\left(x\right)\right| \leqslant q < 1$$
+
+Из сходимости метода итерации можно сделать вывод о сходимости данного метода.
+\paragraph*{Теорема}
+\textit{Если $f\left(a\right) f\left(b\right) < 0$, $f^\prime\left(x\right) \neq 0$, $f^{\prime\prime}\left(x\right) \neq 0$, и сохраняют определённые знаки на $\left[a; b\right]$, то по начальному приближению $x_0 \in \left[a;b\right]$, которое удовлетворяет $f^\prime\left(x_0\right) f^{\prime\prime}\left(x_0\right) > 0$, то можно вычислить методом касательных по функции (\ref{baseformula}) корень уравнения $f\left(x\right) = 0$ с любой точностью.}
+
+Рекомендации:
+\begin{enumerate}
+\item Интервал $\left[a;b\right]$ выбирается так, чтобы $f^\prime\left(x\right)$ и $f^{\prime\prime}\left(x\right)$ сохраняли знак.
+\item Начальное приближение $x_0$ можно взять любое, например какой-либо конец отрезка, но только так, чтобы $f^\prime\left(x\right) f^{\prime\prime}\left(x\right) > 0$.
+\end{enumerate}
+\subsection*{Оценка метода:}
+Для метода касательных можно использовать формулу общей оценки для всех методов:
+\begin{align}
+ & \left|x_n - \bar{x}\right| = \frac{\left|f\left(x_n\right)\right|}{\left|f^\prime\left(\xi\right)\right|} \leqslant \frac{\left|f\left(x_n\right)\right|}{\min\limits_{\left[a; b\right]}\left| f^\prime\left(x\right)\right|} \leqslant \varepsilon & \label{formula2}
+\end{align}
+
+Оценка метода касательных по формуле Тейлора:
+
+$$f\left(x_n\right) = \underbrace{f\left(x_{n-1}\right) + f^\prime\left(x_{n-1}\right)\left(x_n-x_{n-1}\right)}_{\text{равно нулю по (\ref{baseformula})}} + \frac{1}{2!}f^\prime\left(\xi_{n-1}\right)\left(x_n - x_{n-1}\right)^2,$$
+где, $\xi_{n-1} \in \left[x_{n-1}; x_n\right]$.
+$$\left|x_n - \bar{x}\right| \leqslant \frac{M_2}{2 m_1}\left(x_n - x_{n-1}\right)^2$$
+$$M_2 = \max\limits_{\left[a;b\right]}\left|f^{\prime\prime}\left(x\right)\right|,          0 < m_1 < \min\limits_{\left[a;b\right]}\left|f^\prime\left(x\right)\right|$$
+
+Формула оценки двух соседних приближений:
+$$\left|\bar{x} - x_n\right| \leqslant \frac{M_2}{2 m_1} \left(\bar{x} - x_{n-1}\right)^2$$
+Если $\frac{M_2}{2 m_1} \leqslant, \left|\bar{x} - x_{n-1}\right| < 10^{-m}$, то $\left|\bar{x} - x_n\right| < 10^{-2m}$.
+На каждом шаге количество верных цифр уменьшается в 2 раза.
+
+Метод быстро сходится, но много вычислений.
+\subsection*{Случай близких корней}
+Если существуют $x_1, x_2$ --- близкие корни, тогда смотрим на (\ref{baseformula}) $f\left(\bar{x_1}\right) = 0, f\left(\bar{x_2}\right) = 0$.
+
+В данном случае касательная $\parallel 0x: \exists x_0\: f\left(x_0\right) = 0$.
+
+По формуле Тейлора:
+$$f( \bar{x_2} ) = f( x_0 ) + f^\prime( x_0 )( \bar{x_2} - x_0 ) + \frac{1}{2!}f^{\prime\prime}( \xi )( \bar{x_2} - x_0 )^2, \:\:\xi\in [x_0; \bar{x_2} ]$$
+
+Предположив, что $\left|x_0- \bar{x_1}\right| = \left|x_0 - \bar{x_2}\right| = d$, мы можем из формулы Тейлора вывести значение для $d$:
+$$d=\sqrt{\frac{-2f\left(x_0\right)}{f^{\prime\prime}\left(\xi\right)}}, \:\xi\in\left[x_0; \bar{x_2}\right]$$
+$$x_{1,2} = x_0 \pm d$$
+Если $\xi = x_0$, то можно найти $d$ и после этого построить начальное приближение для обоих корней.
+\end{document}

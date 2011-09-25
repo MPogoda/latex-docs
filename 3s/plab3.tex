@@ -1,0 +1,75 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\begin{document}
+\begin{enumerate}
+\item \textit{В чём заключается смысл метода измерения сопротивления с помощью мостика? Какое плечо моста является плечом сравнения?}
+
+Суть ~метода ~заключается в нахождении неизвестных сопротивлений через соотношения известных, которое вычисляется по правилам Киркгоффа.
+Плечом сравнения является плечо $R_1$.
+\item \textit{Запишите закон Ома для однородного участка цепи, неоднородного участка, полной цепи.}
+
+Закон Ома для однородного участка цепи:
+$$\mathcal{I} = \frac{U}{R}$$
+Закон Ома для неоднородного участка цепи:
+$$\mathcal{I} = \frac{\varphi_1 - \varphi_2 + \mathcal{E}_{12}}{R}$$
+Закон Ома для полной цепи:
+$$\mathcal{I} = \frac{\mathcal E}{R}$$
+\item \textit{Запишите закон Ома в дифференциальной форме.}
+$$\vec{j} = \sigma\vec{E}$$
+\item \textit{Сформулируйте правила Киркгоффа.}
+\begin{enumerate}
+\item Алгебраическая сумма сил токов, которые сходятся в узле, равна 0:
+$$\sum\limits_{k=1}^n \mathcal{I}_k = 0$$
+\item В контуре алгебраическая сумма падений напряжений (произведений сил токов на сопротивления соответственных участков) равна
+алгебраической сумме электродвижущих сил, которые действуют в этом контуре:
+$$\sum\limits_{k=1}^N \mathcal{I}_kR_k = \sum\limits_{k=1}^N\mathcal{E}_k$$
+\end{enumerate}
+\item {Какая формула связи сопротивлений моста при условии его равновесия? Выведите её.}
+
+По второму правилу Киркгоффа для acd и cbd контуров:
+\begin{equation}\label{a1}
+\begin{cases}
+  \mathcal{I}_xR_x+\mathcal{I}_rR_r - \mathcal{I}_3R_3 = 0\\
+  \mathcal{I}_1R_1 - \mathcal{I}_2R_2 - \mathcal{I}_rR_r = 0
+  \end{cases}
+\end{equation}
+По первому правилу Киркгоффа для узлов c и d:
+\begin{equation}\label{a2}
+\begin{cases}
+\mathcal{I}_x-\mathcal{I}_r-\mathcal{I}_1 = 0\\
+\mathcal{I}_r+\mathcal{I}_3-\mathcal{I}_2 = 0
+\end{cases}
+\end{equation}
+Если $\mathcal{I}_r = 0$, то из (\ref{a1}) и (\ref{a2}):
+\begin{equation}\label{a3}
+\begin{cases}
+\mathcal{I}_xR_x-\mathcal{I}_3R_3 = 0\\
+\mathcal{I}_1R_1 - \mathcal{I}_2R_2 = 0
+\end{cases}
+\end{equation}
+\begin{equation}\label{a4}
+\begin{cases}
+\mathcal{I}_x=\mathcal{I}_1\\
+\mathcal{I}_3=\mathcal{I}_2
+\end{cases}
+\end{equation}
+Подставим (\ref{a4}) в (\ref{a3}):
+\begin{equation}\label{a5}
+\mathcal{I}_1R_x=\mathcal{I}_3R_3
+\end{equation}
+\begin{equation}\label{a6}
+\mathcal{I}_1R_1=\mathcal{I}_3R_2
+\end{equation}
+Поделим (\ref{a5}) на (\ref{a6}):
+$$R_x = \frac{R_1R_3}{R_2}$$
+\item \textit{Можна ли использовать мостик Уитстона для измерения маленьких сопротивлений? Проанализируйте и обоснуйте ответ.}
+
+Нет. Это метод не можна использовать для измерения маленьких сопротивлений, т.\,к. при этих условиях через схему будет течь слишком
+большой ток, что приведёт к появлению значительныйы погрешностей измерений.
+\end{enumerate}
+
+\end{document}
