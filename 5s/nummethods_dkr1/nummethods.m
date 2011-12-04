@@ -115,19 +115,20 @@ end
 
 % Inputs
 % given x coordinates
-x = [1.415; 1.420; 1.425; 1.430; 1.435; 1.440; 1.445; 1.450; 1.455; 1.460];
+x = [1.34; 1.345; 1.35; 1.355; 1.36; 1.365; 1.37; 1.375; 1.38; 1.385; 1.39];
 % given y coordinates
-y = [0.880; 0.889; 0.890; 0.891; 0.892; 0.893; 0.894; 0.895; 0.896; 0.897];
+y = [4.26; 4.35;  4.46; 4.51;  4.56; 4.67;  4.79; 4.91;  5.01; 5.18;  5.21];
 % number of given coordinates
 m = length(x);
 % x coordinates of points we wanna compute f(x)
-X1 = 1.4167;
-X2 = 1.4240;
-X3 = 1.4360;
-X4 = 1.4610;
+X1 = 1.3610;
+X2 = 1.341;
+X3 = 1.371;
+X4 = 1.395;
 
 % Plot given points as red pluses
-plot(x, y, 'r;table;');
+figure;
+plot([1.33; x], [4.25; y], 'r;table;');
 xlabel('x');
 ylabel('y');
 hold;
@@ -155,7 +156,7 @@ end
 x += X2;
 
 % calculate Y3 and Y4 using modifications of Newton method
-diffs = calculate_diffs(y);
+diffs = calculate_diffs(y)
 k = choose_shift(x - X3);
 Y3 = stirling_formula(diffs, k, (X3 - x(k)) / (x(2) - x(1)));
 Y4 = second_newton_formula(diffs, (X4 - x(10))/(x(2)-x(1)));

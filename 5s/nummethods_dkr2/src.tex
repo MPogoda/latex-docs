@@ -1,0 +1,142 @@
+\documentclass[a4paper,10pt,notitlepage,pdftex,headsepline]{scrartcl}
+
+\usepackage{a4wide}
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={ДКР по ЧМ №2},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+%for \includepdf
+%\usepackage{pdfpages}
+
+\author{Михаил Погода}
+\title{Домашняя контрольная работа №2 по численным методам}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Вычислить интеграл Римана с точностью $10^{-3}$}
+$$\int\limits_{0.4}^{0.9} \sin\frac{1}{x^2} dx$$
+\subsection{Метод трапеций с определением количества интервалов разбиения через оценку погрешности}
+
+Используяю разбиение интервала $\left[a;b\right]$ на $n$ одинаковых отрезков, конечная формула для вычисления будет следующей:
+
+$$I = \frac{b - a}{n}\left( \frac{f\left(x_0\right) + f\left(x_n\right)}{2} + \sum\limits_{k = 1}^{n - 1} f\left(x_k\right)\right)$$
+,где $x_i$ --- крайние точки интервалов.
+
+Погрешность таких вычислений не превышает
+$$\frac{\left(b - a\right)^3}{12 n^2} \max\limits_{x\in\left[a;b\right]} \left|f^{\prime\prime} \left(x\right)\right|$$
+
+Из этой формулы, с учётом того, что мы вычисляем с точность до $10^{-3}$, получим, что число интервалов $n$, на которые нужно разбить отрезок $\left[a;b\right]$, равно
+
+$$n \geqslant \sqrt{\frac{\left(b-a\right)^3}{12 \cdot 0.0005} \max\limits_{x\in\left[a;b\right]}\left|f^{\prime\prime}\left(x\right)\right|}$$
+
+\subsubsection{Ответ:}
+После вычислений получим:
+$$n = 112$$
+$$I = 0.16687$$
+\subsection{Метод Симпсона с использованием принципа Рунге}
+Если метод трапеций представлял аппроксимировал функцию на каждом участке прямой, то метод Симпсона аппроксимирует функцию на каждом участке параболой. Итоговая формула, для подсчёта определённого интеграла, разбивая отрезок на $n$ одинаковых интервалов, имеет вид:
+$$I_n = \frac{\strut b - a}{3 n}\left( \frac{f\left(x_0\right) + f\left(x_n\right)}{2} + \sum\limits_{k = 1}^{n - 1}f\left(x_k\right) + 2 \sum\limits_{k = 0}^{n - 1} f\left(\frac{x_k+x_{k+1}}{2}\right)\right)$$
+
+\subsubsection{Использование принципа Рунге для установления факта достижения заданной точности}
+Принцип Рунге заключается в том, что мы подсчитываем искоемое значение $I_n$, используя $n$ отрезков и $I_{2n}$, использую $2n$ отрезков.
+Если $\frac{\left|I_{2n}-I_n\right|}{15} \leqslant 0.0005$, значит мы достигли заданной точности.
+
+\subsubsection{Ответ:}
+После вычислений получим:
+$$ I_8 = 0.16677$$
+\subsection{С помощью формул Гаусса}
+Формулы Гаусса для численного интегрирования позволяют достаточно точно посчитать определённый интеграл вида $$\int\limits_{-1}^1 f\left(x\right) dx = \sum\limits_{k=0}^{n} f\left(x_k\right) * A_k$$
+где значения $A_k, x_k$ можно получить, воспользовавшись данными для метода Гаусса с шестью узлами:
+
+\begin{tabular}{|c|c|c|}
+\hline
+$n$ & $A_k$ & $x_k$\\
+\hline
+$0$ & $0.1713245$ & $-0.93247$\\
+$1$ & $0.3607616$ & $-0.6612094$\\
+$2$ & $0.467914$ & $-0.2386124$\\
+$3$ & $0.467914$ & $0.2386124$\\
+$4$ & $0.3607616$ & $0.6612094$\\
+$5$ & $0.1713245$ & $0.93247$\\
+\hline
+\end{tabular}
+
+Чтобы можно было воспользоваться этим методом, необходимо привести интеграл к виду $\int\limits_{-1}^1 f\left(x\right)\,dx$:
+
+$$\int\limits_{0.4}^{0.9} \sin\frac{1}{x^2}\,dx = \left| x = \frac{0.9 + 0.4}{2} + \frac{0.9-0.4}{2} x \right| =
+\frac{1}{4}\int\limits_{-1}^{1}\sin\left(\strut \frac{20}{13+5t}\right)^2\,dt$$
+
+\subsection{Ответ:}
+Проведя вычисления, получим
+$$\frac{1}{4}\int\limits_{-1}^1\sin\left(\strut \frac{20}{13+5t}\right)^2\,dt = 0.16696$$
+
+\section{Вычислить несобственный интеграл с точностью $10^{-3}$}
+
+$$\int\limits_2^\infty\frac{e^{-x^2}}{\sqrt{2-\cos{x}}}\,dx$$
+
+На промежутке $[2;\infty)$ справедлива следующая цепочка неравенств:
+
+$$\frac{e^{-x^2}}{\sqrt{2-\cos{x}}} \leqslant e^{-x^2} \leqslant e^{-x}$$
+
+т.\,е. искомый интеграл может быть оценён сверху интегралом от $g\left(x\right) = e^{-x}$.
+
+Можно найти данный несобственный интеграл, разбив полуоткрытый интервал $[2;\infty)$ точкой $a$ так, чтобы $$\int\limits_a^\infty\frac{e^{-x^2}}{\sqrt{2-\cos{x}}}\,dx < 0.0005$$
+
+$$\int\limits_a^\infty\frac{e^{-x^2}}{\sqrt{2-\cos{x}}}\,dx \leqslant \int\limits_a^\infty e^{-x}\,dx < 0.0005$$
+$$\bigl.(\strut -e^{-x})\Bigr|\limits_a^\infty = e^{-a} < 0.0005$$
+$$-a < \ln{0.0005}$$
+$$a > -\ln{0.0005} = 7.601$$
+
+т.\,е. второй интеграл пренебрежимо мал в соотвествии с нашией точностью вычислений, и
+
+$$\int\limits_2^\infty\frac{e^{-x^2}}{\sqrt{2-\cos{x}}}\,dx \approx \int\limits_2^8\frac{e^{-x^2}}{\sqrt{2-\cos{x}}}\,dx$$
+а этот интеграл можно вычислить по формуле Гаусса.
+\subsection{Ответ:}
+После вычислений, получим:
+$$\int\limits_2^\infty\frac{e^{-x^2}}{\sqrt{2-\cos{x}}}\,dx = 0.00256$$
+
+\section*{Приложение. Исходные коды на GNU Octave/Matlab}
+\subsection*{find\_num\_of\_intervals.m}
+\listinginput{1}{find_num_of_intervals.m}
+\subsection*{func2.m}
+\listinginput{1}{func2.m}
+\subsection*{func.m}
+\listinginput{1}{func.m}
+\subsection*{gaussian\_method.m}
+\listinginput{1}{gaussian_method.m}
+\subsection*{improper\_int.m}
+\listinginput{1}{improper_int.m}
+\subsection*{second\_deriv.m}
+\listinginput{1}{second_deriv.m}
+\subsection*{simpson\_method.m}
+\listinginput{1}{simpson_method.m}
+\subsection*{trapezoidal\_method.m}
+\listinginput{1}{trapezoidal_method.m}
+\end{document}
