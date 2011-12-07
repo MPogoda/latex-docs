@@ -1,0 +1,181 @@
+\documentclass[a4paper,10pt,notitlepage,pdftex]{scrartcl}
+
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian,ukrainian]{babel}
+\usepackage[T2A]{fontenc}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{
+	unicode=true,
+    pdftitle={},
+    pdfauthor={Кулик Ольга},
+    pdfcreator={pdflatex},
+    pdfsubject={},
+    pdfborder    = {0 0 0},
+    bookmarksopen,
+    bookmarksnumbered,
+    bookmarksopenlevel = 2,
+    pdfkeywords={},
+    colorlinks=true, % установка цвета ссылок в оглавлении
+    citecolor=black, 
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+
+\usepackage{a4wide}
+\usepackage{geometry}
+\geometry{left=1cm}
+\geometry{top=1.5cm}
+\geometry{right=1cm}
+\author{Кулик Ольга}
+\title{ЧМ}
+\date{\today}
+
+\usepackage{moreverb}
+
+\begin{document}
+\thispagestyle{empty}
+{
+\LARGE
+
+\vspace*{7cm}
+
+\begin{center}
+Домашняя контрольная работа \textnumero~3\\
+Тема: ,,Задача Коши''
+
+Вариант \textnumero~11\\
+\end{center}
+
+\vspace*{4cm}
+\begin{flushright}
+Студента\\
+ФПМ, КМ-92\\
+Погоды Михаила
+\end{flushright}
+}
+
+\newpage
+
+\section*{Задание \textnumero~1\\}
+
+Рассмотреть задачу Коши:
+
+$$u^{\prime\prime} = \frac{1}{2}u + x$$
+
+$$ u(0) = 0$$
+
+Построить ее численное решение на отрезку [0;2] с шагом h=0.25.
+
+Сравнить результаты между собой и с аналитическим решением:
+$$u(x)=-2(x+2)+4e^{\frac{x}{2}}$$
+
+\subsection*{По схеме Эйлера}
+$$y_{i+1} = y_i + h\cdot f(x_i,y_i);$$
+$$h = x_{i+1} - x_i;$$
+$$y_0 = u_0 $$
+\subsubsection*{Решение:}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$i$	& $x_i$		& $y_i$		& $f_i$		& $u(x_i)$	& $\Delta_i$\\
+\hline
+$0$	& $0$		& $0$		& $0$		& $0$		& $0$\\
+$1$	& $0.25$	& $0$		& $0.2500$	& $0.0326$	& $0.0326$\\
+$2$	& $0.50$	& $0.6250$	& $0.5313$	& $0.1361$	& $0.0736$\\
+$3$	& $0.75$	& $0.1953$	& $0.8477$	& $0.3200$	& $0.1247$\\
+$4$	& $1.00$	& $0.4072$	& $1.2036$	& $0.5949$	& $0.1877$\\
+$5$	& $1.25$	& $0.7081$	& $1.6041$	& $0.9730$	& $0.2649$\\
+$6$	& $1.50$	& $1.1091$	& $2.0546$	& $1.4680$	& $0.3589$\\
+$7$	& $1.75$	& $1.6227$	& $2.5614$	& $2.0955$	& $0.4727$\\
+$8$	& $2.00$	& $2.2631$	& $3.1316$	& $2.8731$	& $0.6100$\\
+\hline
+\end{tabular}
+
+\subsection*{По схеме Эйлера-Коши}
+
+$$y^*_{i+1} = y_i + h\cdot f(x_i,y_i)$$
+
+$$y_{i+1} = y_i + \frac{h}{2}\left(f(x_i,y_i)+f(x_{i+1},y^*_{i+1})\right)$$
+
+\subsubsection*{Решение:}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$i$	& $x_i$		& $f_i$		& $y^*_i$	& $f_i(x_i,y^*_i)$	& $y$		& $u(x_i)$	& $\Delta_i$\\
+\hline
+$0$	& $0$		& $0$		& $0$		& $0.25$			& $0$		& $0$		& $0$\\
+$1$	& $0.25$	& $0.2656$	& $0.0977$	& $0.5488$			& $0.0313$	& $0.0326$	& $0.0013$\\
+$2$	& $0.50$	& $0.5665$	& $0.2747$	& $0.8873$			& $0.1331$	& $0.1361$	& $0.0030$\\
+$3$	& $0.75$	& $0.9074$	& $0.5416$	& $1.2708$			& $0.3148$	& $0.3200$	& $0.0052$\\
+$4$	& $1.00$	& $1.2935$	& $0.9105$	& $1.7052$			& $0.5870$	& $0.5949$	& $0.0078$\\
+$5$	& $1.25$	& $1.7309$	& $1.3947$	& $2.1973$			& $0.9619$	& $0.9730$	& $0.011$\\
+$6$	& $1.50$	& $2.2265$	& $2.0096$	& $2.7548$			& $1.4529$	& $1.4680$	& $0.0150$\\
+$7$	& $1.75$	& $2.7878$	& $2.7726$	& $3.3863$			& $2.0756$	& $2.0955$	& $0.0199$\\
+$8$	& $2.00$	& $3.4237$	& $3.7033$	& $4.1016$			& $2.8474$	& $2.8731$	& $0.0258$\\
+\hline
+\end{tabular}
+
+\subsection*{По схеме Рунге-Кутта четвертого порядка}
+
+$$y_{i+1} = y_i + \frac{1}{6}(k_1 + 2 k_2 + 2 k_3 + k_4)$$
+$$k_1 = h\cdot f(x_i, y_i);$$
+$$k_2 = h\cdot f(x_i + \frac{h}{2}, y_i + \frac{k_1}{2});$$
+$$k_3 = h\cdot f(x_i + \frac{h}{2}, y_i + \frac{k_2}{2});$$
+$$k_4 = h\cdot f(x_i + h, y_i + k_3);$$
+
+\subsubsection*{Решение:}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$i$	& $x_i$		& $y_i$			& $u(x_i)$		& $\Delta_i$\\
+\hline
+$0$	& $0$		& $0$			& $0$			& $0$\\
+$1$	& $0.25$	& $0.0325928$	& $0.0325938$	& $1.0388\cdot 10^{-6}$\\
+$2$	& $0.50$	& $0.1360993$	& $0.1361017$	& $2.3543\cdot 10^{-6}$\\
+$3$	& $0.75$	& $0.3199617$	& $0.3199657$	& $4.0017\cdot 10^{-6}$\\
+$4$	& $1.00$	& $0.5948790$	& $0.5948851$	& $6.0460\cdot 10^{-6}$\\
+$5$	& $1.25$	& $0.9729753$	& $0.9729838$	& $8.5637\cdot 10^{-6}$\\
+$6$	& $1.50$	& $1.4679884$	& $1.4680001$	& $1.1645\cdot 10^{-5}$\\
+$7$	& $1.75$	& $2.0954858$	& $2.0955012$	& $1.5394\cdot 10^{-5}$\\
+$8$	& $2.00$	& $2.8731074$	& $2.8731273$	& $1.9936\cdot 10^{-5}$\\
+\hline
+\end{tabular}
+
+\subsection*{Вывод:}
+При возростании $i$ погрешность увеличивается, так как интегральные кривые расходятся. 
+
+Метод Эйлера является методом первого порядка, т.\,е. имеет первый порядок точности $O(h)$. 
+
+Метод Эйлера-Коши имеет второй порядок точности, т.\,е. его применение уменьшает в среднем значение погрешностей до величины второго порядка малости $O(h^2)$. 
+
+Метод Рунге-Кутта четвертого порядка имеет четвёртый порядок точности, то есть суммарная ошибка на конечном интервале интегрирования имеет порядок $O(h^4)$.
+
+\subsection*{Приложение (код на java):}
+\subsubsection*{euler\_cauchy\_method.m}
+\listinginput{1}{euler_cauchy_method.m}
+
+\subsubsection*{euler\_method.m}
+\listinginput{1}{euler_method.m}
+
+\subsubsection*{func.m}
+\listinginput{1}{func.m}
+
+\subsection*{real\_answer.m}
+\listinginput{1}{real_answer.m}
+
+\subsection*{runge\_kutta\_method.m}
+\listinginput{1}{runge_kutta_method.m}
+
+\subsection*{task.m}
+\listinginput{1}{task.m}
+\end{document}
