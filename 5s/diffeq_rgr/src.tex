@@ -1,0 +1,353 @@
+\documentclass[a4paper,10pt,notitlepage,pdftex,headsepline]{scrartcl}
+
+\usepackage{a4wide}
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\usepackage{lscape}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={РГР по Дифференциальным уравнениям},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+%for \includepdf
+%\usepackage{pdfpages}
+
+\author{Михаил Погода}
+\title{Расчётно-графическая работа по дифференциальным уравнениям}
+\date{\today}
+
+\def\rang{\mathop{\rm rang}}
+\begin{document}
+\maketitle
+\begin{center}
+\bf
+Вариант \textnumero~23
+\end{center}
+\section{Линейное уравнение с постоянными коэффициентами}
+\subsection*{Задание}
+Проанализировать корректность постановки задачи Коши для данного дифференциального уравнения и решить его
+\[
+y^{\prime\prime} - 4 y^\prime + 4 y = 2 e^{2x}
+\]
+\[
+y(0) = -1,\qquad y^\prime(0) = 0
+\]
+\subsection*{Решение}
+Так как функция $2 e^{2 x}$ непрерывна, а коэффициенты при $y, y^\prime, y^{\prime\prime}$ --- постоянные, то задача Коши поставлена корректно.
+
+\subsubsection*{Поиск решение однородного уравнения}
+Характеристическое уравнение:
+\[
+\lambda^2 - 4 \lambda + 4
+\]
+\[
+\lambda = 2, k = 2
+\]
+Фундаментальная система решений:
+ ФСР = $\left\{ e^{2 x}, x e^{2 x} \right\}$.
+ 
+\[
+y_\text{о.\,р.} = C_1 e^{2 x} + C_2 x e^{2 x}
+\]
+\subsubsection*{Поиск частичного решения}
+\[
+y_\text{ч.\,р.} = C_3 x^2 e^{2 x}
+\]
+\[
+y_\text{ч.\,р.}^{\prime\prime} - 4 y_\text{ч.\,р.}^\prime + 4 y_\text{ч.\,р.} = 2 e^{2 x}
+\]
+Подставив и упростив, получим
+\[
+C_3 = 1
+\]
+
+Таким образом, общее решение исходного уравнения имеет вид
+\[
+y = C_1 e^{2 x} + C_2 x e^{2 x} + x^2 e^{2 x}
+\]
+\subsection*{Поиск констант из начальных условий}
+Найдём константы $C_1$ и $C_2$ из начальных условий:
+\[
+y(0) = C_1 = -1
+\]
+\[
+y^\prime = 2 C_1 e^{2 x} + C_2 e^{2 x} + 2 C_2 x e^{2 x} + 2 e^{2 x} (x + x^2)
+\]
+\[
+y^\prime(0) = -2 + C_2 = 0
+\]
+\subsection*{Ответ}
+\[
+y = e^{2 x} (x^2 + 2 x - 1)
+\]
+\newpage
+\section{Оператор эволюции}
+\subsection*{Задание:}
+Определить оператор эволюции системы линейных дифференциальных уравнений с матрицей $A$.
+Записать решение через найденный оператор эволюции.
+На каком множестве определён этот оператор?
+\[
+A = \left(\begin{matrix}
+3 & 0 & -1\\
+3 & -2& 1\\
+6 & -1& -1
+\end{matrix}\right)
+\]
+\subsection*{Решение}
+Характеристическое уравнение:
+\[
+\left|
+\begin{matrix}
+3-\lambda & 0 & -1\\
+3 & -2-\lambda & 1\\
+6 & -1 & -1-\lambda
+\end{matrix}
+\right| = 0
+\]
+или
+\[\lambda^3 = 0\]
+\[\lambda = 0,\qquad k = 3\]
+
+\[e^{A t} = e^{(N + S) t}\]
+\[S = P S_0 P^{-1}\]
+\[S_0 = \left(\begin{matrix}
+\lambda & 0 & 0\\
+0 & \lambda & 0\\
+0 & 0 & \lambda
+\end{matrix}\right) = \Theta\]
+\[S = \Theta\]
+\[N = A - S = A\]
+\[N^2 = \left(\begin{matrix}
+3 & 0 & -1\\
+3 & -2& 1\\
+6 & -1& -1
+\end{matrix}\right)\times\left(\begin{matrix}
+3 & 0 & -1\\
+3 & -2& 1\\
+6 & -1& -1
+\end{matrix}\right)=\left(\begin{matrix}
+3 & 1 & -2\\
+9 & 3 & -6\\
+9 & 3 & -6
+\end{matrix}\right)\]
+\[N^3=\left(\begin{matrix}
+3 & 1 & -2\\
+9 & 3 & -6\\
+9 & 3 & -6
+\end{matrix}\right)\times\left(\begin{matrix}
+3 & 0 & -1\\
+3 & -2& 1\\
+6 & -1& -1
+\end{matrix}\right) = \Theta\]
+$N$ --- нильпотентная матрица третьего порядка.
+\[e^{N t} = I + Nt + \frac{N^2 t^2}{2} =\left(\begin{matrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{matrix}\right) + \left(\begin{matrix}
+3 & 0 & -1\\
+3 & -2& 1\\
+6 & -1& -1
+\end{matrix}\right) t + \left(\begin{matrix}
+3 & 1 & -2\\
+9 & 3 & -6\\
+9 & 3 & -6
+\end{matrix}\right) \frac{t^2}{2}\]
+\[\displaystyle e^{N t} = \left(\begin{matrix}
+\strut\frac{3}{2} t^2 + 3 + 1 & \frac{1}{2} t^2           & -t^2 - t\\
+\frac{9}{2} t^2 + 3 t   & \frac{3}{2} t^2 - 2 t + 1 & t - 3 t^2\\
+\frac{9}{2} t^2 + 6 t   & \frac{3}{2} t^2 - t       & 1 - t - 3 t^2
+\end{matrix}\right)\]
+\subsection*{Ответ}
+\[e^{A t} = e^{(S + N) t} = e^{S t} e^{N t} = e^{N t} = \left(\begin{matrix}
+\strut\frac{3}{2} t^2 + 3 + 1 & \frac{1}{2} t^2           & -t^2 - t\\
+\frac{9}{2} t^2 + 3 t   & \frac{3}{2} t^2 - 2 t + 1 & t - 3 t^2\\
+\frac{9}{2} t^2 + 6 t   & \frac{3}{2} t^2 - t       & 1 - t - 3 t^2
+\end{matrix}\right)\]
+Данный оператор действует в пространстве $\mathbb{R}^3$.
+\newpage
+\section{Фазовый портрет нелинейной системы}
+\subsection*{Задание}
+Проанализировать количество и тип стационарных точек нелинейной системы на плоскости.
+Исследовать на простоту и определить стойкость по Ляпунову полученных недвижимых точек.
+Построить фазовый портрет системы.
+\[
+\begin{cases}
+\dot{x} = x(y - 2x)\\
+\dot{y} = x^2 - 8 y + y^2 - x\\
+\end{cases}
+\]
+\newpage
+\section{Действительная каноническая форма оператора}
+\subsection*{Задание}
+Найти действительную каноническую форму оператора
+\[
+\left(
+\begin{matrix}
+1 & 0 & -4 & 2 & -2\\
+2 & -2 & -4 & 6 & -1\\
+0 & 0 & -1 & 1 & -1\\
+1 & -1 & -2 & 3 & 0\\
+1 & -1 & -2 & 2 & 0
+\end{matrix}
+\right)
+\]
+\subsection*{Решение}
+Характеристическое уравнение:
+\[
+(\lambda - 1)^3 (\lambda + 1)^2 = 0
+\]
+\[
+\lambda_1 = 1, \qquad k = 3
+\]
+\[
+\lambda_2 = -1, \qquad k = 2
+\]
+\subsubsection*{Определение количества блоков для $\lambda_1$}
+\[\delta^{\lambda_1}_1 = 5 - \rang{(A - I)} = 1\]
+\[\delta^{\lambda_1}_2 = 5 - \rang{(A - I)^2} = 2\]
+\[\delta^{\lambda_1}_3 = 5 - \rang{(A - I)^3} = 3\]
+\[v^{\lambda_1}_1 = 2 \delta^{\lambda_1}_1 - \delta^{\lambda_1}_2 = 0\]
+\[v^{\lambda_1}_2 = -\delta^{\lambda_1}_1 + 2 \delta^{\lambda_1}_2 - \delta^{\lambda_1}_3 = 0\]
+\[v^{\lambda_1}_3 = \delta^{\lambda_1}_3 - \delta^{\lambda_1}_2 = 1\]
+\subsubsection*{Определение количества блоков для $\lambda_2$}
+\[\delta^{\lambda_2}_1 = 5 - \rang{(A + I)} = 1\]
+\[\delta^{\lambda_2}_2 = 5 - \rang{(A + I)^2} = 2\]
+\[v^{\lambda_2}_1 = 2 \delta^{\lambda_2}_1 - \delta^{\lambda_2}_2 = 0\]
+\[v^{\lambda_2}_2 = \delta^{\lambda_2}_3 - \delta^{\lambda_2}_2 = 1\]
+\subsection*{Ответ:}
+Действительная каноническая форма:
+\[\left(\begin{matrix}
+1 & 0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0\\
+0 & 0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1 & -1
+\end{matrix}\right)
+\]
+\newpage
+\section{Операционное исчисление}
+\subsection*{Задание}
+Решить, используя преобразования Лапласа
+\[
+\begin{cases}
+\dot{x} - \dot{y} = -\sin{t}\\
+\dot{x} + \dot{y} = \cos{t}\\
+x(0) = \frac{1}{2}\\
+y(0) = -\frac{1}{2}
+\end{cases}
+\]
+\subsection*{Решение}
+\[
+\begin{aligned}
+x(t) & \risingdotseq X(p)\\
+\dot{x}(t) &\risingdotseq p X(p) - x(0) = p X(p) - \frac{1}{2}\\
+y(t) &\risingdotseq Y(p)\\
+\dot{y}(t) &\risingdotseq p Y(p) - y(0) = p Y(p) + \frac{1}{2}\\
+\sin{t} &\risingdotseq \frac{1}{p^2 + 1}\\
+\cos{t} &\risingdotseq \frac{p}{p^2 + 1}
+\end{aligned}
+\]
+\[
+\begin{cases}
+p X(p) - p Y(p) - 1 = -\frac{1}{p^2 + 1}\\
+p X(p) + p Y(p) = \frac{p}{p^2 + 1}
+\end{cases}
+\]
+Сложив уравнения, получим
+\[2 p X(p) = \frac{p - 1}{p^2 + 1} + 1\]
+\[X(p) = \frac{1}{2}\left(\frac{1}{p^2 + 1} + \frac{p}{p^2 + 1}\right)\]
+Подставив полученное значение во второе уравнение системы:
+\[\frac{p}{2}\frac{1 + p}{p^2 + 1} + p Y(p) = \frac{p}{p^2 + 1}\]
+\[Y(p) = \frac{1}{2}\left(\frac{1}{p^2 + 1} - \frac{p}{p^2 + 1}\right)\]
+Вернёмся от изображений к оригиналам:
+\[\begin{aligned}
+X(p) &\fallingdotseq \frac{1}{2}\left(\sin{t} + \cos{t}\right)\\
+Y(p) &\fallingdotseq \frac{1}{2}\left(\sin{t} + \cos{t}\right)
+\end{aligned}\]
+Проверим выполнение начальных условий:
+\[ x(0) = \frac{1}{2}\left(\sin{0} + \cos{0}\right) = \frac{1}{2}\left(0 + 1\right) = \frac{1}{2}\]
+\[ y(0) = \frac{1}{2}\left(\sin{0} - \cos{0}\right) = \frac{1}{2}\left(0 - 1\right) = -\frac{1}{2}\]
+\subsection*{Ответ}
+\[\begin{aligned}
+x(t) &= \frac{1}{2}\left(\sin{t} + \cos{t}\right)\\
+y(t) &= \frac{1}{2}\left(\sin{t} - \cos{t}\right)
+\end{aligned}\]
+\newpage
+\section{Квазилинейные уравнения}
+\subsection*{Задание}
+Найти решение, удовлетворяющее начальным условиям
+\[\begin{cases}
+x\frac{\partial u}{\partial x} + y\frac{\partial u}{\partial y} = u - x y\\
+u(x, 2) = 1 + x^2
+\end{cases}\]
+\subsection*{Решение}
+\[\frac{dx}{x} = \frac{dy}{y} = \frac{du}{u - xy}\]
+
+\[\frac{dx}{x} = \frac{dy}{y}\]
+\[\ln{x} = \ln{y} + \tilde{C_1} \Rightarrow \ln{\frac{x}{y}} = \tilde{C_1}\]
+\[\frac{x}{y} = e^{\tilde{C_1}}\]
+\[\frac{x}{y} = C_1\]
+
+\[\frac{du}{u-xy} = \frac{dx}{x}\]
+\[x du = (u - xy) dx\]
+\[x du = (u - \frac{x^2}{C_1}) dx\]
+\[\frac{du}{dx}=\frac{u}{x}-\frac{x}{C_1}\]
+\[u = C_2 x - \frac{x^2}{C_1}\]
+\[u = C_2 x - x y\]
+\[C_2 = \frac{u + x y}{x}\]
+
+\[\Phi\left(\frac{x}{y}, \frac{u + xy}{x}\right) = 0\]
+
+Найдём из начальных условий соотношение между $C_1$ и $C_2$:
+\[\frac{x}{2} = C_1 \Rightarrow x = 2 C_1\]
+\[C_2 = \frac{1+4 C_1^2 + 4 C_1}{2 C_1} = \frac{\left(1 + 2 C_1\right)^2}{2 C_1}\]
+\subsection*{Ответ}
+\[\cfrac{u + xy}{x} = \cfrac{\left(1+2 \cfrac{x}{y}\right)^2}{2\cfrac{x}{y}}\]
+или в явном виде
+\[u = \cfrac{y}{2}\left(1 + 2 \cfrac{x}{y}\right)^2 - x y\]
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
