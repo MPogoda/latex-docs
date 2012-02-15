@@ -18,7 +18,10 @@ function [Q R] = calculate_qr(A)
 
     %printf("Transformation matrix H_%d:\n", i);
     H = eye(m) - (2 / (v' * v)) * (v * v');
-    %disp(H);
+    printf("=======================asdfghasdfgh=====================\n");
+    disp(H);
+    printf(".\n");
+    disp(H');
 
     Q *= H;
 
