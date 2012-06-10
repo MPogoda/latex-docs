@@ -1,0 +1,126 @@
+\documentclass[a4paper,12pt,notitlepage,pdftex,headsepline]{scrartcl}
+
+\usepackage{a4wide}
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\usepackage{lscape}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={РГР по КГ},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+
+\author{Михаил Погода}
+\title{РГР ро КГ}
+\date{\today}
+
+\begin{document}
+  \thispagestyle{empty}
+  \begin{center}
+    \large
+    \MakeUppercase{Министерство образования и науки,}
+
+    \MakeUppercase{молодёжи и спорта Украины}
+
+    \MakeUppercase{Национальный технический университет Украины}
+
+    \MakeUppercase{,,Киевский политехнический институт''}
+
+    \addvspace{6pt}
+
+    \normalsize
+    Кафедра прикладной математики
+
+    \vfill
+
+    \textbf{Расчётно-графическая работа}
+
+    по курсу ,,Компьютерная графика''
+
+    \addvspace{6pt}
+
+    на тему:
+    \texttt{,,Алгоритм Люка для заполнения области''}
+  \end{center}
+
+  \vfill
+
+  \begin{flushright}
+    Студента
+
+    группы КМ-92
+
+    Погоды Михаила
+  \end{flushright}
+
+  \vfill
+
+  \begin{center}
+    КИЕВ
+
+    2012
+  \end{center}
+  \newpage
+
+  \begin{center}\bf \large Краткие теоретические сведения
+  \end{center}
+    Во всех алгоритмах заполнения области, которые используют построчную
+    развёртку, используется память изображения, в которой выполняются
+    кодирование и заполнение.
+
+    Во многих случаях при использовании алгоритма контроля чётности можно
+    получать ошибочные результаты, вызванные тем, что встреча текущей точки с
+    контуром не изменяет контекста.
+
+    Алгоритм Люка позволяет преодолеть эти трудности, использую следующие
+    приёмы:
+    \begin{itemize}
+      \item для горизонтальных участков используется такой код, под действием
+        которого отрезок окрашивается, но не изменяет контекст;
+      \item для вершины, общей для двух рёбер, находящихся по одну сторону от
+        горизонтального отрезка, проходящего через эту вершину, код ведёт к
+        окрашиванию, но без изменения контекста;
+      \item для перекрытий, которые могут быть вызваны либо пересечением двух
+        рёбер, либо недостаточно высокой разрешающей способностью в процессе
+        дискретизации, алгоритм Люка не изменяет контекст, если их количество
+        --- нечётное.
+    \end{itemize}
+
+    Алгоритм, блок-схема которого реализована далее, необходимы следующие
+    соглашения:
+    \begin{itemize}
+      \item структура, хранящая координаты точки, причём функция \texttt{x(P)}
+        возвращает абсциссу точки $P$, а функция \texttt{y(P)} --- её
+        ординату.
+      \item некоторая коллекция точек, причём константа $p_0$ указывает на
+        первую точку в этой коллекции, а функция \texttt{next\_p()} возвращает
+        следующую точку из этой коллекции.
+      \item константы $X_{min}, X_{max}, Y_{min}, Y_{max}$, задающие окно,
+        содержащее закрашиваемые многоугольник.
+    \end{itemize}
+\end{document}
