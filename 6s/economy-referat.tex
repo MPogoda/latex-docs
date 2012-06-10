@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt,notitlepage,pdftex,headsepline]{scrartcl}
+
+\usepackage{a4wide}
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\usepackage{lscape}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={Реферат по политологии},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+%for \includepdf
+%\usepackage{pdfpages}
+
+\author{Михаил Погода}
+\title{Реферат по политологии}
+\date{\today}
+
+\begin{document}
+  \thispagestyle{empty}
+  \begin{center}
+    \large
+    \MakeUppercase{Министерство образования и науки,}
+
+    \MakeUppercase{молодёжи и спорта Украины}
+
+    \MakeUppercase{Национальный технический университет Украины}
+
+    \MakeUppercase{,,Киевский политехнический институт''}
+
+    \addvspace{6pt}
+
+    \normalsize
+    Кафедра прикладной математики
+
+    \vfill
+
+    \textbf{Реферат}
+
+    по дисциплине ,,Экономика''
+
+    на тему: ,,Влияние монопольного ценообразования на общий спрос и общее
+    предложение в условиях украинского рынка несовершенной конкуренции''
+  \end{center}
+
+  \vfill
+
+  \begin{flushright}
+    студента\\
+    группы КМ-92\\
+    Погоды Михаила
+  \end{flushright}
+
+  \vfill
+
+  \begin{center}
+    КИЕВ
+
+    2012
+  \end{center}
+\end{document}
