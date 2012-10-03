@@ -1,0 +1,661 @@
+% vim:spelllang=ru,en
+\documentclass[a4paper,12pt,notitlepage,headsepline,pdftex]{scrartcl}
+
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{concrete}
+\usepackage{cite}
+\usepackage{url}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\usepackage{lscape}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={PostgreSQL},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+
+\usepackage{xtab}
+\usepackage{nccfoots}
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \large
+    \MakeUppercase{Министерство образования и науки,}
+
+    \MakeUppercase{молодёжи и спорта Украины}
+
+    \MakeUppercase{Национальный технический университет Украины}
+
+    \MakeUppercase{,,Киевский политехнический институт''}
+
+    \addvspace{6pt}
+
+    \normalsize
+    Кафедра прикладной математики
+
+    \vfill
+
+    \textbf{Реферат}
+
+    по дисциплине ,,Базы данных и информационные системы''
+
+    на тему: \textit{,,PostgreSQL''}
+  \end{center}
+
+  \vfill
+
+  \noindent
+  Выполнил\\
+  студент группы КМ-92\\
+  Погода~М.\,В.\\
+  \vfill
+
+  \begin{center}
+    КИЕВ
+
+    2012
+  \end{center}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\section{Введение}
+  \emph{PostgreSQL}\footnote{произносится ,,Пост-Грес-Кью-Эль'', в
+    профессиональной среде коротко называется ,,постгрес''} --- свободная
+  объектно"=реляционная система управления базами данных (СУБД).
+
+  PostgreSQL ведет свою ,,родословную'' от некоммерческой СУБД
+  \textbf{Postgres}, разработанной, как и многие open-source проекты, в
+  Калифорнийском университете в Беркли.
+  К разработке Postgres, начавшейся в 1986 году, имел непосредственное
+  отношение Майкл Стоунбрейкер, руководитель более раннего проекта
+  \textbf{Ingres}, на тот момент уже приобретённого компанией \emph{Computer
+  Associates}.
+  Само название ,,Postgres'' расшифровывалось как ,,Post Ingres'',
+  соответственно, при создании Postgres были применены многие уже ранее
+  сделанные наработки.
+
+  Стоунбрейкер и его студенты разрабатывали новую СУБД в течение восьми лет, с
+  1986 по 1994 год.
+  За этот период в синтаксис были введены процедуры, правила, пользовательские
+  типы и многие другие компоненты.
+  Работа не прошла даром "--- в 1995 году разработка снова разделилась:
+  Стоунбрейкер использовал полученный опыт в создании коммерческой СУБД
+  \textbf{Illustra}, продвигаемой его собственной одноимённой компанией
+  (приобретённой впоследствии компанией Informix), а его студенты разработали
+  новую версию Postgres "--- \emph{Postgres95}, в которой язык запросов
+  \emph{POSTQUEL} --- наследие Ingres --- был заменен на
+  \textbf{SQL}\footnote{Structured Query Language --- язык структурированных
+  запросов}.
+
+  В этот момент разработка Postgres95 была выведена за пределы университета и
+  передана команде энтузиастов.
+  С этого момента СУБД получила имя, под которым она известна и развивается в
+  текущий момент "--- PostgreSQL.\cite{ruwiki}
+  \pagebreak
+
+\section{Возможности PostgreSQL}
+  PostgreSQL считается самой совершенной СУБД, распространяемой на условиях
+  открытых исходных текстов.
+  В PostgreSQL реализованы многие возможности, обычно присутствующие только в
+  коммерческих СУБД, таких как \emph{DB2} и \emph{Oracle}.
+  Ниже перечислены основные возможности PostgreSQL.
+
+  \begin{itemize}
+    \item \emph{Объектно"=реляционная модель.}
+      Работа с данными в PostgreSQL основана на объектно"=реляционной модели,
+      что позволяет задействовать сложные процедуры и системы правил.
+    \item \emph{Простота расширения.}
+      В PostgreSQL поддерживаются пользовательские операторы, функции, методы
+      доступа и типы данных.
+    \item \emph{Полноценная поддержка SQL.}
+    \item \emph{Проверка целостности ссылок.}
+      PostgreSQL поддерживает проверку целостности ссылок, обеспечивающую
+      правильность данных в базе.
+    \item \emph{Гибкость API\footnote{Application programming interface ---
+        \label{p:langs}
+      Интерфейс программирования приложений}}.
+      В настоящее время, существуют программные интерфейсы для:
+
+      \begin{minipage}{0.26\textwidth}
+        \begin{itemize}\tt
+          \item Object Pascal,
+          \item Python,
+          \item Perl,
+          \item PHP,
+        \end{itemize}
+      \end{minipage}
+      \begin{minipage}{0.25\textwidth}
+        \begin{itemize}\tt
+          \item ODBC,
+          \item Java/JDBC,
+          \item Ruby,
+          \item TCL,
+        \end{itemize}
+      \end{minipage}
+      \begin{minipage}{0.25\textwidth}
+        \begin{itemize}\tt
+          \item C/C++,
+          \item Lua,
+          \item Javascript,
+          \item LOLCODE,
+        \end{itemize}
+      \end{minipage}
+      \begin{minipage}{0.20\textwidth}
+        \begin{itemize}\tt
+          \item OpenCL,
+          \item Parrot,
+          \item R,
+          \item Scheme.
+        \end{itemize}
+      \end{minipage}
+    \item \emph{Процедурные языки запросов}.
+      В PostgreSQL предусмотрена поддержка внутренних процедурных языков, в
+      том числе, специализированной языка \texttt{PL/pgSQL}, являющегося
+      аналогом \texttt{PL/SQL}, процедурного языка \emph{Oracle}.
+      Одним из преимуществ PostgreSQL является возможность использования
+      \texttt{Perl}, \texttt{Python} и \texttt{TCL} в качестве внутренних
+      процедурных языков.
+    \item \emph{MVCC\footnote{Multi-Version Concurrency Control}.}
+      Эта технология используется для предотвращения лишних
+      \textbf{блокировок} (locking).
+    \item \emph{Клиент"=сервер.}
+      В PostgreSQL используется клиент"=серверная модель.
+      Сессия PostgreSQL состоит из двух взаимодействующих процессов (программ):
+      \begin{itemize}
+        \item \textbf{Процесс"=сервер}, который управляет файлами базы данных,
+          принимает соединения от клиентов и выполняет операции над базой
+          данных по запросам клиентов.
+          Эта серверная программа называется \texttt{postgres}.
+        \item \textbf{Пользовательский клиент"=процесс} (frontend), который,
+          собственно, работает с базой данных.
+          Клиентские приложения могут сильно отличаться друг от друга:
+          клиент может быть как приложением с текстовым интерфейсом, так и с
+          графическим интерфейсом;
+          как веб-сервером, генерирующим страницу на основании данных, так и
+          специализированным программой обслуживания базы данных.
+          Некоторые клиентские программы поставляются вместе с сервером,
+          большинство же разрабатываются пользователями.
+      \end{itemize}
+
+      Клиент и сервер могут находиться как на одной машине, так и на разных.
+      В случае разных хостов, они общаются через соединение
+      \texttt{TCP/IP\footnote{Transmission Control Protocol/Internet Protocol
+      --- Протокол управления передачей данных}}.
+
+      Сервер PostgreSQL может обслуживать множество конкурирующих соединений
+      клиентов.
+      Для этого сервер создаёт по процессу (,,форкает'') для каждого клиента.
+      После этого клиент и новый процесс сервера общаются без вмешательства
+      главного процесса \texttt{postgres}.
+      Таким образом, процесс \texttt{postgres} всегда запущен в ожидании
+      соединений с клиентами, в то время как его сабпроцессы работают
+      непосредственно с клиентами.
+      Вся эта архитектура совершенно прозрачна для клиента.\cite{ofdoc}
+
+    \item \emph{WAL\footnote{Write Ahead Logging --- Опережающая регистрация
+      изменений}.}
+  \end{itemize}\cite{prpsql}
+
+  СУБД PostgreSQL работает на таких операционных системах, как
+  \begin{itemize}
+    \item GNU/Linux,
+    \item *BSD,
+    \item UNIX,
+    \item Android,
+    \item Windows
+  \end{itemize}\cite{enwiki}
+
+  \pagebreak
+
+\section{Типы данных}
+  Так как язык SQL относится к \emph{языкам с сильной типизацией}, с любым
+  объектом данных, представленным в PostgreSQL, связывается определённый тип,
+  даже если на первый взгляд это и не очевидно.
+  Тип данных одновременно определяет и ограничивает разновидности операций,
+  которые могут выполняться с этими данными.
+
+  Типы не только ассоциируются со всеми данными, но и играют важную роль при
+  создании таблиц.
+  Таблицы состоят из одного или нескольких полей.
+  При создании таблицы каждому полю, помимо имени, назначается определённый
+  тип данных.
+
+  В таблице~\ref{tab:types} перечислены встроенные типы данных.
+  Большинство имён из колонки \emph{псевдоним} используются внутри реализации
+  PostgreSQL.
+  Типы, выделенные \textbf{полужирным}, являются частью стандарта
+  SQL.\cite{upandrunning}
+
+  \topcaption{Типы данных PostgreSQL}\label{tab:types}
+  \tablefirsthead{\hline%
+                  \textbf{Тип данных} & \textbf{Псевдоним} &%
+                  \textbf{Описание}\\  \hline}
+  \tablehead{\multicolumn{3}{c}%
+            {\tablename\ \thetable{} "--- продолжение}\\%
+            \hline%
+            \textbf{Тип данных} & \textbf{Псевдоним} & \textbf{Описание}\\%
+            \hline}
+  \tablelasthead{\multicolumn{3}{c}%
+                  {\tablename\ \thetable{} "--- окончание}\\%
+                \hline%
+                \textbf{Тип данных} & \textbf{Псевдоним} &%
+                \textbf{Описание}\\ \hline }
+  \tabletail{\hline%
+              \multicolumn{3}{|r|}%
+              {Продолжение на следующей странице}\\%
+             \hline}
+  \tablelasttail{\hline}
+  \begin{center}
+    \begin{mpxtabular}{|p{0.31\textwidth}|p{0.22\textwidth}|p{0.47\textwidth}|}
+      \texttt{\bf boolean} & \texttt{bool} & отдельная логическая величина\\
+      \texttt{\bf bit [ (n) ]} & & битовая последовательность фиксированной %
+              длины (ровно \texttt{n} бит)\\
+      \texttt{\bf bit varying [ (n) ]} & \texttt{varbit} & битовая %
+              последовательность переменной длины (до \texttt{n} бит)\\
+      \hline
+      \texttt{character [ (n) ]} & \texttt{\bf char [ (n) ]} & символьная %
+              строка фиксированной длины (ровно \texttt{n} символов)\\
+      \texttt{\bf character varying [ (n) ]} & \texttt{\bf varchar [ (n) ]} &%
+              символьная строка переменной длины (до \texttt{n} символов)\\
+      \texttt{text} & & символьная строка переменной или неограниченной %
+              длины\\
+      \hline
+      \texttt{\bf smallint} & \texttt{int2} & 2"=байтовое целое со знаком\\
+      \texttt{\bf integer} & \texttt{int, int4} & 4"=байтовое целое со %
+              знаком\\
+      \texttt{\bf bigint} & \texttt{int8} & 8"=байтовое целое со знаком\\
+      \texttt{\bf real} & \texttt{float4} & 4"=байтовое вещественное число\\
+      \texttt{\bf double precision} & \texttt{float8} & 8"=байтовое %
+              вещественное число\\
+      \texttt{\bf numeric [ (p, s) ]} & \texttt{\bf decimal [ (p, s) ]} & %
+              число из {\tt p} цифр, содержащее {\tt s} цифр в дробной части\\
+      \texttt{money} & & фиксированная точность, представление денежных %
+              величин\\
+      \texttt{smallserial} & \texttt{serial2} & 2"=байтовое целое с %
+              автоматическим приращением\\
+      \texttt{serial} & \texttt{serial4} & 4"=байтовое целое с %
+              автоматическим приращением\\
+      \texttt{bigserial} & \texttt{serial8} & 8"=байтовое целое с %
+              автоматическим приращением\\
+      \hline
+      \texttt{\bf date} & & календарная дата (день, месяц и год)\\
+      \texttt{\bf time [ (p) ]} & & время суток\\
+      \texttt{\bf time [ (p) ] with time zone} & \texttt{timetz} & время %
+              суток с информацией о часовом поясе\\
+      \texttt{\bf timestamp [ (p) ]} & & дата и время\\
+      \texttt{\bf timestamp [ (p) ] with time zone } & \texttt{timestamptz} &%
+              дата и время с информацией о часовом поясе\\
+      \texttt{\bf interval [ fields ] [ (p) ]} & & произвольный интервал %
+              времени\\
+      \hline
+      \texttt{box} & & прямоугольник на плоскости\\
+      \texttt{circle} & & круг с заданным центром и радиусом\\
+      \texttt{line} & & прямая на плоскости\\
+      \texttt{lseg} & & отрезок на плоскости\\
+      \texttt{path} & & геометрическая фигура на плоскости\\
+      \texttt{point} & & точка на плоскости\\
+      \texttt{polygon} & & многоугольник на плоскости\\
+      \hline
+      \texttt{cidr} & & спецификация сети \texttt{IPv4} или \texttt{IPv6}\\
+      \texttt{inet} & & сетевой адрес \texttt{IPv4} или \texttt{IPv6} с %
+              необязательными битами подсети\\
+      \texttt{macaddr} & & MAC\protect\Footnote{a}{Media Access %
+                                                   Control}"=адрес\\
+      \hline
+      \texttt{bytea} & & бинарные данные (массив байтов)\\
+      \texttt{tsquery} & & запрос поиска текста\\
+      \texttt{tsvector} & & документ поиска текста\\
+      \texttt{txid\_snapshot} & & пользовательский ID снимка транзакции\\
+      \texttt{uuid} & & универсальный уникальный идентификатор\\
+      \texttt{\bf xml} & & данные XML\Footnote{b}{Extensible Markup %
+                                                  Language}\\
+      \texttt{json} & & данные JSON\Footnote{c}{JavaScript Object Notation}\\
+    \end{mpxtabular}
+  \end{center}
+
+  \pagebreak
+\section{Команды и функции}
+  Любая концептуальная информация о реляционных базах данных и таблицах
+  приносит пользу лишь в том случае, если Вы знаете, как организовать
+  взаимодействие с данными.
+  Язык SQL состоит из структурированных команд, предназначенных для
+  добавления, модификации и удаления данных из базы.
+  Эти команды образуют основу для взаимодействия с сервером PostgreSQL.
+
+  \subsection{Команды}
+    \begin{table}[h]
+      \centering
+      \caption{Основные действия PostgreSQL}\label{tab:commands}
+      \begin{tabular}[c]{l|l}
+        \hline
+        \textbf{Действие} & \textbf{Описание}\\
+        \hline
+        \texttt{CREATE DATABASE} & Создание новой базы данных\\
+        \texttt{CREATE INDEX} & Создание нового индекса для столбца таблицы\\
+        \texttt{CREATE SEQUENCE} & Создание новой последовательности в базе
+                                  данных\\
+        \texttt{CREATE TABLE} & Создание новой таблицы в базе данных\\
+        \texttt{CREATE TRIGGER} & Создание нового определения триггера\\
+        \texttt{CREATE VIEW} & Создание нового представления для таблицы\\
+        \texttt{SELECT} & Выборка записей из таблицы\\
+        \texttt{INSERT} & Вставка записей в таблицу\\
+        \texttt{UPDATE} & Модификация данных\\
+        \texttt{DELETE} & Удаление записей из таблицы\\
+        \texttt{DROP DATABASE} & Уничтожение базы данных\\
+        \texttt{DROP INDEX} & Удаление индекса столбца\\
+        \texttt{DROP SEQUENCE} & Уничтожение генератора последовательности\\
+        \texttt{DROP TABLE} & Уничтожение таблицы\\
+        \texttt{DROP TRIGGER} & Уничтожение определения триггера\\
+        \texttt{DROP VIEW} & Уничтожение представления\\
+        \texttt{CREATE USER} & Создание новой учётной записи пользователя\\
+        \texttt{ALTER USER} & Модификация учётной записи\\
+        \texttt{DROP USER} & Удаление учётной записи\\
+        \texttt{GRANT} & Предоставление прав доступа к объекту базы данных\\
+        \texttt{REVOKE} & Лишение прав доступа к объекту базы данных\\
+        \texttt{CREATE FUNCTION} & Создание функции SQL\\
+        \texttt{CREATE LANGUAGE} & Создание определения языка\\
+        \texttt{CREATE OPERATOR} & Создание оператора SQL\\
+        \texttt{CREATE TYPE} & Создание типа данных SQL\\
+        \hline
+      \end{tabular}
+    \end{table}
+
+    Операция \texttt{SELECT} поддерживает:
+    \begin{itemize}
+      \item JOIN.
+        Возможные варианты синтаксиса:
+        \begin{itemize}
+          \item \verb't1 { [INNER] | { LEFT | RIGHT | FULL } [OUTER] } JOIN t2 ON be'
+          \item \verb't1 { [INNER] | { LEFT | RIGHT | FULL } [OUTER] } JOIN t2 USING ( list )'
+          \item \verb't1 NATURAL { [INNER] | { LEFT | RIGHT | FULL } [OUTER] } JOIN t2'
+        \end{itemize}
+      \item Псевдонимы таблиц/столбцов.
+      \item Подзапросы (в поле \verb'FROM' может быть другой запрос).
+      \item Табличные функции.
+      \item Клаузы \verb'GROUP BY' и \verb'HAVING' в поле \verb'WHERE'.
+      \item Клауза \verb'DISTINCT' --- фильтрация дублирующихся строчек.
+      \item Клауза \verb'ORDER BY', имеющая синтаксис:
+
+        \verb'SELECT ... FROM ... ORDER BY se [ASC | DESC] [NULLS {FIRST | LAST}] [, ...]'
+    \end{itemize}
+
+  \subsection{Операторы}
+    \begin{itemize}
+      \item Логические:
+        \verb'AND, OR, NOT'
+      \item Сравнения:
+        \begin{itemize}
+          \item \verb'<, >, <=, >=, =, <>' или \verb'!=' (оператор
+                      \verb'!=' преобразуется в \verb'<>' во время разбора
+                                              (парсинга) строки)
+          \item \verb'a [NOT] BETWEEN x AND y', что равносильно %
+            \verb'a >= x AND a <= y'
+          \item \verb'IS [NOT] NULL'
+          \item \verb'ISNULL' --- нестандартный оператор, эквивалентный
+            \verb'IS NULL'
+          \item \verb'NOTNULL' --- нестандартный оператор, эквивалентный
+            \verb'IS NOT NULL'.
+            \verb'NULL <> NULL', однако можно установить параметр
+            \emph{transform\_null\_equals} и сервер PostgreSQL будет
+            автоматически трансформировать выражения типа \verb'x = NULL' в
+            \verb'x IS NULL'.
+          \item \verb'IS [NOT] DISTINCT FROM'
+        \end{itemize}
+      \item Математические:
+        \begin{itemize}
+          \item \verb'+, -, *, /, %, ^'
+          \item \verb'|/' --- квадратный корень
+          \item \verb'||/' --- кубический корень
+          \item \verb'!'
+          \item \verb'!!' --- префиксный факториал
+          \item \verb'@' --- модуль
+        \end{itemize}
+      \item Побитовые:
+        \begin{itemize}
+          \item \verb'&, |'
+          \item \verb'#' --- XOR
+          \item \verb'~' --- NOT
+          \item \verb'<<, >>'
+        \end{itemize}
+      \item Строковые:
+        \begin{itemize}
+          \item \verb'string || string', \verb'string || non-string',
+            \verb'non-string || string' --- конкатенация
+        \end{itemize}
+    \end{itemize}
+
+  \subsection{Математические функции}
+    Среди математических функций, реализованных в PostgreSQL, можно отметить
+    следующие:
+    \verb'abs', \verb'ceiling', \verb'cbrt', \verb'degrees', \verb'div',
+    \verb'exp', \verb'floor', \verb'ln', \verb'log', \verb'mod', \verb'pi',
+    \verb'power', \verb'radians', \verb'random', \verb'round', \verb'setseed',
+    \verb'sign', \verb'trunc', \verb'width_bucket', \verb'acos', \verb'asin',
+    \verb'atan', \verb'atan2', \verb'cos', \verb'cot', \verb'sin', \verb'tan'.
+
+  \subsection{Функции для работы со строками}
+    В стандарте SQL определены некоторые функции для работы со строками так,
+    что они используют некоторые ключевые слова, а не запятые, для разделения
+    аргументов.
+    PostgreSQL предоставляет также возможности этих функций с обычным
+    синтаксисом вызова функций.
+
+    В PostgreSQL есть следующие функции для работы со строками:
+    \verb'bit_length', \verb'char_length', \verb'character_length',
+    \verb'lower', \verb'octet_length', \verb'overlay', \verb'postion',
+    \verb'substring', \verb'trim', \verb'upper', \verb'ascii', \verb'btrim',
+    \verb'chr', \verb'concat', \verb'concat_ws', \verb'convert',
+    \verb'convert_from', \verb'convert_to', \verb'encode', \verb'format',
+    \verb'initcap', \verb'left', \verb'length', \verb'lpad', \verb'ltrim',
+    \verb'md5', \verb'pg_client_encoding', \verb'strpos', \verb'quote_ident',
+    \verb'quote_literal', \verb'quote_nullable', \verb'regexp_mathes',
+    \verb'regexp_replace', \verb'to_hex', \verb'regexp_split_to_array',
+    \verb'regexp_split_to_table', \verb'repeat', \verb'replace',
+    \verb'reverse', \verb'right', \verb'rpad', \verb'rtrim',
+    \verb'split_part', \verb'substr', \verb'to_ascii',
+    \verb'translate'.
+
+  \pagebreak
+
+\section{Особенности языка запросов}
+  Кроме основных возможностей, присущих любой SQL базе данных, PostgreSQL
+  поддерживает:
+  \begin{itemize}
+    \item Очень высокий уровень соответствия ANSI SQL 92, ANSI SQL 99 и ANSI
+      SQL 2003.
+    \item \emph{Схемы}, которые обеспечивают пространство имен на уровне
+      SQL.
+      Схемы содержат таблицы, в них можно определять типы данных, функции и
+      операторы.
+      Используя полное имя объекта можно одновременно работать с несколькими
+      схемами.
+      Схемы позволяют организовать базы данных совокупность нескольких
+      логических частей, каждая их которых имеет свою политику доступа, типы
+      данных.
+      Для приложений, которые создают новые объекты в базе данных удобно и
+      безопасно создавать отдельную схему (и включать ее в SEARCH\_PATH) с
+      тем, чтобы избежать возможной коллизии с именами объектов и удобством
+      обновления приложения.
+    \item \emph{Subqueries} --- подзапросы (subselects), полная поддержка
+      SQL92.
+      Подзапросы делают язык SQL более гибким и зачастую более эффективным.
+    \item \emph{Outer Joins} --- внешние связки (LEFT,RIGHT, FULL).
+    \item \emph{Rules} --- правила, согласно которым модифицируется исходный
+      запрос.
+      Главное отличие от триггеров состоит в том, что rule работает на
+      уровне запроса и \textbf{перед} исполнением запроса, а триггер --- это
+      реакция системы на изменение данных, т.\,е. триггер запускается
+      \textbf{в процессе} исполнения запроса для каждой измененной записи
+      (PER ROW).
+      Правила используются для указания системе, какие действия надо
+      произвести при попытке обновления \emph{view}.
+    \item \emph{Views} --- представления, виртуальные таблицы.
+      Реальных экземпляров этих таблиц не существуют, они материализуются
+      только при запросе.
+      Одним из основных предназначений \emph{view} является разделение прав
+      доступа к родительским таблицам и к \emph{view}, а также обеспечение
+      постоянства пользовательского интерфейса при изменении родительских
+      таблиц.
+      Обновление \emph{view} (материализация) возможно в PostgreSQL с
+      помощью \verb'PL/pgSQL'.
+    \item \emph{Cursors} --- курсоры, позволяют уменьшить трафик между
+      клиентом и сервером, а также память на клиенте, если требуется
+      получить не весь результат запроса, а только его часть.
+    \item \emph{Table Inheritance} --- наследование таблиц, позволяющее
+      создавать объекты, которые наследуют структуру родительского объекта и
+      добавлять свои специфические атрибуты.
+      При этом наследуются значения атрибутов по умолчанию (DEFAULTS) и
+      ограничение целостности (CONSTRAINTS).
+      Поиск по родительской таблице автоматически включает поиск по дочерним
+      объектам, при этом сохраняется возможность поиска только по ней
+      (only).
+      Наследование можно использовать для работы с очень большими таблицами
+      для эмуляции partitioning.
+    \item \emph{Prepared Statements} (преподготовленные запросы) --- это
+      объекты, живущие на стороне сервера, которые представляют собой
+      оригинальный запрос после команды PREPARE, который уже прошел стадии
+      разбора запроса (parser), модификации запроса (rewriting rules) и
+      создания плана выполнения запроса (planner), в результате чего, можно
+      использовать команду EXECUTE, которая уже не требует прохождения этих
+      стадий.
+      Для сложных запросов это может быть большим выигрышем.
+    \item \emph{Stored Procedures} --- серверные (хранимые) процедуры
+      позволяют реализовывать бизнес логику приложения на стороне сервера.
+      Кроме того, они позволяют сильно уменьшить трафик между клиентом и
+      сервером.
+    \item \emph{Savepoints} (nested transactions) --- в отличие от ,,плоских
+      транзакций'', которые не имеют промежуточных точек фиксации,
+      использование savepoints позволяет отменять работу части транзакции,
+      например вследствии ошибочно введенной команды, без влияния на
+      оставшуюся часть транзакции.
+      Это бывает очень полезно для транзакций, которые работают с большими
+      объемами данных.
+    \item Права доступа к объектам системы на основе системы привилегий.
+      Владелец объекта или суперюзер может как разрешать доступ (GRANT), так
+      и отменять (REVOKE).
+    \item Система обмена сообщениями между процессами --- LISTEN и NOTIFY
+      позволяют организовывать событийную модель взаимодействия между
+      клиентом и сервером (клиенту передается название события, назначенное
+      командой notify и PID процесса).
+    \item \emph{Триггеры} позволяют управлять реакцией системы на изменение
+      данных (INSERT,UPDATE,DELETE), как перед самой операцией (BEFORE), так
+      и после (AFTER).
+      Во время выполнения триггера доступны специальные переменные NEW
+      (запись, которая будет вставлена или обновлена) и OLD (запись перед
+      обновлением).
+    \item \emph{Cluster table} --- упорядочивание записей таблицы на диске
+      согласно индексу, что иногда за счет уменьшения доступа к диску
+      ускоряет выполнение запроса.
+  \end{itemize}\cite{highperf}
+  \pagebreak
+
+\section{Безопасность}
+  Безопасность данных также является важнейшим аспектом любой СУБД.
+  В PostgreSQL она обеспечивается 4-мя уровнями безопасности:
+  \begin{enumerate}
+    \item PostgreSQL нельзя запустить под привилегированным пользователем ---
+      \emph{системный контекст};
+    \item SSL\footnote{Secure Sockets Layer}, SSH\footnote{Secure SHell}
+      шифрование трафика между клиентом и сервером --- \emph{сетевой
+      контекст};
+    \item сложная система аутентификации на уровне хоста или IP
+      адреса/подсети.
+      Система аутентификации поддерживает пароли, шифрованные пароли,
+      Kerberos, IDENT и прочие системы, которые могут подключаться используя
+      механизм подключаемых аутентификационных модулей.
+    \item Детализированная система прав доступа ко всем объектам базы данных,
+      которая совместно со схемой, обеспечивающая изоляцию названий объектов
+      для каждого пользователя, PostgreSQL предоставляет богатую и гибкую
+      инфраструктуру.
+  \end{enumerate}
+  \pagebreak
+
+\section{Установка соединений}
+  Интерфейсы в PostgreSQL реализованы для доступа к базе данных из ряда языков
+  (основной список был перечислен на странице \pageref{p:langs}) и методов
+  доступа к данным:
+  \begin{itemize}
+    \item \emph{JDBC}\footnote{англ. Java DataBase Connectivity --- соединение
+      с базами данных на Java} --- платформенно"=независимый промышленный
+      стандарт взаимодействия Java"=приложений с различными СУБД,
+      реализованный в виде пакета \verb'java.sql', входящего в состав Java SE.
+
+      JDBC основан на концепции так называемых драйверов, позволяющих получать
+      соединение с базой данных по специально описанному URL.
+      Драйверы могут загружаться динамически (во время работы программы).
+      Загрузившись, драйвер сам регистрирует себя и вызывается автоматически,
+      когда программа требует URL, содержащий протокол, за который драйвер
+      отвечает.
+    \item \emph{ODBC}\footnote{англ. Open Database Connectivity} --- это
+      программный интерфейс (API) доступа к базам данных, разработанный фирмой
+      Microsoft, в сотрудничестве с Simba Technologies на основе спецификаций
+      Call Level Interface (CLI), который разрабатывался организациями SQL
+      Access Group, X/Open и Microsoft.
+      Стандарт CLI призван унифицировать программное взаимодействие с СУБД,
+      сделать его независимым от поставщика СУБД и программно"=аппаратной
+      платформы.
+  \end{itemize}
+  \pagebreak
+\section{Локализация}
+  PostgreSQL поддерживает 25 различных наборов символов (charsets), включая
+  ASCII, LATIN, WIN, KOI8 и UNICODE, а также locale, что позволяет корректно
+  работать с данными на разных языках.
+
+  Также присутствует поддержка \emph{NLS} (Native Language Support) ---
+  документация, сообщения об ошибках доступны на различных языках, включая
+  японский, немецкий, итальянский, французский, русский, испанский,
+  португальский, словенский, словацкий и несколько диалектов китайского
+  языков.
+  \pagebreak
+\section{Клиенты и инструментарий}
+  \begin{itemize}
+    \item Утилита \emph{psql} (входит в дистрибутив) предоставляет удобный
+      интерфейс для работы с базой данных, содержит краткий справочник по SQL,
+      облегчает ввод команд (используя стрелки для повтора и табулятор для
+      расширения), поддерживает историю и буфер запросов, а также позволяет
+      работать как в интерактивном режиме, так и потоковом режиме.
+    \item \emph{phpPgAdmin} (распространяется под лицензией
+      \textbf{GPL}\footnote{GNU General Public License}) представляет
+      возможность с помощью веб"=браузера администрировать PostgreSQL кластер.
+    \item \emph{pgAdmin III} (GNU Artistic license) предоставляет удобный
+      интерфейс для работы с базами данных PostgreSQL и работает под Linux,
+      FreeBSD и Windows 2000/XP.
+    \item \emph{PgEdit} --- программная среда для разработки приложений и
+      SQL"=редактор, доступна для Windows и Mac.
+    \item \ldots
+  \end{itemize}\cite{wtfispg}
+  \pagebreak
+
+\addcontentsline{toc}{section}{Литература}
+\bibliographystyle{gost780s}
+\bibliography{src}
+\end{document}
