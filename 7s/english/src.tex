@@ -32,11 +32,6 @@
 \title{English copybook}
 \date{\today}
 
-\makeatletter
-\newcommand{\rmnum}[1]{\romannumeral #1}
-\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
-\makeatother
-
 \begin{document}
 \begin{titlepage}
   \maketitle
@@ -90,6 +85,27 @@
       \item Some phones come with miniature keyboards.
       \item Because the screen of WAP phone is so small.
     \end{enumerate}
+  \subsection{Exercise 9}
+      \begin{verse}
+        Texting is messing\\
+        My head and my english.\\
+        Try to write essays\\
+        They all come out texts.\\
+        Gran is not pleased with letters\\
+        She's getting,\\
+        Swears I wrote better\\
+        Before coming to university.\\
+        And she's African.
+      \end{verse}
+      \begin{verse}
+        Fourteen: a text message poem\\
+        His eyes are bunsen burner blue,\\
+        His hair like iron filings\\
+        With Electricity going through.\\
+        I sit by him in chemistry\\
+        It splits my atoms\\
+        When he smiles me.
+      \end{verse}
 \section{Unit 17}
   \subsection{Exercise A}
     \begin{enumerate}
@@ -107,12 +123,12 @@
     \begin{minipage}[t]{0.5\textwidth}
       \paragraph{1}
         \begin{description}
-          \item[a] \Rmnum{3}
-          \item[b] \Rmnum{5}
-          \item[c] \Rmnum{4}
-          \item[d] \Rmnum{6}
-          \item[e] \Rmnum{2}
-          \item[f] \Rmnum{1}
+          \item[a] III
+          \item[b] V
+          \item[c] IV
+          \item[d] VI
+          \item[e] II
+          \item[f] I
         \end{description}
     \end{minipage}
     \begin{minipage}[t]{0.5\textwidth}
@@ -154,20 +170,20 @@
   \subsection{Exercise B}
     \begin{minipage}{0.25\textwidth}
       \begin{description}
-        \item[a] \Rmnum{4}
-        \item[b] \Rmnum{3}
-        \item[c] \Rmnum{1}
-        \item[d] \Rmnum{2}
+        \item[a] IV
+        \item[b] III
+        \item[c] I
+        \item[d] II
       \end{description}
     \end{minipage}
     \begin{minipage}{0.25\textwidth}
       \begin{description}
-        \item[a] \Rmnum{3}
-        \item[b] \Rmnum{4}
-        \item[c] \Rmnum{6}
-        \item[d] \Rmnum{1}
-        \item[e] \Rmnum{2}
-        \item[f] \Rmnum{5}
+        \item[a] III
+        \item[b] IV
+        \item[c] VI
+        \item[d] I
+        \item[e] II
+        \item[f] V
       \end{description}
     \end{minipage}
     \begin{minipage}{0.25\textwidth}
@@ -263,6 +279,333 @@
       Скорее всего, методы шифрования изменятся в будущем, но три принципа,
       которые они обеспечиваются не должны измениться.
       Если вы понимаете базовые принципы, вы уже на три шага впереди других.
+    \end{otherlanguage}
+\section{Unit 19}
+  \subsection{Exercise 5}
+    \begin{enumerate}
+      \item \textit{Anti-virus program}.
+        When an user runs anti-=virus software, the software checks files for
+        virus coding.
+        If coding is matched to a known virus in a virus database, a message
+        is displayed to the user that a virus has been found.
+        If the user removes the virus or deletes the infected file, the virus
+        cannot spread or cause further damage.
+      \item \textit{Face recognition}.
+        When you approach a high-=security network, key features of your face
+        are scanned.
+        When the system matches your features to a database record of
+        authorised staff, your identify is verified, so you can log on.
+        If your identify is not verified, you cannot use the system.
+      \item \textit{Voice recognition}.
+        Voice-=activated computers without keyboards will become more common.
+        When the user wants to log on, she speaks to the computer which
+        matches his voice to a database of voice patterns.
+        If the user has a cold or sore throat, he is allowed to use the system
+        because stress and intonation patterns remain the same.
+    \end{enumerate}
+  \subsection{Exercise 6}
+    \begin{itemize}
+      \item \begin{enumerate}
+          \item Person looks through the scanner.
+          \item Laser scans the retina.
+          \item Computer converts the visual data into barcode.
+        \end{enumerate}
+      \item \begin{enumerate}
+          \item Select the language.
+          \item Insert credit card.
+          \item Insert hand to be scanned, so the computer could check
+            whether handprint matches credit card or not.
+        \end{enumerate}
+    \end{itemize}
+  \subsection{Перевод}
+    \begin{otherlanguage}{russian}
+      Вторичные и автономные хранилища (которые часто называют
+      HSM\footnote{Hierarchical Storage Management}) --- современный способ
+      решения задачи хранения данных.
+      Жёсткие диски дешевеют, однако требования к хранению данных увеличиваются,
+      поэтому лучше планировать HSM, которые позволяют добавлять диски к
+      системе.
+
+      По сути, HSM --- это автоматическое перераспределение данных между
+      носителями.
+      Много изготовителей программного и аппаратного обеспечения имеют свои
+      реализации HSM, и все они основываются на одних и тех же базовых
+      технологиях.
+
+      Наиболее распространённой конфигурацией HSM является та, в которой
+      существуют онлайн"=хранилище (жёсткий диск), вторичное хранилище
+      (быстрый носитель, с которого можно практически мгновенно получить
+      данные) и оффлайн"=хранилище (медленный, но более дешёвый носитель).
+      Такой способ является основным в современных системах.
+
+      В основном, такие системы используют оптические носители для вторичных,
+      последовательные носители в качестве оффлайн"=хранилищ.
+
+      Данные автоматически переносятся с онлайн"=хранилища на вторичные
+      накопители, если он не использовались на протяжении определённого
+      промежутка времени.
+      Обычно этот промежуток равен трём месяцам.
+
+      Системы вторичных накопителей обычно реализуются как оптические
+      диски, которые могут быть перезаписанными.
+
+      Система должна работать полагаясь на том, что пользователь на должен
+      знать, что файл был перемещён во вторичное хранилище.
+      Поэтому в структуре директорий остаётся маркер для того, чтобы
+      пользователь всё ещё мог видеть файл.
+      Когда пользователь попробует открыть его, файл будет скопирован со
+      вторичного в онлайн"=хранилище, где будет открыт пользователем.
+      Всё, что заметит пользователь --- небольшая задержка при открытии файла.
+
+      Перемещение данных со вторичного на автономное хранилище может быть
+      осуществлено похожим способом, однако чаще маркер, который остаётся в
+      директории просто содержит ссылку.
+      Это даёт пользователь возможность сделать запрос на файл управляющей
+      программе, и получить информацию типа ,,этот файл был заархивирован на
+      автономное хранилище'' и ссылку на место хранения файла.
+      Потом эта ссылка посылается управляющей программе, и файлы могут быть
+      восстановлены (с носителя) обычным способом.
+
+      Некоторые современные системы могут хранить несколько носителей в
+      хранилище, что позволяет оперировать ими как в ,,музыкальном автомате''.
+  \end{otherlanguage}
+\section{Unit 20}
+  \subsection{Exercise 6}
+    \begin{enumerate}
+      \item find out
+      \item hand over
+      \item tracked down
+      \item break into
+      \item log on
+      \item go about
+      \item phone up
+      \item throw away
+      \item grown up
+      \item hacking into
+      \item keep ahead
+    \end{enumerate}
+  \subsection{Exercise 7}
+    \begin{enumerate}
+      \item throw away
+      \item hack (break) into
+      \item grown up
+      \item set about
+      \item calls you, hand it over
+      \item shut down
+      \item ran up
+      \item find out
+      \item write down
+      \item check out
+    \end{enumerate}
+\section{Unit 21}
+  \subsection{Exercise 10}
+    \begin{itemize}
+      \item \textit{Parallel implementation} means that both systems will run
+        for a determined period of time, after which the old system will be
+        disabled.
+        The advantage is that if we have some troubles with new system --- we can
+        roll back to the old one.
+        Disadvantage is that both systems should be run maintained and
+        synchronised with each other.
+      \item \textit{Phased implementation}: gradually the old system is being
+        upgraded to new by parts, so users use the same system with new
+        features, while the haven't completely replaced the old system.
+        Advantage is that it is easier for users to get used to the new
+        system.
+        Disadvantage is complexity of such systems and that some changed
+        cannot be made to the system.
+    \end{itemize}
+\section{Unit 21}
+  \subsection{Перевод}
+    \begin{otherlanguage}{russian}
+      Одной из основных мотиваций использования ООП является работа с
+      мультимедийными приложениями, в которых разнообразные типы данных, такие
+      как звук и видео, могут быть запакованными вместе в исполняемый модуль.
+      Другая причина --- написание программного кода, который был бы более
+      интуитивно понятным и многоразовым.
+
+      Возможно, ключевой особенностью ООП является инкапсуляция --- объединение
+      данных и команд программы в модули, которые называются ,,объектами''.
+
+      Меню также является объектом, как варианты выбора в нём.
+      Каждый раз пользователь выбирает объект , инструкции внутри объекта
+      запускаются со свойствами или данными, которые содержит объект, чтобы
+      перейти к следующему шагу.
+
+      Другой ключевой особенностью ООП является наследование.
+      Оно позволяет ООП-=разработчикам определять класс объектов, например
+      ,,четырёхугольники'', и их более конкретный случай ,,квадраты'' (какк
+      ,,четырёхугольник'' с одинаковыми сторонами.
+      Таким образом, все свойства ,,четырёхугольника'' (имеет четыре стороны и
+      четыре угла) автоматически наследуются ,,квадратами''.
+
+    \end{otherlanguage}
+\section{Unit 22}
+  \subsection{Exercise A}
+    \begin{enumerate}
+      \item To improve your marketability to poptential employers by upgrading
+        your skill-set.
+      \item Whose training should you undertake?
+        Whose certificates should you get?
+      \item Microsoft Word
+      \item Attending a training course, self-study
+      \item The amount of work you'll have to do to get up to speed for the
+        exams and the difference between passing or failing the exam.
+      \item Because you need to get used to answering the requisite number of
+        questions withing the allowed time to fit into it.
+    \end{enumerate}
+  \subsection{Exercise B}
+    \begin{enumerate}
+      \item \begin{enumerate}
+          \item MCPS
+          \item MCSE
+          \item MCT
+          \item MCSD
+        \end{enumerate}
+      \item \begin{enumerate}
+          \item true
+          \item false
+          \item false
+          \item true
+          \item false
+          \item true
+          \item true
+        \end{enumerate}
+    \end{enumerate}
+  \subsection{Перевод}
+    \begin{otherlanguage}{russian}
+      Представим, что вы --- инженер технической поддержки.
+      Вы застряли на работе, которая вам не нравится и желаете перемен.
+      Один из способов что-либо изменить --- улучшить ваши навыки для того,
+      чтобы повысить уровень вашего соответствия нуждам рынка работы.
+
+      Если вы отважились на это, то какой курс выбрать?
+      Если вам необходимы сертификаты, то именно ли эти?
+      И даже если вы их получите, насколько вы можете быть уверены, что ваша
+      зарплата возрастёт?
+      Одно из решений --- набор сертификатов, предложенных Microsoft.
+
+      Microsoft предлагает широкий набор сертификационных программ, нацеленных
+      на всех, начиная от пользователя конкретной программы (например,
+      Microsoft Word) и заканчивая тем, кто хочет стать инженером технической
+      поддержки/сотрудником службы технической поддержки.
+      Также существует множество других сертификатов.
+      Если вы обладатель любого такого сертификата, то вы можете с гордостью
+      называть себя Microsoft-=сертифицированным специалистом.
+
+      Выбрав своё направление, вы должны определиться насколько
+      квалифицированным вы являетесь основываясь на ваших знаниях и опыте.
+      Необходимо ли вам посещать курсы или достаточно самостоятельного
+      обучения?
+      Сколько времени вы можете выделить для этого?
+      Будет ли платить ваш работодатель за эти курсы?
+
+      Ключевым вопросом является ваш опыт.
+      Он влияет не только на объём работы, которую необходимо проделать во
+      время подготовки к экзаменам, но может и определить, успешно ли вы
+      сдадите тесты.
+
+      Пока вы заняты изучением всего необходимого для сертификации, пробные
+      экзамены являются хорошей находкой.
+      Они демонстрируют типы вопросов, с которыми вы столкнётесь на экзамене,
+      ознакомят вас со структурой экзамена.
+      Основным фактом, на который вам необходимо обратить внимание, является
+      тот факт, что на экзамене время ограничено, поэтому вам необходимо
+      привыкнуть отвечать на определённое количество вопросов за выделенное
+      время.
+
+      Если вы решите, что вам могут помочь учебные курсы, не выбирайте курс
+      только по его названию.
+      Узнайте, что именно предлагает этот курс, и существуют ли какие-либо
+      условия для поступающих.
+      Также узнайте, что делает компания, проводящая курс, если абитуриент не
+      имеет минимально-=необходимых знаний для этого курса.
+
+      Когда экзамены заменяются новыми, вам необходимо обновить свой
+      сертификат.
+      В конце концов, за то, чтобы ваш сертификат отвечал современному
+      стандарту, отвечаете только вы.
+      Иначе вы теряет сертификацию пока не сдадите новый экзамен.
+
+      Как рабочий службы поддержки, вы получите удовлетворённость собой, зная
+      тот факт, что вы прошли сложный тест, и знание того, что ваш менеджер по
+      персоналу боится того факта, что вас могут перевербовать в любой момент.
+
+      Существуют следующие квалификационные направления:
+      \begin{itemize}
+        \item Сертифицированные системный инженер Microsoft (MCSE).
+          Эти специалисты проектируют, устанавливают, поддерживают та
+          диагностируют неполадки в информационных системах.
+        \item Сертифицированный специалист по продуктам Microsoft (MCPS).
+          Эти специалисты знают всё хотя бы про одну операционную систему от
+          Microsoft.
+          Другие специализируются на других продуктах Microsoft.
+      \end{itemize}
+    \end{otherlanguage}
+\section{Unit 23}
+  \subsection{Exercise A}
+    \begin{enumerate}
+      \item Connecting interfaces compatibility problem.
+      \item Ericsson, IBM, Intel, Nokia and Toshiba.
+      \item Mobility, low power usage
+      \item Operating requences
+      \item PDA, Tablet PC's, Laptops, Phones
+      \item  40-bit encryption and frequency hopping.
+      \item Because it would increase its power consumption and cost.
+    \end{enumerate}
+  \subsection{Exercise B}
+    \begin{enumerate}
+      \item \begin{enumerate}
+          \item III
+          \item V
+          \item I
+          \item VI
+          \item VII
+          \item II
+          \item IV
+        \end{enumerate}
+      \item \begin{enumerate}
+          \item false
+          \item false
+          \item true
+          \item true
+          \item false
+          \item false
+          \item true
+        \end{enumerate}
+    \end{enumerate}
+\section{Unit 24}
+  \subsection{Exercise A}
+    \begin{enumerate}
+      \item That anything is possible if you really put your mind to it.
+      \item All the details of his passport, bank account, medical records and
+        driving license.
+      \item Shopping.
+      \item Software programs, networks, telephones \& machines with a degree
+        of intelligence built in.
+      \item Increasing the speed of evolution.
+      \item The deluge of information.
+    \end{enumerate}
+  \subsection{Перевод}
+    \begin{otherlanguage}{russian}
+      Пообщаться с проффесором Кокрэйном --- это, возможно, лучший способ
+      путешествовать во времени, не покидая при этом современной пространство,
+      так как его видение будущего растянуто далеко в XXI век.
+      Он твёрдо уверен, что возможно всё, если к этому подойти с умом.
+
+      Изготовленные для XXI века кольцо с печаткой Питера Кокрена создано на
+      основании чипа, который содержит всю информацию с его паспорта,
+      банковского счёта, медических записей и водительских прав.
+      По словам самого Кокрена, это должно будет произвести революции в
+      будущем.
+
+      Однако и это ещё не всё.
+      BT сделали шаг вперёд в развитии искусственного интеллекта и создали
+      машины, которые решают собственные проблемы.
+      ,,Мы создали решение, про которое человек не мог и мечтать.
+      Мы имеем решение, однако, в то же время, мы не понимаем, как оно
+      работает, но оно работает.
+      Мы эффективно увеличиваем скорость эволюции'', говорит Кокрен.
     \end{otherlanguage}
 \section{Text 1}
   \begin{otherlanguage}{russian}
