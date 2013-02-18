@@ -1,0 +1,135 @@
+% vim:spelllang=ru,en
+\documentclass[a4paper,12pt,notitlepage,headsepline,pdftex]{scrartcl}
+
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{concrete}
+\usepackage{fullpage}
+\usepackage{cite}
+\usepackage{url}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\usepackage{lscape}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={Краткий обзор методов},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+
+\usepackage{xtab}
+\usepackage{nccfoots}
+\usepackage{nccstretch}
+\begin{document}
+  Методы решения задачи деконвуляции
+  \begin{equation}
+    s(t) = \left( \omega(t) * e(t) \right) + \eta(t)
+    \label{eq:convulation}
+  \end{equation}
+  при условии, что известен сигнал $\omega$
+  \begin{itemize}
+    \item Линейные
+      \begin{itemize}
+        \item Обратная фильтрация.
+          Так же известна как \textit{spiking deconvolution}.
+          Суть заключается в поиске фильтра $f(t)$ такого, чтобы $\omega(t) *
+          f(t) = \delta(t)$.
+        \item Фильтры Wiener.
+          Используются для минимизации уровня шума только на основании
+          измеренного сигнала.
+          Используется статистический подход.
+      \end{itemize}
+    \item Нелинейные
+      \begin{itemize}
+        \item ,,CLEAN''.
+          Assumes that the radio sky can be represented by a small number of
+          point sources in an otherwise empty field of view.
+          It uses a simple iterative procedure to find the positions and
+          strengths of these sources.
+          \begin{itemize}
+            \item \textbf{The H\"{o}gbom algorithm}.
+            \item \textbf{The Clark algorithm}.
+              Much of the computation in `CLEAN' consists of shifting and
+              scaling the dirty beam.
+              As this is essentially a convolution it may, in some
+              circumstances, be done more efficiently with 2-d FFTs.
+              Clark's (1980) `CLEAN' algorithm does this, finding approximate
+              positions and strengths of the point components using only a
+              small patch of the dirty beam.
+            \item \textbf{The Cotton-Schwab algorithm}.
+              A further advantage of the Cotton-Schwab algorithm, besides
+              gridding correction, is its ability to image and ,,CLEAN'' many
+              separate but proximate fields simultaneously.
+              In the minor cycle each field is ,,CLEAN''ed independently; in
+              the major cycles, ,,CLEAN'' components from all fields are
+              removed together.
+              In calculating the residual image for each field, the full phase
+              equation, including the w-term, can be used.
+              Thus, the algorithm can correct images for the ``non-coplanar
+              baselines'' distortion.
+
+              The Cotton-Schwab algorithm is often faster than the Clark
+              ,,CLEAN'', the major exception being for data sets with a large
+              number of visibility samples, where re-gridding many times can
+              be prohibitively expensive.
+              The Cotton-Schwab algorithm also allows ,,CLEAN''ing with
+              smaller guard bands around the region of interest, hence with
+              smaller image sizes.
+            \item \textbf{Steer, Dewdney \& Ito} (1984) developed a variant of
+              the Clark algorithm in which the minor cycle is replaced by
+              simply taking all points above a sidelobe"=dependent threshold,
+              scaling them and then subtracting normally in the major cycle.
+              This saves time compared to ,,CLEAN'', but the radio astronomy
+              community has little experience with this variant of the
+              algorithm.
+              The algorithm's ability to handle different practical situations
+              is therefore somewhat uncertain.
+              It was implemented in classic AIPS as ,,SDCLN''.
+
+            \item \textbf{Segalovitz \& Frieden} (1978) proposed an ad hoc
+              modification of the dirty beam to enhance the smoothness of the
+              resulting ,,CLEAN'' image.
+              Cornwell (1983) justified a similar prescription as forcing the
+              minimization of the image power (i.\,e., the sum of the squares
+              of the pixel values) and thus pushing down the extrapolated
+              visibility function.
+              Both approaches seem to ameliorate the striping instability to
+              which ,,CLEAN'' is susceptible.
+          \end{itemize}
+        \item \textbf{Метод максимальной энтропии}\footnote{Maximum entropy
+          method, MEM}.
+          Идея заключается в минимизации гладкости образа (энтропии) сигнала.
+          Для изображений с 1\,000\,000 и больше пикселей MEM работает быстрее
+          CLEAN.
+        \item \textbf{The Richardson-Lucy algorithm}.
+          Основная идея: найти наиболее вероятный сигнал зная его образ и
+          функцию разброса точек.
+          Метод можно использовать только когда функция разброса точек
+          полностью определена.
+      \end{itemize}
+  \end{itemize}
+\end{document}
