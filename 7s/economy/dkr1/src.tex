@@ -1,0 +1,170 @@
+% vim:spelllang=ru
+\documentclass[a4paper,10pt,notitlepage,pdftex,headsepline]{scrartcl}
+
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{concrete}
+
+\pdfcompresslevel=9
+\usepackage[pdftex]{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={ДКР №1 по экономике предприятий и организации
+            производства},
+            pdfauthor={Михаил Погода},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true,
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\author{Погода Михаил}
+\title{ДКР №1 по экономике предприятий и организации производства}
+\date{Вариант №2}
+
+\usepackage{amsmath}
+\begin{document}
+  \maketitle
+
+\section{Сырьё и материалы}
+  Расходы на приобретение материалов вычисляются согласно норм их
+  расходования и цен с учётом транспортно"=заготовительных затрат:
+  \begin{equation}
+    C_\text{м} = \left(1 + k_\text{т.з.}\right) \sum_{i = 1}^n q_\text{вм}^i
+    \text{Ц}_\text{м}^i
+    \label{eq:1}
+  \end{equation}
+
+  В этом случае существует всего один вид материала.
+  $k_\text{т.з.} = 20\% = 0.2$ --- коэффициент транспортно"=заготовительных
+  затрат.
+  $\text{Ц}_\text{м} = 4\,\frac{\text{грн}}{\text{кг}}$ --- цена за единицу
+  материала.
+  $q_\text{вм} = 5\,\frac{\text{кг}}{\text{издел}}$ --- норма расхода материала
+  на единицу продукции.
+
+  \begin{equation}
+    C_\text{м} = 1.2 \cdot 5 \cdot 4 = 24\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r1}
+  \end{equation}
+\section{Покупные комплектующие изделия, полуфабрикаты, работы и услуги
+производственного характера сторонних предприятий и организаций}
+  \begin{equation}
+    C_\text{пф} = \left( 1 + k_\text{т.з.}\right)\sum_{i = 1}^n q_\text{пф}^i
+    \text{Ц}_\text{пф}^i
+    \label{eq:2}
+  \end{equation}
+
+  В нашем случае один вид полуфабрикатов.
+  $k_\text{т.з.} = 20\% = 0.2$ --- коэффициент транспортно"=заготовительных
+  затрат.
+  $\text{Ц}_\text{пф} = 1.3\,\frac{\text{грн}}{\text{шт}}$ --- цена за единицу
+  полуфабриката.
+  $q_\text{пф} = 11\,\frac{\text{шт}}{\text{издел}}$ --- норма траты
+  полуфабрикатов на единицу продукции.
+  \begin{equation}
+    C_\text{пф} = 1.2 \cdot 1.3 \cdot 11 =
+    17.16\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r2}
+  \end{equation}
+\section{Возвратные отходы}
+  \begin{equation}
+    C_\text{в} = \sum_{i = 1}^n q_\text{в}^i \text{Ц}_\text{в}^i
+    \label{eq:3}
+  \end{equation}
+
+  $q_\text{в}$ --- количество возвратных отходов на единицу продукции.
+  $\text{Ц}_\text{в} = 1.5\,\frac{\text{грн}}{\text{кг}}$ --- цена единицы
+  вида возвратных отходов.
+
+  На одну единицу продукции необходимо 5 кг материала, $k_\text{исп} = 0.83$.
+
+  $q_\text{в} = 5 \cdot \left( 1 - 0.83 \right) \cdot 1.5 = 5 \cdot 0.17 \cdot
+  1.5 = 1.28\,\frac{\text{кг}}{\text{издел}}$
+  \begin{equation}
+    C_\text{в} = 0.85 \cdot 1.5 = 1.275\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r3}
+  \end{equation}
+\section{Стоимость затрат на топливо, энергию и другие технологические цели}
+  Невозможно рассчитать прямо, поэтому эта стоимостью переносится на другие
+  расходы по частям.
+\section{Основная заработная плата}
+  \begin{equation}
+    C_\text{з.о.} = \sum_{i = 1}^n C_T^i t_\text{ш}^i
+    \label{eq:4}
+  \end{equation}
+
+  $C_T = 9.5\,\frac{\text{грн}}{\text{ч}}$ --- почасовая ставка для вида работы.
+  $t_\text{ш} = 7\,\frac{\text{ч}}{\text{издел}}$ --- норма времени для вида
+  работы.
+
+  \begin{equation}
+    C_\text{з.о.} = 9.5 \cdot 7 = 66.5\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r4}
+  \end{equation}
+\section{Дополнительная заработная плата}
+  Расходы по этой статье определяются в процентах относительно основной
+  заработной платы.
+  Норматив дополнительной заработной платы $\alpha_\text{дз} = 10\% = 0.1$.
+  \begin{equation}
+    C_\text{дз} = 0.1 \cdot 66.5 = 6.65\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r5}
+  \end{equation}
+\section{Отчисления на социальное страхование}
+  Отчисления на социальное страхование составляет $38\%$ от суммы основной и
+  дополнительной заработных плат.
+
+  \begin{equation}
+    C_\text{соц} = 0.38 \cdot \left( 6.65 + 66.5 \right) =
+    27.8\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r6}
+  \end{equation}
+\section{Расходы на содержание и эксплуатацию оборудования, амортизация}
+  \begin{equation}
+    C_\text{о} = \frac{C_\text{зп} \cdot \alpha_\text{об}}{100} =
+    \frac{66.5 \cdot 120}{100} = 79.8\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r7}
+  \end{equation}
+\section{Общепроизводственные расходы}
+  Эта статья включает в себя затраты на управление производством, некоторой
+  части амортизационных затрат.
+  \begin{equation}
+    C_\text{ор} = \left( C_\text{зп} + C_\text{о} \right) \cdot
+    \frac{\alpha_\text{о.р}}{100} = \left( 66.5 + 79.8 \right) \cdot
+    \frac{250}{100} = 365.75\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r8}
+  \end{equation}
+\section{Производственная себестоимость}
+  \begin{equation}
+    C_\text{пр} = 24 + 17.16 + 1.28 + 66.5 + 6.65 + 27.8 + 79.8 + 365.75 =
+    588.93\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r9}
+  \end{equation}
+\section{Административные расходы}
+  \begin{equation}
+    C_\text{адм} = \left( C_\text{зп} + C_\text{о}
+    \right)\cdot\frac{\alpha_\text{зх}}{100} = \left( 66.5 + 79.8 \right)
+    \cdot 1.5 = 219.45\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r10}
+  \end{equation}
+\section{Внепроизводственные расходы}
+  \begin{equation}
+    C_\text{вн.пр} = \frac{C_\text{пр}\cdot\alpha_\text{вн.пр}}{100} = 588.93
+    \cdot 0.05 = 29.45\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r11}
+  \end{equation}
+\section{Полная себестоимость единицы продукции}
+  \begin{equation}
+    C = C_\text{пр} + C_\text{адм} + C_\text{вн.пр} = 588.93 + 219.45 + 29.45
+    = 837.83\,\frac{\text{грн}}{\text{издел}}
+    \label{eq:r12}
+  \end{equation}
+\end{document}
