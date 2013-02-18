@@ -1,0 +1,69 @@
+% vim:spelllang=ru,en
+\documentclass[a4paper,12pt,notitlepage,headsepline,pdftex]{scrartcl}
+
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{concrete}
+\usepackage{cite}
+\usepackage{url}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\usepackage{lscape}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={ПОЭВМ Лаба №1},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+
+\usepackage{xtab}
+\usepackage{nccfoots}
+\usepackage{listings}
+
+\lstloadlanguages{C++}
+\lstset{language=C++,frame=tb,commentstyle=\itshape,stringstyle=\bfseries}
+\begin{document}
+  \begin{itemize}
+    \item \texttt{Cart}.\textit{ISBN, BundleID} $\rightarrow$
+      \texttt{HistoryOfPurchasing}.\textit{price}
+    \item \texttt{Book}.\textit{quantity} $\rightarrow$
+      \texttt{Request}.\textit{quantity}
+    \item \texttt{HistoryOfPurchasing}.\textit{date} $\rightarrow$
+      \texttt{HistoryOfDelivers}.\textit{date}
+    \item \texttt{HistoryOfBrowsing}.\textit{date} $\rightarrow$
+      \texttt{HistoryOfPurchasing}.\textit{date}
+    \item \texttt{Transaction}.\textit{timestamp} $\rightarrow$
+      \texttt{HistoryOfPurchasing}.\textit{date}
+    \item \texttt{BookToDeliver}.\textit{address} $\rightarrow$
+      \texttt{Delivery}.\textit{CourierID}
+    \item \texttt{Cart}.\textit{ISBN, BundleID} $\rightarrow$
+      \texttt{Transaction}.\textit{amount}
+    \item \texttt{BookToReceive}.\textit{address} $\rightarrow$
+      \texttt{Receiving}.\textit{CourierID}
+
+  \end{itemize}
+\end{document}

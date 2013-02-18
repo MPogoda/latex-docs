@@ -1,0 +1,80 @@
+% vim:spelllang=ru,en
+\documentclass[a4paper,12pt,notitlepage,headsepline,pdftex]{scrartcl}
+
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{concrete}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{fullpage}
+
+\usepackage{textcase}
+\usepackage[pdftex]{graphicx}
+
+\usepackage{lscape}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+            pdftitle={PostgreSQL},
+            pdfauthor={Погода Михаил},
+            pdfcreator={pdflatex},
+            pdfsubject={},
+            pdfborder    = {0 0 0},
+            bookmarksopen,
+            bookmarksnumbered,
+            bookmarksopenlevel = 2,
+            pdfkeywords={},
+            colorlinks=true, % установка цвета ссылок в оглавлении
+            citecolor=black,
+            filecolor=black,
+            linkcolor=black,
+            urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{moreverb}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+
+\usepackage{xtab}
+\usepackage{nccfoots}
+
+\begin{document}
+  \begin{table}
+    \centering
+    \begin{tabular}{|c|p{0.3\textwidth}|c|p{0.47\textwidth}|}
+      \hline
+      \bf\No &\bf Описание события &\bf Тип события &\bf Реакция на событие\\
+      \hline\hline
+      1 & Клерк оценивает популярность товара & N & Предоставить клерку
+      выборку из таблиц \texttt{History of browsing}, \texttt{Books},
+      \texttt{History of Purchasing}\\
+      \hline
+      2 & Клерк добавляет bundle & N & Предоставить клерку форму для
+      ввода названия bundle и индивидуальных скидок для каждой книги в его
+      составе, произвести соответствующие добавления в таблицы \texttt{Bundle}
+      и \texttt{BundledBook}\\
+      \hline
+      3 & Клерк удаляет книгу/bundle & NN & Обратиться к администратору
+      ИС\\
+      \hline
+      4 & Клерк изменяет описание книги/bundle & NN & Обратиться к
+      администратору ИС\\
+      \hline
+      5 & Клерк составляет запрос на пополнения запаса книг & N & Предоставить
+      форму для выбора необходимого количества, произвести соответствующие
+      изменения в таблице \texttt{Request}\\
+      \hline
+      6 & Клерк оценивает задолженности клиентов & N & Предоставить клерку
+      выборку из таблиц \texttt{Customer}, \texttt{RentedBook}\\
+      \hline
+    \end{tabular}
+    \caption{ELM}
+    \label{tab:elm}
+  \end{table}
+\end{document}

@@ -1,0 +1,54 @@
+% vim:spelllang=en
+\documentclass[a4paper,10pt,notitlepage,headsepline,pdftex,twocolumn]{scrartcl}
+
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{concrete}
+\usepackage{fullpage}
+
+\pdfcompresslevel=9 % сжимать PDF
+
+\begin{document}
+\thispagestyle{empty}
+\begin{enumerate}
+  \item \emph{customer} begins browsing
+  \item get list of \texttt{books}
+  \item get list of \texttt{bundles}
+  \item get \texttt{history of purchases}
+  \item[6] get \texttt{rented books}
+  \item[7] get \texttt{history of browsing}
+  \item[8] show optimized catalog
+  \item[9] \emph{customer} puts books into \texttt{cart}
+  \item[10] \emph{customer} begins purchasing
+  \item[11] get \emph{customer}'s \texttt{cart}
+  \item[12] get prices of \texttt{books}
+  \item[13] \emph{customer} gets known about cost
+  \item[14--15] \emph{customer} pays
+  \item[16] \emph{clerk} gets notified about purchase
+  \item[17--20] \emph{clerk} checks transaction
+  \item[21] \emph{customer} receives proof of purchase
+  \item[22] add info to \texttt{history of purchases}
+  \item[23] add \texttt{books to deliver}
+  \item[24] \emph{courier} initiates delivering/receiving
+  \item[25] get info about \texttt{books to receive/deliver}
+  \item[26] form a list of books to process
+  \item[27] after delivering add info to \texttt{delivered books}
+  \item[28] remove info from \texttt{rented books} after receiving book
+  \item[29] \emph{customer} initiates returning book from rent
+  \item[30] add info to \texttt{books to receive}
+  \item[31] \emph{employee} fills \texttt{registration request}
+  \item[32] \emph{administrator} checks and approves this request
+  \item[33] add info to \texttt{employees}
+  \item[34] give ID to \emph{employee}
+  \item[35] \emph{administrator} begins administration
+  \item[36] get all \texttt{queries}
+  \item[37] get info from \texttt{publisher catalogs}
+  \item[38] adding/removing/modifying \texttt{bundles}
+  \item[39] modifying (price, quantity, etc.) of \texttt{book}
+  \item[40] \emph{clerk} initiates process of maintaining
+  \item[41--46] check \texttt{book}, \texttt{histories}, etc.
+  \item[47] \emph{clerk} fills \texttt{query} to \emph{admin}
+\end{enumerate}
+\end{document}
