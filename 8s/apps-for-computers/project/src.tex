@@ -1,8 +1,17 @@
 %vim: spelllang=uk
-\documentclass[utf8,ukrainian]{eskdtext}
+\documentclass[simple,14pt,draft,utf8,ukrainian]{eskdtext}
+\usepackage{eskddstu}
+\ESKDtitle{{\small Мінімізація витрат на побудову огороджень}}
+\ESKDdocName{Пояснювальна записка.}
+\ESKDsignature{ИАЛЦ.468324.002 ПЗ}
+\ESKDauthor{Погода~М.\,В.}
+\ESKDchecker{Олефір~О.\,С.}
+\ESKDgroup{{\scriptsize НТУУ ,,КПІ'', ФПМ, КМ-92}}
+\ESKDapprovedBy{{\scriptsize Молчанов~О.\,А.}}
+\renewcommand{\ESKDfontShape}{\upshape}
+
 \usepackage{pdflscape}
-%\usepackage[left=2.5cm,right=2.5cm]{geometry}
-%\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage{cmap} % чтобы работал поиск по PDF
 \usepackage[utf8]{inputenc}
 %\usepackage[english,ukrainian]{babel}
 \usepackage[T2A]{fontenc}
@@ -10,14 +19,14 @@
 \usepackage{concrete}
 
 %\usepackage{textcase}
-\usepackage[pdftex]{graphicx}
+%\usepackage[pdftex]{graphicx}
 
 \pdfcompresslevel=9 % сжимать PDF
 \usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
 \usepackage[pdftex]{hyperref}
 % настройка ссылок в оглавлении для pdf формата
 \hypersetup{unicode=true
-           ,pdftitle={Етап 2}
+           ,pdftitle={Пояснювальна записка}
            ,pdfauthor={Погода Михайло}
            ,pdfcreator={pdflatex}
            ,pdfsubject={}
@@ -37,88 +46,64 @@
 \usepackage{amssymb}
 
 \begin{document}
+\ESKDthisStyle{empty}
 \begin{titlepage}
-    \Large
     \begin{center}
-        Міністерство освіти і науки, молоді та спорту України
+        \MakeUppercase{Міністерство освіти і науки України}
 
         Національний технічний університет України
 
         ,,Київський політехнічний інститут''
 
-        \vspace*{1cm}
+        \vspace*{0.5cm}
 
         Факультет прикладної математики
 
-        \vspace*{3.5cm}
+        \vfill
 
-        \textbf{II етап курсової роботи}
+        \textbf{\MakeUppercase{Курсовий проект}}
 
-        з дисципліни ПЗ ЕОМ
+        з дисципліни:
 
-        на тему: ,,Мінімізація витрат матеріалів на побудову огороджень''
+        ,,Програмне забезпечення ЕОМ''
+
+        \textbf{Мінімізація витрат матеріалів на побудову огороджень.\\
+          Алгорітм Грехема}
     \end{center}
 
-    \vspace*{4cm}
+    \vfill
 
-    Виконав:\hfill
-        \begin{minipage}{0.3\textwidth}
-            Погода М.\,В.
+    \begin{minipage}{0.15\textwidth}
+      Виконав:
 
-            група КМ-91
-        \end{minipage}
+      Керівник:
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+      студент групи КМ-92
 
-    \vspace*{1cm}
+      к.\,т.\,н., доцент
+    \end{minipage}
+    \begin{minipage}{0.2\textwidth}
+      Погода~М.\,В.
 
-    \hfill 28 лютого 2013~року
+      Олефір~О.\,С.
+    \end{minipage}
+    \begin{minipage}{0.20\textwidth}
+      \underline{\hspace{0.8\textwidth}}
+
+      \underline{\hspace{0.8\textwidth}}
+    \end{minipage}
+
+    \vfill
 
     \vfill
 
     \begin{center}
         \Large
-        Київ
-
-        2013
+        Київ --- 2013
     \end{center}
 \end{titlepage}
-
-\paragraph{Тестові дані №1}
-\begin{equation}
- A = \left\{ \left( 0; 0 \right), \left( 3; 0 \right), \left( 3; 8 \right),
-  \left( 7; 5 \right), \left( 4; 2 \right), \left( 2; 5 \right), \left( 2; 2
-\right) \right\}
-  \label{eq:t1}
-\end{equation}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\textwidth]{scr1.png}
-  \caption{Розв’язок тестових даних №1}
-  \label{fig:f1}
-\end{figure}
-\paragraph{Тестові дані №2}
-\begin{equation}
-  A = \left\{ \left( 0; 0 \right), \left( 0; 2 \right), \left( 2; 2
-  \right), \left( 2; 0 \right) \right\}
-  \label{eq:t2}
-\end{equation}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\textwidth]{scr2.png}
-  \caption{Розв’язок тестових даних №2}
-  \label{fig:f2}
-\end{figure}
-\paragraph{Тестові дані №3}
-\begin{equation}
-  A = \left\{ \left( 0; 0 \right), \left( 0; 10 \right), \left( 5; 5
-  \right), \left( 10; 10 \right), \left( 10; 0 \right), \left( 5; 15
-\right), \left( 5; 10 \right) \right\}
-  \label{eq:t3}
-\end{equation}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.65]{scr3.png}
-  \caption{Розв’язок тестових даних №3}
-  \label{fig:f3}
-\end{figure}
-
+\ESKDthisStyle{formII}
+\tableofcontents
+\newpage
 \end{document}
