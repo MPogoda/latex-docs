@@ -15,7 +15,6 @@
 
 % 3. Завантажуємо пакети
 % мовні пакети
-\RequirePackage{extsizes}
 \RequirePackage{cmap}% для кодування шрифтів у pdf
 \RequirePackage[T2A]{fontenc} % пакет для підтримки кирилічних шрифтів
 % \DeclareSymbolFont{T2Aletters}{T2A}{cmr}{m}{it}
@@ -120,6 +119,7 @@
       {\thesection} % указуємо формат власне номера: це буде просто число, без крапки
       {0.5em} % відстань між номером і назвою
       {} % текст, що передує назві
+\titleformat{\paragraph}{\bfseries}{}{}{}
 
 % тепер --- для підрозділу ще нижчого рівня
 \titleformat{\subsection} % указуємо, що модифікуємо саме підрозділ нижнього рівня
@@ -246,7 +246,6 @@
 % задамо відстані між рядками в змісті
 \setlength\cftbeforechapskip{0pt}
 
-\RequirePackage[pdftex]{xcolor}
 % займемося розділами
 % \makeatletter
 % \patchcmd\@chapter{\numberline{\thechapter.}}{\numberline{\thechapter}}{}{}
