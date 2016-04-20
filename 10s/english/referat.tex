@@ -1,0 +1,653 @@
+% vim:spelllang=en
+\documentclass[a4paper,12pt,notitlepage,pdftex]{scrreprt}
+
+\usepackage{cmap} % чтобы работал поиск по PDF
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{concrete}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{subfig}
+
+\pdfcompresslevel=9 % сжимать PDF
+\usepackage{pdflscape} % для возможности альбомного размещения некоторых страниц
+\usepackage[pdftex]{hyperref}
+% настройка ссылок в оглавлении для pdf формата
+\hypersetup{unicode=true,
+    pdftitle={Referat for English},
+    pdfauthor={Michael Pogoda},
+    pdfcreator={pdflatex},
+    pdfsubject={},
+    pdfborder    = {0 0 0},
+    bookmarksopen,
+    bookmarksnumbered,
+    bookmarksopenlevel = 2,
+    pdfkeywords={},
+    colorlinks=true, % установка цвета ссылок в оглавлении
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{multicol}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        Ministry of Education and Science of Ukraine\\
+        National Technical University of Ukraine\\
+        ``Kyiv Polytechnic University''\\
+        \vspace*{2em}
+
+        Department of Applied Mathematics\\
+
+        \vfill
+        \vfill
+        \vfill
+
+        \textbf{Data Mining: a Look Beyond The Tip of The Iceberg}\\
+    \end{center}
+
+    \vfill
+    \hfill\begin{minipage}{0.22\textwidth}
+        Written by\\
+        Mykhailo Pohoda\\
+        Group: KM-31m
+
+        \vspace*{1em}
+        Checked by:\\
+        Mukhanova~O\\
+        \underline{\hspace*{\textwidth}}
+    \end{minipage}
+
+    \vfill
+    \begin{center}
+        Kyiv\\
+        2014
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\chapter{Summary}
+    In first chapter Data Mining is discussed as problem we have to solve nowadays.
+
+    Second chapter describes main characteristics potential customer for data mining is looking for.
+
+    Third chapter discusses various aspects of data mining that need to be addressed by any serious data mining
+    package.
+
+    Fourth chapter is determines classification of data mining problems by Agrawal.
+
+    Fifth chapter provides data mining model which is used by developers.
+
+    Sixth chapter discusses various data mining technologies.
+
+    Seventh chapter compares existing solutions for data mining.
+\chapter{Vocabulary}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item knowledge
+            \item data mining
+            \item implicitly
+            \item clustering
+            \item visualisation
+            \item scalability
+            \item machine learning
+            \item statistics
+            \item efficient
+            \item integrity constraints
+            \item heterogeneity
+            \item complexity
+            \item representation
+            \item uncertainty
+            \item investments
+        \end{itemize}
+    \end{multicols}
+
+\chapter{What is Data Mining?}
+    Over the past two decades there has been a huge increase in the amount of data being stored in databases as well
+    as the number of database applications in business and the scientific domain.
+    This explosion in the amount of electronically stored data was accelerated by the success of the relational model
+    for storing data and the development and maturing of data retrieval and manipulation technologies.
+    While technology for storing the data developed fast to keep up with the demand, little stress was paid to
+    developing software for analysing the data until recently when companies realised that hidden within these masses
+    of data was a resource that was being ignored.
+    The huge amounts of stored data contains knowledge about a number of aspects of their business waiting to be
+    harnessed and used for more effective business decision support.
+    Database Management Systems used to manage these data sets at present only allow the user to access information
+    explicitly present in the databases i.e.\ the data.
+    The data stored in the database is only a small part of the ``iceberg of information'' available from it.
+    Contained implicitly within this data is knowledge about a number of aspects of their business waiting to be
+    harnessed and used for more effective business decision support.
+    This extraction of knowledge from large data sets is called Data Mining or Knowledge Discovery in Databases and is
+    defined as the non-trivial extraction of implicit, previously unknown and potentially useful information from
+    data.
+    The obvious benefits of Data Mining has resulted in a lot of resources being directed towards its development.
+
+    Almost in parallel with the developments in the database field, machine learning research was maturing with the
+    development of a number of sophisticated techniques based on different models of human learning.
+    Learning by example, cased-based reasoning, learning by observation and neural networks are some of the most
+    popular learning techniques that were being used to create the ultimate thinking machine.
+
+    While the main concern of database technologists was to find efficient ways of storing, retrieving and
+    manipulating data, the main concern of the machine learning community was to develop techniques for learning
+    knowledge from data.
+    It soon became clear that what was required for Data Mining was a marriage between technologies developed in the
+    database and machine learning communities.
+
+    Data Mining can be considered to be an inter-disciplinary field involving concepts from Machine Learning, Database
+    Technology, Statistics, Mathematics, Clustering and Visualisation among others.
+
+    So how does Data Mining differ from Machine Learning?
+    After all the goal of both technologies is learning from data.
+    Data Mining is about learning from existing real-world data rather than data generated particularly for the
+    learning tasks.
+    In Data Mining the data sets are large therefore efficiency and scalability of algorithms is important.
+    As mentioned earlier the data from which data mining algorithms learn knowledge is already existing real-world
+    data.
+    Therefore, typically the data contains lots of missing values and noise and it is not static i.e.\ it is prone to
+    updates.
+    However, as the data is stored in databases efficient methods for data retrieval are available that can be used to
+    make the algorithms more efficient.
+    Also, Domain Knowledge in the form of integrity constraints is available that can be used to constrain the
+    learning algorithms search space.
+
+    Data Mining is often accused of being a new buzz world for Database Management System (DBMS) reports.
+    This is not true.
+    Using a DBMS Report a company could generate reports such as:
+    \begin{itemize}
+        \item Last months sales for each service type.
+        \item Sales per service grouped by customer sex or age bracket.
+        \item List of customers who lapsed their insurance policy.
+    \end{itemize}
+
+    However, using Data Mining techniques the following questions may be answered:
+    \begin{itemize}
+        \item What characteristics do my customers that lapse their policy have in common and how do they differ from
+            my customers who renew their policy?
+        \item Which of my motor insurance policy holders would be potential customers for my House Content Insurance
+            policy?
+    \end{itemize}
+
+    Clearly, Data Mining provides added value to DBMS reports and answers questions that DBMS reports cannot answer.
+
+\chapter{Characteristics of a Potential Customer for Data Mining}
+\label{chap:second}
+    Most of the challenges faced by data miners stem from the fact that data stored in real-world databases was not
+    collected with discovery as the main objective.
+    Storage, retrieval and manipulation of the data were the main objectives of the data being stored in databases.
+    Thus most companies interested in data mining poses data with the following typical characteristics:
+    \begin{itemize}
+        \item The stored data is large and noisy.
+        \item Conventional methods of data analysis are not useful due to the complexity of the data structures and
+            the size of the data.
+        \item The data is distributed and heterogeneous due to most of the data being collected over time in legacy
+            systems.
+    \end{itemize}
+
+    The sheer size of the databases in real-world applications causes efficiency problems.
+    The noise in the data and heterogeneity cause problems in terms of accuracy of the discovered knowledge and
+    complexity of the discovery algorithms required.
+
+\chapter{Aspects of Data Mining}
+\label{chap:third}
+    In this section we discuss a number of issues that need to be addressed by any serious data mining package.
+
+    \paragraph{Uncertainty Handling}
+        Nothing is certain in this world and therefore any system that tries to model a real-world scenario must allow
+        a representation for uncertainty.
+        A number of uncertainty models have been proposed in the Artificial Intelligence community.
+        Though no consensus has been arrived at as to which model is best it is recognized that attention must be paid
+        on the selection of a model that is suitable for the problem at hand.
+        Most Data Mining systems tend to employ the Bayesian Probability model though some support for Fuzzy Logic,
+        Rough Sets and Evidence Theory has been shown as well.
+    \paragraph{Dealing with Missing Values}
+        Missing Values can occur in databases due to two reasons:
+        \begin{enumerate}
+            \item a value may not be available at the present time (incomplete information);
+            \item no value may be appropriate due to some other attributes value in the tuple.
+        \end{enumerate}
+        Within the relational model missing values are represented as NULLs.
+        Facilities must be provided to deal with NULL values within a Data Mining system either by filling in these
+        values before the discovery process is undertaken or by taking NULLs into account within the discovery
+        process, perhaps by using a model of uncertainty like Evidence Theory that allows an explicit expression for
+        ignorance.
+        A number of methodologies have been suggested in machine learning literature e.g.\ NULL as an attribute value,
+        using the most common attribute value and decision tree techniques.
+    \paragraph{Dealing with Noisy data}
+        Noise in data in real-world databases are a fact of life.
+        Discovery techniques used for Data Mining therefore need to be able to handle noisy data.
+        As compared to symbolic learning techniques like decision tree induction, Neural Network techniques tend to
+        generalise and learn classification knowledge better in the presence of knowledge.
+        Though a number of techniques based on statistics have been used in machine learning techniques more robust
+        techniques are required in Data Mining for dealing with noise if useful discovery from data is to be
+        performed.
+    \paragraph{Efficiency of algorithms}
+        Machine Learning algorithms though highly sophisticated and general get very inefficient when used for
+        learning from large data sets.
+        In Data Mining the data sets are very large and therefore the need to create new efficient, more specific
+        algorithms is very important.
+    \paragraph{Constraining Knowledge Discovered to only Useful or Interesting Knowledge}
+        From large amounts data an even larger amount of knowledge can be discovered.
+        Therefore what is required is techniques that prioritise the knowledge in terms of its usefulness or
+        interesting to the present needs of the user.
+        At present the uncertainty and support of the knowledge, knowledge about the user domain and some measure of
+        interestingness is used.
+        The measure of interestingness is accepted as being a subjective measure as what is interesting to one user
+        may be of no interest to another.
+        However, some aspects of interestingness can be automated and a number of measures have been suggested e.g.\
+        the J-measure by Smyth and Goodman and Piatetsky-Shapiros measure based on statistical independence.
+    \paragraph{Incorporating Domain Knowledge}
+        Very often some reliable knowledge about he discovery domain may be available to the user.
+        An important question is how to use this knowledge to discover better knowledge in a more efficient way.
+    \paragraph{Size and Complexity of Data}
+        As compared to machine learning problems the data sets in Data Mining are much larger, noisier and incomplete.
+        Also the data used for discovering knowledge in Data Mining was not collected or stored for the purpose of
+        discovery.
+        Most data has been collected over a period of time and lies in different formats in legacy systems.
+        Thus, heterogeneity and distribution of data is of particular interest to Data Mining.
+        Techniques are required for integrating heterogeneous and distributed data.
+    \paragraph{Data Selection}
+        Due to the large amounts of data, efficiency of the Data Mining algorithms is important.
+        One way of improving the efficiency of Data Mining techniques is by reducing the amount of data.
+        A lot of work has been done in Machine Learning with respect to relevance.
+        Similar techniques need to be employed in Data Mining.
+    \paragraph{Understandability of Discovered Knowledge}
+        Knowledge discovered using Data Mining techniques must be in a form that can be understood by the user as in
+        the end of the day a user will only be able to use the knowledge for decision making if he or she is able to
+        understand the knowledge.
+        This is the main failing of Neural Networks as they are unintelligible black boxes.
+        Decision Trees can get very large and opaque when using a large training data set.
+    \paragraph{Consistency between Data and Discovered Knowledge}
+        Data stored in databases may be updated from time to time.
+        Techniques are required for updating the knowledge discovered from the data so that it is consistent with
+        updates made to the data.
+
+\chapter{Classification of Data Mining Problems}
+    Agrawal classify Data Mining problems into three categories.
+
+    \paragraph{Classification}
+        Consider a bank that gives loans to its customers.
+        The bank would obviously find it useful to be able to predict which new customer would be a good investment
+        and which one would not.
+        Using data collected about the previous customers, the bank would like to know the attributes that make a
+        customer a good investment or a bad investment.
+        What is required is a set of rules that partition the data into two exclusive groups --- one of good
+        investments and the other of bad investments.
+        Such rules are called classification rules as they classify the given data into a fixed number of groups.
+        The data on old customers (for whom the group that they belong to is known) is called the training set from
+        which the classification rules are discovered.
+        The classification rules can then be used to discover as to which group a new customer belongs to.
+
+        Two approaches have been employed within machine learning to learn classifications.
+        They are Neural Network based approaches and Induction based approaches.
+        Both approaches have a number of advantages and disadvantages.
+        Neural Networks may take longer to train than a rule induction approach but they are known to be better at
+        learning to classify in situations where the data is noisy.
+        However, as it is difficult to explain why a Neural Network made a particular classification they are
+        dismissed as unsuitable for real Data Mining.
+        Rule Induction based approaches to classification are normally Decision Tree based.
+        Decision Trees can get very large and cumbersome when the training set is large, which is the case in Data
+        Mining, and though they are not black boxes like Neural Networks become difficult to understand as well.
+
+        Both Neural Networks and Tree Induction techniques have been employed for Data Mining as well along with
+        Statistical techniques.
+
+    \paragraph{Association}
+        This involves rules that associate one attribute of a relation to another.
+        For example, if we have a table containing information about people living in Belfast, an association rule
+        could be of the type $$(\text{Age} < 25) \land (\text{Income} > 10000) \Rightarrow (\text{Car\_model} =
+        \text{Sports})$$
+        This rule associates the Age and Income of a person to the type of car he drives.
+
+        Set oriented approaches developed by Agrawal are the most efficient techniques for discovery of such rules.
+        Other approaches include attribute-oriented induction techniques, Information Theory based Induction and
+        Minimal-Length Encoding based Induction.
+
+    \paragraph{Sequences}
+        This involves rules that are based on temporal data.
+        Suppose we have a database of natural disasters.
+        From such a database if we conclude that whenever there was an earthquake in Los Angeles, the next day
+        Mt.~Kilimanjaro erupted, such a rule would be a sequence rule.
+        Such rules are useful for making predictions which could be useful in making market gains or for taking
+        preventive action against natural disasters.
+        The factor that differentiates sequence rules from other rules is the temporal factor.
+
+        Techniques have been developed for discovering sequence relationships using Discrete Fourier Transforms to map
+        time sequences to the frequency domain.
+        This technique is based on two observations:
+        \begin{enumerate}
+            \item for most sequences of practical interest only the first few frequencies are strong;
+            \item Fourier transforms preserve the Euclidean distance in the time or frequency domain.
+        \end{enumerate}
+
+        Another technique uses Dynamic Time Warping, a technique used in the speech recognition field, to find
+        patterns in temporal data.
+
+\chapter{A Data Mining Model}
+    \section{Data Pre-processing}
+        As mentioned in Chapter~\ref{chap:second}, data stored in the real-world is full of anomalies that need to be
+        dealt with before sensible discovery can be made.
+        This Data Pre-processing/Cleansing may be done using visualization or statistical tools.
+        Alternatively, a Data Warehouse may be built prior to the Data Mining tools being
+        applied.
+
+        Data Pre-processing involves removing outliers in the data, predicting and filling-in missing values, noise
+        reduction, data dimensionality reduction and heterogeneity resolution.
+        Some of the tools commonly used for data pre-processing are interactive graphics, holdings and Principal
+        Component Analysis.
+
+    \section{Data Mining Tools}
+        The Data Mining tools consist of the algorithms that automatically discover patterns from the pre-processed
+        data.
+        The tool chosen depends on the mining task at hand.
+
+    \section{User Bias}
+        The User is central to any discovery/mining process.
+        User Biases in the Data Mining model are a way for the User to direct the Data Mining tools to areas in the
+        database that are of interest to the user.
+        User Bias may consist of:
+        \begin{itemize}
+            \item Attributes of Interest in the databases
+            \item Goal of discovery
+            \item A minimum degree of support and confidence in any knowledge discovered
+            \item Domain Knowledge
+            \item Prior Knowledge/Beliefs about the domain
+        \end{itemize}
+
+\chapter{Data Mining Technologies}
+    Various approaches have been used for Data Mining based on inductive learning, Bayesian statistics, information
+    theory, fuzzy sets, rough sets, Relativity strength, Evidence Theory etc.
+
+    \section{Machine Learning}
+        To be able to make a machine mimic the intelligent behaviour of humans has been a long standing goal of
+        Artificial Intelligence researchers who have taken their inspiration from a variety of sources such as
+        psychology, cognitive science and neurocomputing.
+
+        Machine Learning paradigms can be classified into two classes: Symbolic and Non-symbolic paradigms.
+        Neural Networks are the most common non-symbolic paradigm while rule-induction is a symbolic paradigm.
+
+        \subsection{Neural Networks}
+            Neural Networks is a Non-Symbolic paradigm of Machine Learning that finds its inspiration from
+            Neuroscience.
+            The realisation that most Symbolic Learning Paradigms are not satisfactory in a number of domains e.g.\
+            pattern recognition, that are regarded by humans as trivial lead to research into trying to model the
+            human brain.
+
+            The human brain consists of a network of approximately $10^{11}$ neurones.
+            Each biological neurone consists of a number of nerve fibres called \textit{dendrites} connected to the
+            \textit{cell body} where the \textit{cell nucleus} is located.
+            The axon is a long, single fibre that originates from the cell body and branches near its end into a
+            number of strands.
+            At the ends of these strands are the transmitting ends of the synapse that connect to other biological
+            neurones through the receiving ends of the synapse found on dendrites as well as the cell body of
+            biological neurones.
+            A single axon typically makes thousands of synapses with other neurones.
+            The transmission process is a complex chemical process which effectively increases or decreases the
+            electrical potential within the cell body of the receiving neurone.
+            When this electrical potential reaches a threshold value (action potential) it enters it's excitatory
+            state and is said to fire.
+            It is the connectivity of the neurones that give these simple ``devices'' their real power.
+            The figure above shows a typical biological neurone.
+
+            An Artificial Neurone (or processing elements, PE) are highly simplified models of the biological neurone.
+            As in biological neurones an artificial neurone has a number of inputs, a cell body (consisting of the
+            summing node and the Semi-Linear function node in the figure) and an output which can be connected to a
+            number of other artificial neurones.
+
+            Neural Networks are densely interconnected networks of PE's together with a rule to adjust the strength of
+            the connections between the units in response to externally supplied data.
+            Using neural networks as a basis for a computational model has its origins in pioneering work conducted by
+            McCulloch and Pitts in 1943.
+            They suggested a simple model of a neurone that commuted the weighted sum of the inputs to the neurone and
+            output a 1 or a 0 according to weather the sum was over a threshold value or not.
+            A zero output would correspond to the inhibitory state of the neurone while a 1 output would correspond to
+            the excitatory state of the neurone.
+            But the model was far from a true model of a biological neurone as for a start the biological neurones
+            output is a continuous function rather than a step function.
+            The step function has been replaced by other more general, continuous functions called activation functions.
+            The most popular of these is the sigmoid function defined as:
+            $$ f\left( x \right) = \frac{1}{1+e^{-x}} $$
+
+            The overall behavior of a network is determined by its connectivity rather than by the detailed operation
+            of any element.
+            Different topologies for neural networks are suitable for different tasks e.g.\ Hopfield Networks for
+            optimization problems, Multi-layered Perceptron for classification problems and Kohonen Networks for data
+            coding.
+
+            There are three main ingredients to a neural network:
+            \begin{itemize}
+                \item the neurones and the links between them,
+                \item the algorithm for the training phase,
+                \item a method for interpreting the response from the network in the testing phase.
+            \end{itemize}
+
+            The learning algorithms used are normally iterative e.g.\ back-propagation algorithm attempting to reduce
+            the error in the output of the network.
+            Once the error is reduced (not necessarily minimum) the network can be used to classify other unseen
+            objects.
+
+            Though neural networks seem an attractive concept they have a number of disadvantages.
+            Firstly, the learning process is very slow and compared to other learning methods.
+            The learned knowledge is in the form of a network and it is difficult for a user to interpret it (the same
+            is a disadvantage of using decision trees).
+            User intervention in the learning process, interactively is difficult to incorporate which is normally
+            required in Data Mining applications.
+            However, neural networks are known to perform better that symbolic learning techniques in noisy data found
+            in most real-world data sets.
+
+        \subsection{Rule Induction}
+            Automating the process of learning has enthralled AI researchers for some years now.
+            The basic idea is to build a model of the environment using sets of data describing the environment.
+            The simplest model clearly is to store all the states of the environment along with all the transitions
+            between them over time.
+            For example, a chess game may be modelled by storing each state of the chess board along with the
+            transitions from one state to the other.
+            But the usefulness of such a model is limited as the number of states and transitions between them are
+            infinite.
+            Thus, it is unlikely that a state that occurs in the future would match, exactly, a state from the past.
+            Thus, a better model would be to store abstractions/generalizations of the states and the associated
+            transitions.
+            The process of generalization is called Induction.
+
+            Each generalization of the states is called a class and has a class description associated with it.
+            The class description defines the properties that a state must have to be a member of the associated
+            class.
+
+            The process of building a model of the environment using examples of states of the environment is called
+            Inductive Learning.
+            There are two basic types of inductive learning:
+            \begin{itemize}
+                \item Supervised Learning,
+                \item Unsupervised Learning.
+            \end{itemize}
+
+            In Supervised Learning the system is provided with examples of states and class labels for each of the
+            examples defining the class that the example belongs to.
+            Supervised Learning techniques are then used on the examples to find a description for each of the
+            classes.
+            The set of examples is called the training data set.
+            Supervised learning may be classified into Single Class Learning and Multiple Class Learning.
+
+            In Single Class Learning the supervisor defines a single class by providing examples of states belonging
+            to that class (positive examples).
+            The supervisor may also provide examples of states that do not belong to that class (negative examples).
+            The inductive learning algorithm then constructs a class description for the class that singles out
+            instances of that class from other examples.
+
+            In Multiple Class Learning the examples provided by the supervisor belong to a number of classes.
+            The inductive learning algorithm constructs class description for each of the classes that distinguish
+            states belonging to one class from those belonging to another.
+
+            In Unsupervised Learning the classes are not provided by a supervisor.
+            The inductive learning algorithm has to identify the classes by finding similarities between different
+            states provided as examples.
+            This process is called learning by observation and discovery.
+
+    \section{Statistics}
+        Statistical techniques may be employed for data mining at a number of stages of the mining process.
+        In fact statistical techniques have been employed by analysts to detect unusual patterns and explain patterns using statistical models.
+        However, using statistical techniques and interpreting their results is difficult and requires a considerable amount of knowledge of statistics.
+        Data Mining seeks to provide non-statisticians with useful information that is not difficult to interpret.
+        We know discuss how statistical techniques can be used within Data Mining.
+
+        \paragraph{Data Cleansing}
+            The presence of data which are erroneous or irrelevant (outliers) may impede the mining process.
+            Whilst such data therefore need to be distinguished, this task is particularly sensitive, as some outliers
+            may be of considerable interest in providing the knowledge that mining seeks to find: ``good'' outliers
+            need to be retained, whilst ``bad'' outliers should be removed.
+            Bad outliers may arise from sources such as human or mechanical errors in experimental measurement, from
+            the failure to convert measurements to a consistent scale, or from slippage in time-series measurements.
+            Good outliers are those outliers that may be characteristic of the real world scenario being modelled.
+            While these are often of particular interest to users, knowledge about them may be difficult to come by
+            and is frequently more critical than knowledge about more commonly occurring situations.
+            The presence of outliers may be detected by methods involving thresholding the difference between
+            particular attribute values and the average, using either parametric or non-parametric methods.
+
+        \paragraph{Exploratory Data Analysis}
+            Exploratory Data Analysis (EDA) concentrates on simple arithmetic and easy-to-draw pictures to provide
+            Descriptive Statistical Measures and Presentation, such as frequency counts and table construction
+            (including frequencies, row, column and total percentages), building histograms, computing measures of
+            location (mean, median) and spread (standard deviation, quartiles and semi inter-quartile range, range).
+
+        \paragraph{Data Selection}
+            In order to improve the efficiency and increase the time performance of data analysis, it is necessary to
+            provide sampling facilities to reduce the scale of computation.
+            Sampling is an efficient way of finding association rules, and resampling offers opportunities for
+            cross-validation.
+            Hierarchical data structures may be explored by segmentation and stratification.
+
+        \paragraph{Attribute re-definition}
+            We may define new variables which are more meaningful than the previous e.g.\ $\text{Body Mass Index
+                (BMI)} = \text{Weight} / \text{Height}^2$.
+            Alternatively we may want to change the granularity of the data e.g.\ age in years may be grouped into age
+            groups 0--20 years, 20--40 years, 40--60 years, 60+ years.
+
+            Principal Component Analysis (PCA) is of particular interest to Data Mining as most Data Mining algorithms
+            have linear time complexity with respect to the number of tuples in the database but are exponential with
+            respect to the number of attributes of the data.
+            Attribute Reduction using PCA thus provides a facility to account for a large proportion of the
+            variability of the original attributes by considering only relatively few new attributes (called Principal
+            Components) which are specially constructed as weighted linear combinations of the original attributes.
+            The first Principal Component (PC) is that weighted linear combination of attributes with the maximum
+            variation; the second PC is that weighted linear combination which is orthogonal to the first PC whilst
+            maximising the variation, etc.
+            The new attributes formed by PCA may possibly themselves be assigned individual meaning if domain
+            knowledge is invoked, or they may be used as inputs to other Knowledge Discovery tools.
+            The facility for PCA requires the partial computation of the eigen system of the correlation matrix, as
+            the PC weights are the eigenvector components, with the eigenvalues giving the proportions of the variance
+            explained by each PC\@.
+
+        \paragraph{Data Analysis}
+            Statistics provides a number of tools for data analysis some of which may be employed within Data Mining.
+            These include:
+            \begin{itemize}
+                \item Measures of Association and Relationships between attributes, such as computation of expected
+                    frequencies and construction of cross-tabulations, computation of $\chi^2$ statistics of
+                    association, presentation of scatter plots and computation of correlation coefficients.
+                    The interestingness of rules may be assessed by considering measures of statistical significance.
+                \item Inferential Statistics for hypothesis testing, such as construction of confidence intervals,
+                    parametric and non-parametric hypothesis tests for average values and for group comparisons.
+                \item Classification may be carried out using discriminant analysis (supervised) or cluster analysis
+                    (unsupervised).
+            \end{itemize}
+
+    \section{Database Approaches --- Set Oriented Approaches}
+        Set-oriented approaches to data mining attempt to employ facilities provided by present day DBMSs to discover
+        knowledge.
+        This allows the use of years of research into database performance enhancement to be used within Data Mining
+        processes.
+        However, SQL is very limited in what it can provide for Data Mining and therefore techniques based solely on
+        this approach are very limited in applicability.
+        Though these techniques have shown that certain aspects of Data Mining can be performed within the DBMS
+        efficiently, providing a challenge for researchers into investigating how the data mining operations can be
+        divided into DBMS operations and non-DBMS operations to make the most of both worlds.
+
+    \section{Visualisation}
+        Visualisation techniques are used within the discovery process at two levels.
+        Firstly, visualising the data enhances exploratory data analysis.
+        Exploratory Data Analysis is useful for data pre-processing allowing the user to identify outliers and data
+        subsets of interest.
+        Secondly, Visualisation may be used to make underlying patterns in the database more visible.
+        NETMAP, a commercially available Data Mining Tool derives most of its power from this pattern visualisation
+        technique.
+
+\chapter{State of the Art and Limitations of Commercially Available Products}
+    \section{End-User Products}
+        Most end-user products available in the market do not address many of the aspects of data mining enumerated in
+        Section~\ref{chap:third}.
+        In fact, these packages are really machine learning packages with added facilities for accessing databases.
+        Having said that they are powerful tools that can be very useful given a clean data set.
+        However clean data sets are not found in real-world applications and cleansing large data sets manually is not
+        possible.
+
+        In this section we discuss two end-user products available in the UK\@.
+        However, a much larger number of so called ``data mining tools'' exist in the market.
+
+        \subsection{CLEMENTINE}
+            This package supplied by ISL Ltd., Basingstoke, England is a very easy to use package for ``data mining''.
+            The interface has been built with the intention of making it ``as easy to use as a spreadsheet''.
+            CLEMENTINE uses a Visual Programming Interface for building the discovery model and performing the
+            learning tasks.
+
+        \subsection{DataEngine}
+            This package is supplied by MIT GmbH, Germany.
+            It also provides a Visual Programming interface.
+    \section{Consultancy Based Products}
+        \subsection{SGI}
+            Silicon Graphics provide ``Tailored Data Mining Solutions'' which include Hardware support in the form of
+            CHALLENGE family of database servers and software support in the form of Data Warehousing and Data Mining
+            software.
+            The CHALLENGE servers provide unique Data Visualisation capabilities an area that Silicon Graphics are
+            recognised as leaders.
+            The Interface provided by SGI allows you to ``fly'' through visual representations of your data allowing
+            you to identify important patterns in your data and directing you to the next question you should ask
+            within your analysis!
+
+            Apart from Visualisation, SGI provides facilities for Profile Generation and Mining for Association Rules.
+
+        \subsection{IBM}
+            IBM provide a number of tools to give users a powerful interface to Data Warehouses.
+            \subsubsection{IBM Visualizer}
+                Provides a powerful and comprehensive set of ready to use building blocks and development tools that
+                can support a wide range of end-user requirements for query, report writing, data analysis,
+                chart/graph making and business planning.
+
+            \subsubsection{Discovering Association Patterns}
+                IBMs Data Mining group at Almaden pioneered research into efficient techniques for discovering
+                associations in buying patterns in supermarkets.
+                There algorithms have been successfully employed in supermarkets in the USA to discover patterns in
+                the supermarket data that could not have been discovered without data mining.
+
+            \subsubsection{Segmentation or Clustering}
+                Data Segmentation is the process of separating data tuples into a number of sub-groups based on
+                similarities in their attribute values.
+                IBM provides two solutions based on two different discovery paradigms: Neural Segmentation and Binary
+                Segmentation.
+                Neural Segmentation is based on a Neural Network technique called self-organising maps.
+                Binary Segmentation was developed at IBMs European Centre for Applied Mathematics.
+                It is based on a technique called relational analysis. This technique was developed to deal with
+                binary data.
+
+\chapter*{References}
+    \begin{enumerate}
+        \item R.~Agrawal, S.~Ghosh, Imielinski T, Iyer B and Swami A, An interval classifier for database mining
+            applications, Proc of 18th Int'l Conf.\ on VLDB, pp 560--573, 1992.
+        \item Agrawal R, Imielinski T and Swami A, Database mining: A performance perspective, IEEE Transactions on
+            Knowledge and Data Engineering, Special issue on Learning and Discovery in Knowledge-Based Databases,
+            1993.
+        \item R. Agrawal, C. Faloutsos, A. Swami. Efficient similarity search in sequence databases. Proc.\ of the 4th
+            International Conference on Foundations of Data Organisation and Algorithms, 1993.
+        \item R. Srikant, R. Agrawal. Mining Generalized Association Rules. Proc.\ of VLDB95.
+        \item Fast Similarity Search in the Presence of Noise, Scaling and Translation in Time-Series Databases. Pro.\
+            of VLDB95.
+        \item S.\,S. Anand, D.A. Bell and J.G. Hughes, A General Framework for Data Mining Based on Evidence Theory,
+            Provisionally accepted by Data and Knowledge Engineering Journal.
+    \end{enumerate}
+
+\end{document}
