@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1052.3622"
+   height="744.09448"
+   id="svg3996"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="tree.svg">
+  <metadata
+     id="metadata4916">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="1028"
+     id="namedview4914"
+     showgrid="false"
+     inkscape:zoom="0.70623917"
+     inkscape:cx="506.42371"
+     inkscape:cy="362.70998"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3996" />
+  <defs
+     id="defs3998" />
+  <g
+     id="g4000"
+     transform="matrix(0.79921352,0,0,0.8870714,46.726381,11.21967)">
+    <g
+       id="g4002">
+      <rect
+         x="0"
+         y="0"
+         width="1220"
+         height="815"
+         id="rect4004"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(530,7.5)"
+       id="g4006">
+      <g
+         id="g4008">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4010">
+          <g
+             id="g4012">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4014"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4016">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4018"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4020"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(534.4,25)"
+       id="g4022">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="9.6000004"
+         y="11"
+         id="text4024"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вас интересуют</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="26.6"
+         y="25"
+         id="text4026"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">книги для</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="26.1"
+         y="39"
+         id="text4028"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">новичков?</text>
+    </g>
+    <g
+       transform="translate(280,105)"
+       id="g4030">
+      <g
+         id="g4032">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4034">
+          <g
+             id="g4036">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4038"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4040">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4042"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4044"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(284.4,129)"
+       id="g4046">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="11.1"
+         y="11"
+         id="text4048"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вас интересуэт</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="6.0999999"
+         y="25"
+         id="text4050"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">конкретный язык</text>
+    </g>
+    <g
+       transform="translate(880,105)"
+       id="g4052">
+      <g
+         id="g4054">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4056">
+          <g
+             id="g4058">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4060"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4062">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4064"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4066"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(884,129)"
+       id="g4068">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="10"
+         y="11"
+         id="text4070"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вас интересуют</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="20.5"
+         y="25"
+         id="text4072"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">конкретные</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="35"
+         y="39"
+         id="text4074"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">языки?</text>
+    </g>
+    <g
+       transform="translate(530,232.5)"
+       id="g4076">
+      <g
+         id="g4078">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4080">
+          <g
+             id="g4082">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4084"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4086">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4088"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4090"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(534.18182,243.5)"
+       id="g4092">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="9.818182"
+         y="11"
+         id="text4094"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вас интересуют</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="30.318182"
+         y="25"
+         id="text4096"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">книги по</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="11.318182"
+         y="39"
+         id="text4098"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">теоретическим</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="25.318182"
+         y="53"
+         id="text4100"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">аспектам?</text>
+    </g>
+    <g
+       transform="translate(110,232.5)"
+       id="g4102">
+      <g
+         id="g4104">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4106">
+          <g
+             id="g4108">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4110"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4112">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4114"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4116"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(114.4,256.5)"
+       id="g4118">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="5.0999999"
+         y="11"
+         id="text4120"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вы хотите писать</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="35.099998"
+         y="25"
+         id="text4122"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">сайты?</text>
+    </g>
+    <g
+       transform="translate(800,232.5)"
+       id="g4124">
+      <g
+         id="g4126">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4128">
+          <g
+             id="g4130">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4132"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4134">
+              <path
+                 d="m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4136"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4138"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4140">
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4142">
+              <path
+                 d="m 2.4,1.5 0,71.25 114,0 0,-70.5 -112.8,0 z"
+                 id="path4144"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2.4,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 1.25,-0.75 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-3.75 -0.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -2.55,0 z"
+                 stroke-miterlimit="10"
+                 id="path4146"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(804.4,256.5)"
+       id="g4148">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="18.6"
+         y="11"
+         id="text4150"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Gang og four</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="7.5999999"
+         y="25"
+         id="text4152"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">&quot;Patterns in OOP&quot;</text>
+    </g>
+    <g
+       transform="translate(30,357.5)"
+       id="g4154">
+      <g
+         id="g4156">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4158">
+          <g
+             id="g4160">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4162"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4164">
+              <path
+                 d="m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4166"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4168"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4170">
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4172">
+              <path
+                 d="m 2.4,1.5 0,71.25 114,0 0,-70.5 -112.8,0 z"
+                 id="path4174"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2.4,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 1.25,-0.75 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-3.75 -0.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -2.55,0 z"
+                 stroke-miterlimit="10"
+                 id="path4176"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(34.4,381.5)"
+       id="g4178">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="14.6"
+         y="11"
+         id="text4180"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Dare. Thomas</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="8.1000004"
+         y="25"
+         id="text4182"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">&quot;Pragmatic Ruby&quot;</text>
+    </g>
+    <g
+       transform="translate(200,357.5)"
+       id="g4184">
+      <g
+         id="g4186">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4188">
+          <g
+             id="g4190">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4192"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4194">
+              <path
+                 d="m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4196"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4198"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4200">
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4202">
+              <path
+                 d="m 2.4,1.5 0,71.25 114,0 0,-70.5 -112.8,0 z"
+                 id="path4204"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2.4,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 1.25,-0.75 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-3.75 -0.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -2.55,0 z"
+                 stroke-miterlimit="10"
+                 id="path4206"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(204,368.5)"
+       id="g4208">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="30.5"
+         y="11"
+         id="text4210"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">D.Ritchy,</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="16"
+         y="25"
+         id="text4212"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">B.Kernigan &quot;C</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="16.5"
+         y="39"
+         id="text4214"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Programming</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="28"
+         y="53"
+         id="text4216"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">language&quot;</text>
+    </g>
+    <g
+       transform="translate(400,357.5)"
+       id="g4218">
+      <g
+         id="g4220">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4222">
+          <g
+             id="g4224">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4226"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4228">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4230"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4232"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(404.4,375)"
+       id="g4234">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="24.6"
+         y="11"
+         id="text4236"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вы читали</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="18.6"
+         y="25"
+         id="text4238"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">&quot;Конкретную</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="20.1"
+         y="39"
+         id="text4240"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">математику&quot;</text>
+    </g>
+    <g
+       transform="translate(320,477.5)"
+       id="g4242">
+      <g
+         id="g4244">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4246">
+          <g
+             id="g4248">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4250"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4252">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4254"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4256"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(324,508.5)"
+       id="g4258">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="14"
+         y="11"
+         id="text4260"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Понравилось?</text>
+    </g>
+    <g
+       transform="translate(650,357.5)"
+       id="g4262">
+      <g
+         id="g4264">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4266">
+          <g
+             id="g4268">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4270"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4272">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4274"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4276"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(654.4,381.5)"
+       id="g4278">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="35.599998"
+         y="11"
+         id="text4280"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Ищите</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="18.6"
+         y="25"
+         id="text4282"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">прикладные</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="31.6"
+         y="39"
+         id="text4284"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">знания?</text>
+    </g>
+    <g
+       transform="translate(980,232.5)"
+       id="g4286">
+      <g
+         id="g4288">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4290">
+          <g
+             id="g4292">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4294"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4296">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4298"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4300"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(984,256.5)"
+       id="g4302">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="11"
+         y="11"
+         id="text4304"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вас интересует</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="41"
+         y="25"
+         id="text4306"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">С++?</text>
+    </g>
+    <g
+       transform="translate(890,357.5)"
+       id="g4308">
+      <g
+         id="g4310">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4312">
+          <g
+             id="g4314">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4316"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4318">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4320"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4322"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(894,381.5)"
+       id="g4324">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="11"
+         y="11"
+         id="text4326"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Вас интересует</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="38.5"
+         y="25"
+         id="text4328"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Ruby?</text>
+    </g>
+    <g
+       transform="translate(310,75)"
+       id="g4330">
+      <image
+         width="259"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAAA8CAYAAABiit8HAAADJUlEQVR4Xu3bwW0TURAGYHLlAlRAqCB0kFABNIBIB5QQ6IB0ABVABzgd5MAddxC4cGbG2o2XSNysnZHft9JoHQ68ed97/vW8cU4euQgQIBACJxQIECCQAsLAPiBAYCcgDGwEAgSEgT1AgMBewMnAbiBAwMnAHiBAwMnAHiAwusBlADyP+hK19QBx9O1g/iMLbGLy51GvovK13yaMvBvMfWgBYTD08ps8gb2AMLAbCBDYCQgDG4EAAWFgDxAgsBe4i5dPo55F/fIA0dYgMKbAaUz75zT1+y8e+gbimJvBrMcW+BrTfxOV3zG4nCmEwdibwuzHEriI6V5F5f131MuobfcwyM8yZ2Otk9kSOLhAvtnzvZT3DIB8nVcGQf58uxyxy8ng3dRcNp3lIkDg8AIZAp+m2j00rAiDTKT3UddRyybyc8vnqCcP+sqm/0mtw7v4HwkcvUC+h/L9to3aTPf/Tnqtk8G36OB11MeoD1M3mVAZEPP1I168FQJHv0FNsKnAWmFwEfP/PqXUi7jnR4H8Oa8/UY+j7v9goqmVtggctcBaYZCIm6j8K6k8HWQY5EnhZvq3vGdguAgQKBJYMwzyzT6fDnLcfE6Qzwby7lRQtAEMS2AWWDMMlqeD5Qo4FdiPBBoIrB0G8+lgOXWnggYbQQsE1g6Dh6cDpwJ7kEATgYowWJ4OnAqabARtEKgIg/l0kPcMBhcBAg0EqsJgDoFNAwMtECAQAlVhAJ8AgWYCwqDZgmiHQJWAMKiSNy6BZgLCoNmCaIdAlYAwqJI3LoFmAsKg2YJoh0CVgDCokjcugWYCwqDZgmiHQJWAMKiSNy6BZgLCoNmCaIdAlYAwqJI3LoFmAsKg2YJoh0CVgDCokjcugWYCwqDZgmiHQJWAMKiSNy6BZgLCoNmCaIdAlYAwqJI3LoFmAsKg2YJoh0CVgDCokjcugWYCwqDZgmiHQJWAMKiSNy6BZgLCoNmCaIdAlYAwqJI3LoFmAsKg2YJoh0CVgDCokjcugWYCwqDZgmiHQJWAMKiSNy6BZgLCoNmCaIdAlYAwqJI3LoFmAsKg2YJoh0CVwF+oO0A9XHot3QAAAABJRU5ErkJggg=="
+         id="image4332" />
+    </g>
+    <g
+       transform="translate(477.25418,87.25)"
+       id="g4334">
+      <g
+         id="g4336">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4338"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4340"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(610.35281,75)"
+       id="g4342">
+      <image
+         width="359"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWcAAAA8CAYAAAC6hnsNAAADvElEQVR4Xu3cQWoUURAG4GTpQnTvwogH0AMIxr2gnkC9gZ7A8QQewXgCFS8Qb6AHEOPCvYLg1iqYhjjEdGXR1d34NRQTmDddNd80P49mJvt7DgIECBBYnMD+4iYyEAECBAjsCWcXAQECBBYoIJwX+KEYiQABAsLZNUCAAIEFCgjnBX4oRiJAgIBwdg0QIEBggQK74XwYM96N+hh1vMB5jUSAAIH/QmA3nDfxrl9EvYzKvx0ECBAgMIOAcJ4BXUsCBAiMCQjnMSHPEyBAYAYB4TwDupYECBAYExDOY0KeJ0CAwAwCwnkGdC0JECAwJrAbzg/jBW+jjqPujb3Y8wQIECAwjcBuOF+NNidRV6KeRh1N09ZZCRAgQOA8gbN+IfgsXvBq+6JNPL7ZBjZJAgQIEGgS+NfPtzOU88cow/Ep/sjKXfVQTSNqQ4AAgUkFfm7zbdImFz35ef9b43acLHfRjy96UusJECCwUoHjmDtr9n9hUf3HR4cxbIZ13pM+2NZK7Y1NgACBvwQy126dYZIh/XxnV51ZmEc+N+lRDedJh3ByAgQILEAgQ/pO1IdTs/yIv/Oba3lbN4+TqOtRj6LeTTmzcJ5S17kJEFijwFEMnbdzv0Td3AbyjXh8EvU66lvUwdRvTDhPLez8BAisTSCD9+t26O/xeC0qv1q8icpdc8vXjIXz2i4b8xIg0CEw7J4/R7O8H/0+6kHXrjnfoHDu+Jj1IEBgbQKnd885+++oS127ZuG8tsvFvAQIdAoMu+ehZ8u95qGZnXPnR60XAQJrEtjdPbfcaxbOa7pEzEqAwFwC+bW6+1G/oi53DmHn3KmtFwECaxMYds+tu2b3nNd2mZiXAIE5BDbRNKv1sHNu5daMAAECNQHhXHOyigABAq0CwrmVWzMCBAjUBIRzzckqAgQItAoI51ZuzQgQIFATEM41J6sIECDQKiCcW7k1I0CAQE1AONecrCJAgECrgHBu5daMAAECNQHhXHOyigABAq0CwrmVWzMCBAjUBIRzzckqAgQItAoI51ZuzQgQIFATEM41J6sIECDQKiCcW7k1I0CAQE1AONecrCJAgECrgHBu5daMAAECNQHhXHOyigABAq0CwrmVWzMCBAjUBIRzzckqAgQItAoI51ZuzQgQIFATEM41J6sIECDQKiCcW7k1I0CAQE1AONecrCJAgECrgHBu5daMAAECNQHhXHOyigABAq0CwrmVWzMCBAjUBIRzzckqAgQItAoI51ZuzQgQIFATEM41J6sIECDQKvAH2i5CPbuelGAAAAAASUVORK5CYII="
+         id="image4344" />
+    </g>
+    <g
+       transform="translate(767.92641,87.25)"
+       id="g4346">
+      <g
+         id="g4348">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4350"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4352"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(360.35281,175.5)"
+       id="g4354">
+      <image
+         width="234"
+         height="87"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAABXCAYAAAAKwNnlAAAEjklEQVR4Xu2dPW4UQRCF7ZgAMkLMCYCI0MsJ4AYsCTGcwOYEQEjk5QZwApaQjBuwAQkRkBJRT5qWVqtdtxjRPTVvv5ZKHnu80/W+6qee/z09oUEAAukJnKbPkAQhAIETjMoggMAMCGDUGRSJFCGwa9RFIDmP+ByxBg8EIJCDwK5RLyOti4hXEVqmQQACCQhg1ARFIAUI1Ahg1Boh1kMgAQGMmqAIpACBGgGMWiPEeggkIIBRExSBFCBQI4BRa4RYD4EEBDBqgiKQAgRqBDBqjRDrIZCAAEZNUARSgECNAEatEWI9BBIQwKgJikAKEKgRwKg1QqyHQAICGDVBEUgBAjUCGLVGiPUQSEAAoyYoAilAoEYAo9YIsR4CCQjsGvVF5PQ64m2ElmkQgEACAvtexfIp8tKrWBYJ8iMFCEAgCOwa9Vb87edAhhefMUQgkITAPjN+jdzuRTyLWCXJkzQgcNQE9hl1GUSuIjYRDyJ+HTUhxEMgAYFDu7dlVv0wzKyYNUGxSOF4CRwy6lkgkVlvDj9fxs/18WJCOQSmJXDdCaP7wzGqjlfVZFyZVbvEWqZBwJHA74zju3ZmV2eBdT11GXHHsSpogsABAmVi0j0FmpwmbTWjbie3iF8UMq9mWxoEHAlofJe9yKLvTSzo2yMmO1fzL0Z1LAqaIHCIgCalZcTT4R80wz6ayqwYlYEKgesJbJ+rWQ9m7c4Mo3ZHToczJKDd4U2EroJMciMQRp3hqCHlSQhoN7jcCHS3dwYYtTdx+pszAc2quvqhY1XtBndrGLUbajoyILAKDTq5pBuAdCa4W8Oo3VDTkQGBsvv7MbQ86akHo/akTV9zJ7AIAZM8r41R5z50yL8nAYzakzZ9QWAkAYw6Ehwfg0BPAhi1J236gsBIAhh1JDg+BoGeBDBqT9r0BYGRBDDqSHB8DAKtCeg+38cR7yN2jXoWfzsf1jXNg8szTfGycQMCm9BQbhuUnO3rqKv4vcudShjVYCQhoSmBy9j6RcQ6Qg+PF6MuY/lbhF7dopm16UPlGLVpjdm4AYHtR9x0j6++8kXfJKGZVrOpzCszN20YtSleNm5CoMyqesuDHiT/EvGw12wqhhjVZCQhoymB7VlVHf2IuN1rNsWoTWvLxs0IlFm1yOpybFo6Y0Y1G03IaUZAs+r3iBtDD12OTTFqs3qyYWMC70Lb84g/w65v0zO92xyZUY1HFdL+O4FyrKq3O2hXuFvDqN1Q05EJAX1zxCqi22wqbhjVZPQgw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCGBUk0Iiw5sARvWuL+pMCPwFOOGHWGDZPFAAAAAASUVORK5CYII="
+         id="image4356" />
+    </g>
+    <g
+       transform="translate(455.5,199.75)"
+       id="g4358">
+      <g
+         id="g4360">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4362"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4364"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(115.14719,175.5)"
+       id="g4366">
+      <image
+         width="204"
+         height="87"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAABXCAYAAABIg6pyAAAEFUlEQVR4Xu2cgXETMRBFkw6gA9MBVIBTAVABUAF0gKkA6AAqACrAqQCogFABUAHsZ07MOYwHxyNu9bNPMxo7k/Np9VZvNrKtnJ7QIACBgwmcHnwlF0IAAicIwyKAwBUIIMwVYHEpBBCGNQCB/QSeTb963i5BGJYLBPYT+Dn96o8nCMNygQDCsAYg0IUAFaYLRm5ShQDCVMk08+xCAGG6YOQmVQggTJVMM88uBBCmC0ZuUoUAwlTJNPPsQgBhumDkJlUIIEyVTDPPLgQQpgtGblKFAMJUyTTz7EIAYbpg5CZVCCBMlUwzzy4EEKYLRm5ShQDCVMk08+xCAGG6YOQmFQisYpJfon+Nrue/GwfIKqSeOR5DYB0v+hD9PLqeI8wxFHlNGQKbmKnO9Os8v54jTJnUM9FjCOjPsVX0s+hbhDkGIa+pQuBpTPRF9J39iybPHqbKEmCehxJYx4Xau6g9iP5u/kKEORQj1113Ajdigk+ib6aJvopHVZqdNrIwd697hphfOgFJcnvqqiz6WW1noz9qhVHAD6PrcZWOkgAqEngfk34Zfbtv8iNUGFn9dhJlHqfe/6ZB4H8S+B43/zTrF/8aLFsYlUNtsCTNj8lubbI0CRoEhiOQKYwk+Rh9FV3V5H50GU+DwLAEMoV5HVS0Z/kcXZWGBoHhCWQJo6qiT1LVbkW/GJ4UAUIgCGQJ0z5JfRMxPCITEHAhkCWMNvb3oj+Orj/NaBCwIJAljDb72rfcic47YhZLhSBFIEuYv06ykQ4IOBBAGIcsEeMwBBBmmFQQiAMBhHHIEjEOQwBhhkkFgTgQQBiHLBHjMAQQZphUEIgDgaWEaafZdIpNX7Ccv618+XcO3IixKIGlhGmf7LeTbHNhNsFe/85Gh3f0jWUaBIYlsJQw6yCgcy+qLvqy5beJyM141JcwVWXOom+HJUVgEAgCSwkj2JJB5/RVZVRR1NpznYeRVDQIDE1gSWEkRKsy7Z8NqOJQXYZeIgQ3J7CkMPMqM4+B6sKatCGwtDCtyswBsXexWS4EurQwl6sM1YU1aEUgQ5h5laG6WC0Xgs0QplUZPfLOGGvQikCWME2UrRUtgi1PIEuY8uAB4EkAYTzzRtRJBBAmCTzDehJAGM+8EXUSAYRJAs+wngQQxjNvRJ1EAGGSwDOsJwGE8cwbUScRQJgk8AzrSQBhPPNG1EkEECYJPMN6EkAYz7wRdRIBhEkCz7CeBBDGM29EnUQAYZLAM6wnAYTxzBtRJxFAmCTwDOtJAGE880bUSQQQJgk8w3oSQBjPvBF1EgGESQLPsJ4EEMYzb0SdRABhksAzrCcBhPHMG1EnEUCYJPAM60kAYTzzRtRJBBAmCTzDehJAGM+8EXUSAYRJAs+wngQQxjNvRJ1E4Be8lWRY6At4MAAAAABJRU5ErkJggg=="
+         id="image4368" />
+    </g>
+    <g
+       transform="translate(223.64719,199.75)"
+       id="g4370">
+      <g
+         id="g4372">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4374"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4376"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(560,78)"
+       id="g4378">
+      <image
+         width="60"
+         height="184"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAC4CAYAAAC/3Y+8AAACmUlEQVR4Xu2V0U0DMRAFLxVAAXzQCaEEOqEDkg7oJCUAnfBBAVAB7Eo2svzvWcTNSZYIoNvsvLl3h21n12Fn+24u/N8Tr0r4FGC/45xpwFUL57J54fPxgW1RF6bUNmGItEpDoPmWtLSoaKvegyZswmsJ+B5ey/f37r6HIdC+hynQKk2RtqUh0ioNgbalKdAqTZG2pSHSKg2BtqUp0CpNkbalIdIqDYG2pSnQKk2RtqUh0ioNgbalKdAqTZG2pSHSKg2BtqUp0CpNkbalIdIqDYG2pSnQKk2RtqUh0ioNgbalKdAqTZG2pSHSKg2BtqUp0CpNkbalIdIqDYG2pSnQKk2RtqUh0ioNgbalKdAqTZG2pSHSKg2BtqUp0CpNkbalIdIqDYG2pSnQKk2RtqUh0ioNgbalKdAqTZG2pSHSKg2BtqUp0CpNkbalIdIqDYG2pSnQKk2RtqUh0ioNgbalKdAqTZG2pSHSKg2BtqUp0CpNkbalIdIqDYG2pSnQKk2RtqUh0ioNgbalKdAqTZG2pSHSKg2BtqUp0CpNkbalF5K+jnt/tvvPSo9/W/gVNqy0HmOLpzgPcV7jjAsf4/MlzjnO89Jt4+aU0qe2cC57Py2cv7trC+f/Lb2ohVPZ9zhXbeGXtlUunz9/xbmN05VftjS1cC4wpnxsG72R6eZMcuEx5TFBLF164THlceEsq+XPbh9IJpwz55TRdCsSnlNG061aOFP+aIrdEM08Pj+00n12f2axZ7fqGe5zM+W8lr93x3SrlJ6/A/q5Sml0yb/wDLswRUClKdJVc0y4ijw114Qp0lVzTLiKPDXXhCnSVXNMuIo8NdeEKdJVc0y4ijw114Qp0lVzTLiKPDXXhCnSVXNMuIo8NXd3Cf8AUHmwuevfaP4AAAAASUVORK5CYII="
+         id="image4380" />
+    </g>
+    <g
+       transform="translate(563.5,151)"
+       id="g4382">
+      <g
+         id="g4384">
+        <rect
+           x="-2"
+           y="-3"
+           width="57"
+           height="18"
+           id="rect4386"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4388"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">не важно</text>
+    </g>
+    <g
+       transform="translate(60,303)"
+       id="g4390">
+      <image
+         width="89"
+         height="84"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABUCAYAAADplZtxAAADCklEQVR4Xu3agTEDQRQGYKmAAsygAyogHdBBVEAHogJUgAroQFRAB2JGAVTA+81uZl0Sz3h7bzc7/83s3GHz9vbz8u5uk8Eat94FBr2PwAHWiOyQBEQmsoNA/iFGEnJL2q20KcIzk/MjTyTkvrShNBwTOb/xNyyRe4BNQxK5Z2CEJzKRHQQchmAmE9lBwGEIZjKRHQQchmAmE9lBwGEIZjKRHQQchmAmOyA/yRi70vakPWM8LnXmV/8MIWe2RCZyfoGeI6JMoFy8StuOYzGT86qfSrgLafjoaUTkvLgx2kvI4GPZ3xA5P3LM4h+lgncX+aBRGq5DuCPZ36ehWZNt0Afy8hNphyHMuezH3ZA1IuOqjO8tYAK1bjg33ElshBP8kD3KxawO15jJOFlkBN52QF6VDfUXsJfS3peddA2ZjKy462QFHkcnFUvj3KahqadZGhmZGy8Yj3I8rhxXBV3UoSQyatpDyOCFF4x/zajCF5VEBjBKxY+nowqNzKdUCjk+4+OqvP3bRcM8wwoClEJG7T2TdiUNtz5Nb6WQJ6KKbz7OPR21qF0KOS6k7AjqtEXYdE6lkOc+PWgZmsgO/10iE9lBwGEIZnJjyFhpiytV3Qtf+jeHafsO4ZXJeODAwwfui3GPnCIfyM9YhcP6BZYMm9u8kMcBGcDDDjJ+hweTZheJvJBRDqbS1gMyFoewARzHTa9heCEDNM1mlAhsWENuOosxSU/kNJvTutt0Fnsjp9mcIjdbi+MkPTMZY3azufksLpHJ3WxuPotLISOb38JbaVP2Sz9KT2vKKh97l4tohTuNmNWr7Pency+FHL9503wWlyoXf/rvt9SpVCa3ZKjOhcgqkb0Dke2GagQiq0T2DkS2G6oRiKwS2TsQ2W6oRiCySmTvQGS7oRqByCqRvQOR7YZqBCKrRPYORLYbqhGIrBLZOxDZbqhGILJKZO9AZLuhGoHIKpG9A5HthmoEIqtE9g5EthuqEYisEtk7ENluqEYgskpk70Bku6Eagcgqkb0Dke2GagQiq0T2Dl8zuXRVFYXYGgAAAABJRU5ErkJggg=="
+         id="image4392" />
+    </g>
+    <g
+       transform="translate(111.07359,326)"
+       id="g4394">
+      <g
+         id="g4396">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4398"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4400"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(190.35281,303)"
+       id="g4402">
+      <image
+         width="99"
+         height="84"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABUCAYAAACWRImAAAADXUlEQVR4Xu2bPXLUQBSE7RNgIsiwT4CJCBExgeEELLEjIkKWkAhc5Zz1CbATUtYhGTdgQ5z5BtCNZ8prScs81lJLxfZUvVqVZqQe9ac3o7/d3nIZjQPbo+mJO7JlGCM6CQxjxDAq9O0J4hwxH1E/N6Ir9cyY4qjfIt4huOwidMAwhGaXpAyj5JCw3jCEZpekDKPkkLDeMIRml6QMo+SQsN4whGaXpAyj5JCw3jCEZpekDKPkkLDeMIRml6QMo+SQsN4whGaXpAyj5JCw3jCEZpek6jAm2OAT4gTBZRehA3UYFbS/Ir4jHgn7YSk40PYO/Fdy5i5+L+2SzoE2GKeQP0D41auOwx+lNhh5qGJWPE1Dlrhbmym36lOdGex4mUC8MhDNybEKxg7k54iHad74iN8jzyH9QvnbR2wEQgjMkFx4lbX4DzKFx8Dg92GjKZEvCiv0dlKDMpoD6KAjvGCZIc462NetdhGBsSxAMMyY/VupDr/xbjoGDsO5zLHwAjHY5fy/whjexm57wBOLWT9F3Ekg9oYCsukwMtrlC5bBnj4YxnWmEQhBPEDwcn7WbRKW92YYNz3ikMUHpQsEhytpMYym3ZzAOX8QBqHIimE0rc7P5uRDlWE0YUyxapD/qBiGYciG4XWEnmOjzwjekXNZVpwZTasrrOLbTj634rKsGIZhyE62dYScGeu41tM2htGTsZHd8jHIhzQ/8EavDmOGdXxE8hrBxyW9Fc8ZV9YukuG80eNynsAnWP6R3O/9jtwwrpym6fmZFIFkGATDN50nqU1vWcEdG8a1vTk73mPVG8Q3xGNVVhjGzfM8Z8dPrL6PuEDcU2WFYTQHnZwdyzW9zxVZzMNUe3bktZK5wjBWT8Ucpjg8sciywsNUO5BDrD5GfEE8W82s+xoPU+2ecu6oEPyVFcNot3pXDcLDlOycjwk5M2I+SVoZhsTmmIhhxHyStDIMic0xEcOI+SRpZRgSm2MihhHzSdLKMCQ2x0QMI+aTpJVhSGyOiRhGzCdJK8OQ2BwTMYyYT5JWhiGxOSZiGDGfJK0MQ2JzTMQwYj5JWhmGxOaYiGHEfJK0MgyJzTERw4j5JGllGBKbYyKGEfNJ0sowJDbHRAwj5pOklWFIbI6JGEbMJ0krw5DYHBP5DYyIf1XkybXSAAAAAElFTkSuQmCC"
+         id="image4404" />
+    </g>
+    <g
+       transform="translate(193.42641,326)"
+       id="g4406">
+      <g
+         id="g4408">
+        <rect
+           x="-2"
+           y="-3"
+           width="72"
+           height="18"
+           id="rect4410"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4412"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет/не знаю</text>
+    </g>
+    <g
+       transform="translate(430,303)"
+       id="g4414">
+      <image
+         width="139"
+         height="84"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAABUCAYAAACyccQFAAADT0lEQVR4Xu2cgW3UMBSG2wlgACSODcoEXDeADY4J6AY9JgAmoEwAG3CdADbgKnUAOgG8X7JRmia9Xydhx/IX6SnX5p3ifPn07NhpT0/YIGASODXzSIPACbIggU0AWWxUJCILDswR2MSB5xFfIvZKQhZkmSOwiwOvIs4j9BlZcGWWALIgh00AWWxUJCILDtgEkMVGRSKy4IBNAFlsVCQiCw7YBJDFRkUisuCATQBZbFQkIgsO2ASQxUZFIrLggE3gR2SeRbyM+Klv8YqCza67xD/piv85gizdOWBfMLLYqPpOVPejbugmYpVRUFn6lmLu6i/iwIcIvVK5QRYkeYzAr1RR3sb+ClmQ5VBVudcF8TSEMGMC6nI+p1++if23YQJjFoQRgXXEu4jXCcf72G/HaJYoyyoaqb9X0QWw/V8CYqwnn6fpNHex1+D2auq0S5FFjZXZmwjJwlaWgMYnEuRjxO+5Uy9BFtn9dWS3ppd3ZXl1eTYx3qc4CKC2LKokeUB1HZ+3SHLwnlVLqCmL+srvqaJMDqiqUeHEkwRqyiJR1AXdmyXkPi2XQC1Z8tqDRt+riNlB1XLR9deyWrJobHIZ8SlCj2psDRCoJcsu2OjfOTyYJWyAWbdNrCVLXqh6EeT33dJv7MJryfLgxZrGuHXZXGTp8rYfd9HIchy3Lr+FLF3e9uMuGlmO49blt0rKopXlPPk2HuAOj3V5I1q46FKyaOJNk3CaV9Ecy1CWdfysVWetD2mJnG2hBErJsk2ySJTzkSz6nSboWExcqCS5WaVkUTezj3iSZNEiojaJo8+sES1cFDWvlCw617C6rBMbvcNCVWlAlNKyDKvLEA9VBVkmCeTqMjzIWAVZJgmMqwtVpRFRSndDGcuwulBVkOVRAqoutynjWex5S64RYUo+DQ2RqLrkJ6RGUNHMWrLkv4CjqjTkYC1ZGkJEUzMBZMEFmwCy2KhIRBYcsAkgi42KRGTBAZsAstioSEQWHLAJIIuNikRkwQGbALLYqEhEFhywCSCLjYpEZMEBmwCy2KhIRBYcsAkgi42KRGTBAZsAstioSEQWHLAJIIuNikRkwQGbALLYqEhEFhywCSCLjYpEZMEBmwCy2KhIRBYcsAkgi42KxL/76nRVL3zMQgAAAABJRU5ErkJggg=="
+         id="image4416" />
+    </g>
+    <g
+       transform="translate(506.07359,326)"
+       id="g4418">
+      <g
+         id="g4420">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4422"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4424"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(610.35281,303)"
+       id="g4426">
+      <image
+         width="129"
+         height="84"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAABUCAYAAAClU1TMAAADoklEQVR4Xu2cPY4TQRSEvScAIsh2OQEQETIbEwAnwMRERISYkAiQyPGeAEhIMSEZN8AhZNwAqtC0ZBl7a2ype+z3qqUnj5jn6XlV33a354eTiVt6BU7SK2ABJobAEBgCMzD5D4IOotxDfEUsLFAOBdangxnKfoF4ieC2WwIFDEECk1WJhkAplGC/IUhgsirRECiFEuw3BAlMViUaAqVQgv2GIIHJqkRDoBRKsN8QJDBZlWgIlEIJ9huCBCarEg2BUijBfkOQwGRVoiFQCiXYbwgSmKxKXIdgii+8R1wguO2WQIF1CDrU/AXxHXEnQf0uEQpsetD0T6/MNXz+tkrxFdgEwUeU/QDhR8zi+/+vwk0QlCmBo8B5PzUkkSNnmdveO5hDjsc9AE8MQmw4tkFwFWUvELf6dcEbfL71GiEmDJe9gUQQaD5HhNL4q2HpkWFvGKgdg+91HEwb8hpah7OdrsFwMAUc8YlwAT5HfBq7hiEQrJ4jgeAIcXvsEz/S/s967TjNlrbAxiPEaD/Hd4XgSLU/uNPmHxJH1xniSg/AzbFAMATj8rG6AB/tKq0hGBcC9k4QCMApgj/H561PyRC0Vnxzf5waeONuieC00LQZgqZyX9oZF4ZcHxACwtCsGYJmUsuOyj2b5lOCIZDeNEuYoadR/m8IQ9DMY9mRIZASxU94iBI/IHgFkdvNmkeCZlLLjjpk8Kku3lfgdrNmCJpJLTsyBFKi+AmGIL7HskJDICWKl8DLxa/7+Z8XiNYhmOPfeCn5GYKXlas1rwmqSTvowMveaF4g4nZZGE6x/aM/QvUriIZgkFfVkmh2uWdAEAoEBIJPdF0gmFO1GYKq8g46eBkNXiH7OeIb4m6rUYD9GIJBPlVNKqPBT/RyA/ELcb3VKGAIqnq708HLaLD6peprgdKZR4KdvKqWXEaD0kGTtYAhqObn3gfmdMBpgK3ZKODpYG+/qnzxKY76DvEZcb9KD1sO6umgpdq6L64NOgQ/mzVD0EzqQR2dtQbA08EgX+IneSSI77Gs0BBIieInGIL4HssKDYGUKH6CIYjvsazQEEiJ4icYgvgeywoNgZQofoIhiO+xrNAQSIniJxiC+B7LCg2BlCh+giGI77Gs0BBIieInGIL4HssKDYGUKH6CIYjvsazQEEiJ4icYgvgeywoNgZQofoIhiO+xrNAQSIniJxiC+B7LCg2BlCh+giGI77Gs0BBIieInGIL4HssKDYGUKH7CXwzrf1VSkyMfAAAAAElFTkSuQmCC"
+         id="image4428" />
+    </g>
+    <g
+       transform="translate(652.92641,326)"
+       id="g4430">
+      <g
+         id="g4432">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4434"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4436"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(830,175.5)"
+       id="g4438">
+      <image
+         width="89"
+         height="87"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABXCAYAAABvAenfAAACz0lEQVR4Xu2b/zFDQRSFpQMqEB1QgaiADkQFqEBUgApQASoQFaAC6QAVcI7ZzWx+8EfsO/uyOTtz5z2TsXf3e9/ct9mls+bWOIFO4xmcYM2QBRIYsiELCORP0UeXm4hbxIjd2+T8kIfochexh+C9Iedn/APWkBsAm3ZpyA0DZveGbMgCAoIUNtmQBQQEKWyyIQsICFLYZEMWEBCksMmGLCAgSGGTDVlAQJDCJgsgf4Uc4716b9rnp27I+ZlO9NjFT2+IT8R6/MQm56XeR3fXiAfEgSHnhRt7e8RND3GKuDTk/JAJl5BZKlg2Pgw5L+TtAJh1+BwxSLt3Tf4fbEI9DFB5P1GLl8FkHqu3tbE00F5e4yqCf8xykpaJNkLmgGkFr6xpy9KegsnD3wbchnJBE+4C3HScHHxbG4GOEPH65zhLQ05fGHwrc9lzj3hpK91FxlUSMg1+DqWB1nLxPl72LDKZtv5OScg3gMIa/Iqg0dW2UpC7IMrv+Gxbob4ZcmYCXOpcILjs6Wfuu3XdlTKZL7d9xBGCZaPqVgoyX3iswzuIqlYS82wpBXlmY7tmlQ1Z8HQN2ZAFBAQpbLIhCwgIUtjkiiBzM+gYcYXgJlC6hJv+TDBtbQqVyfEbXjz/SiEPMOUzxNyjGy2OZrKpIPcwfJ7k0mJuCL2H6Wzgyo0i2jz+N9lmplquVxVkznCI4Lkdbaa5bPGe+8l8EFU2JeTU5nj4SLOrtpjWKCGnNqfGVm1xCcjR5hRytbU4TlJt8rTN1VtcwmTmTG2u3uJSkKPNEXiVK4p0UiXKRQp3WD3hAquLVWA6M8dSJq8UbEMWPG5DNmQBAUEKm2zIAgKCFDbZkAUEBClssiELCAhS2GRDFhAQpLDJhiwgIEhhkw1ZQECQwiYbsoCAIIVNNmQBAUEKm2zIAgKCFDbZkAUEBClssiELCAhS2GRDFhAQpLDJAsjfNiJ1WNma4+YAAAAASUVORK5CYII="
+         id="image4440" />
+    </g>
+    <g
+       transform="translate(878.07359,199.75)"
+       id="g4442">
+      <g
+         id="g4444">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4446"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4448"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(960.35281,175.5)"
+       id="g4450">
+      <image
+         width="109"
+         height="87"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAABXCAYAAAAOGcudAAADj0lEQVR4Xu2bPa7TUBCF36uoELACQkUJrIBQ0SAhSirCDmAFhBWgtwJCRYtERUXeDmipeKwACho6zpFsybLyuPZlcjzGZ6RRbuLcmfH5PL52fk5PbLNT4HR2FbvgE0Ob4UFgaP8BtDX24T78HL6f4f4souR+p22x16/gr+Ec2xIqYGgJoZRKMrSSQgm3G1pCKKWSDK2kUMLthpYQSqkkQysplHC7oSWEUirJ0EoKJdxuaAmhlEoytJJCCbcbWkIopZIMraRQwu2GlhBKqSRDKymUcLuhJYRSKsnQSgol3N6H9gI1voGfwTm2JVSgD22NGj/D+XMDjm0JFehDu44afzR1+kc/CYGxpENgvuD1O/Dn8F3Suhdd1iFoGyjyFn4Bvwf/uWiFEu78ZafAtts+NB1ncIngXQZthRoJ7lrz+BKP+0R1L7qUv11s3G3WNK5vNEIkOJ42OV6CfW/2N9W+lq4QeTXJ+7UN/GaqyrXF8GDlUvEOPvlSUYLWlWaNJ3SCZBcuwVYHDtYtXuMvsCezMdAmK3LixDxIebDybPO4qYWd92CqugxtnPKEx9MkL9B2cN7Lys3QxkvOpYGdRnDsNo6lZmh1cm8xjf8umuQ0aWh10Lqf0d5ACOkVpaHVQeMsdhn/gPkEznVOZoZWL3V7iuTlP8cyM7R6qQ2tXrvJZm6Qmd+G8FMSjmXmTquXeo2pk3zLb2iGVq/ADGe60wxtuAI+PQ7Xqv9Od1q9dtKZK2QjrF3z2L0Q4eu0/bErcqcNV7j70dUtTCPALrQLPOcXxUf/hMTQhkPjO9lhz+C8N+O4hcYx79n48wTCPKoZ2jh5CeRbM+UpHt/DzxtQ7DJ+v0aARzVDGy9v222fMPUh/Cv8tqrLWK6hjYfW7TbO/g2/ouoyQxsPrJ3Rdlv7XLKWtcncaXXg+t0mWcsMrQ5Wd9ZHPHkE/wW/+u/hhkdwpw3Xqv/OttukXeY1rR5YO3OLAV1q7jSp3DHJDC1GR2kUQ5PKHZPM0GJ0lEYxNKncMckMLUZHaRRDk8odk8zQYnSURjE0qdwxyQwtRkdpFEOTyh2TzNBidJRGMTSp3DHJDC1GR2kUQ5PKHZPM0GJ0lEYxNKncMckMLUZHaRRDk8odk8zQYnSURjE0qdwxyQwtRkdpFEOTyh2TzNBidJRGMTSp3DHJDC1GR2kUQ5PKHZPM0GJ0lEYxNKncMckMLUZHaZQ/yhN/WPXZq8EAAAAASUVORK5CYII="
+         id="image4452" />
+    </g>
+    <g
+       transform="translate(995.92641,199.75)"
+       id="g4454">
+      <g
+         id="g4456">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4458"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4460"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(920,303)"
+       id="g4462">
+      <image
+         width="99"
+         height="84"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABUCAYAAACWRImAAAAC7ElEQVR4Xu2ajU0cMRSEjwqgAKRAB6SCQAehA6gg6SCXCkIqSFJB6ICjAuiAi5QCkgqSN5GNzHJwUpD85s7fStYuvx7P53ne9e3OjMPGgR0bJQiZAcNoEgADGEYO5Ek5i65fRfsWbSkZJCMPxiK6fhPtJJqugZHH4h8AYCQCaLsGhgkIyQAGMIwcMJJCMoBh5ICRFJIBDCMHjKSQDGAYOWAkhWQAw8gBIykkwwjGTWg5ivY62q10sYWeR+dP6fqeATCAkeeASc8qTypTP6IdVE0kI4fO++j2UzR95HoGjBwItde7kojzOH8FRh6MmooHJYq7qf5AVJK+lG5P43zZSmDN6APkOLp5F+1t6e5jnOfTrh1h6O5C7xNpAJt+aAy6c9orA/kdZ5Wp+3XCMRkSq5mjGAvGth1aHwTgItqvpwbnkAzNnu+T2aPtgcUWENEYlqWtHU42DCWhLmjXcT3fEghrjV/1C5kwVEuvSiJWLmj/NaIN/qNMGAKhEvXgKXSDvXyx9CwYdW9GdxcHzy1qLx7hBv2DLBhaGz5E+xxNt3oc4UAWjEX0rTewHz2FjkwlC0bdKDsM85cjA2jHngXj0adcAMkrU8BYMftIhlEkgQGMGWUquUxpZ7buWE5htD8zmqt9pfQqU3qw00Oeniv0jNHCOI6vtWur/SltMQ979IIxLzAE4mQCQ9/TA+Dwm4W9YKgMLaPtFhjaJNQhMLpmjypM6AVDxrfpUGnSoc8wSEUxoyeMNh3tukAqEmC06WhhDL9WVDN6JkN9TtNBKppp2RvGNB2kIhmG0vGzaNiP85OvrrS1bITrjGTUdLTnEbxeO8YsGPUNO1KRXKbWzpBRfyErGaP6/ey4gWE0LYABDCMHjKSQDGAYOWAkhWQAw8gBIykkAxhGDhhJIRnAMHLASArJAIaRA0ZSSAYwjBwwkkIygGHkgJEUkgEMIweMpJAMYBg5YCSFZADDyAEjKSQDGEYOGEkhGcAwcsBIyl+O83RV1gFMZQAAAABJRU5ErkJggg=="
+         id="image4464" />
+    </g>
+    <g
+       transform="translate(973.07359,326)"
+       id="g4466">
+      <g
+         id="g4468">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4470"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4472"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(210,600)"
+       id="g4474">
+      <g
+         id="g4476">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4478">
+          <g
+             id="g4480">
+            <path
+               d="m 10,0 80,0 q 10,0 10,10 l 0,80 q 0,10 -10,10 l -80,0 Q 0,100 0,90 L 0,10 Q 0,0 10,0 z"
+               id="path4482"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4484">
+              <path
+                 d="m 10,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 id="path4486"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:none" />
+              <path
+                 d="m 10,0 m 0,0 100,0 q 10,0 10,10 l 0,55 q 0,10 -10,10 L 10,75 Q 0,75 0,65 L 0,10 Q 0,0 10,0 z"
+                 stroke-miterlimit="10"
+                 id="path4488"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(214.4,624)"
+       id="g4490">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="17.6"
+         y="11"
+         id="text4492"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Упражнения</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="31.1"
+         y="25"
+         id="text4494"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">делали?</text>
+    </g>
+    <g
+       transform="translate(1100,357.5)"
+       id="g4496">
+      <g
+         id="g4498">
+        <g
+           transform="scale(1,0.75)"
+           id="g4500">
+          <g
+             id="g4502">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4504"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4506">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4508"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4510"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4512">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4514">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4516"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4518"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(1104,368.5)"
+       id="g4520">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="7.5"
+         y="11"
+         id="text4522"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Alexandrescu</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="29"
+         y="25"
+         id="text4524"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">&quot;Meta-</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0.5"
+         y="39"
+         id="text4526"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">programming in</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="32.5"
+         y="53"
+         id="text4528"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">C++&quot;</text>
+    </g>
+    <g
+       transform="translate(840,477.5)"
+       id="g4530">
+      <g
+         id="g4532">
+        <g
+           transform="scale(1,0.75)"
+           id="g4534">
+          <g
+             id="g4536">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4538"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4540">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4542"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4544"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4546">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4548">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4550"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4552"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(844,501.5)"
+       id="g4554">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="7.5"
+         y="11"
+         id="text4556"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">T.Pope &quot;Ruby</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="11.5"
+         y="25"
+         id="text4558"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">and Beyond&quot;</text>
+    </g>
+    <g
+       transform="translate(980,477.5)"
+       id="g4560">
+      <g
+         id="g4562">
+        <g
+           transform="scale(1,0.75)"
+           id="g4564">
+          <g
+             id="g4566">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4568"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4570">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4572"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4574"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4576">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4578">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4580"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4582"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(984,501.5)"
+       id="g4584">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="12"
+         y="11"
+         id="text4586"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">&quot;Real World</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="23"
+         y="25"
+         id="text4588"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Haskell&quot;</text>
+    </g>
+    <g
+       transform="translate(720,477.5)"
+       id="g4590">
+      <g
+         id="g4592">
+        <g
+           transform="scale(1,0.75)"
+           id="g4594">
+          <g
+             id="g4596">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4598"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4600">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4602"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4604"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4606">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4608">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4610"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4612"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(724,495)"
+       id="g4614">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="8"
+         y="11"
+         id="text4616"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">F.Brooks The</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="9.5"
+         y="25"
+         id="text4618"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Mythical Man-</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="29.5"
+         y="39"
+         id="text4620"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Month</text>
+    </g>
+    <g
+       transform="translate(599,477.5)"
+       id="g4622">
+      <g
+         id="g4624">
+        <g
+           transform="scale(1,0.75)"
+           id="g4626">
+          <g
+             id="g4628">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4630"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4632">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4634"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4636"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4638">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4640">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4642"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4644"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(603,508.5)"
+       id="g4646">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1"
+         y="11"
+         id="text4648"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Aho &quot;Compilers&quot;</text>
+    </g>
+    <g
+       transform="translate(110,720)"
+       id="g4650">
+      <g
+         id="g4652">
+        <g
+           transform="scale(1.2,0.75)"
+           id="g4654">
+          <g
+             id="g4656">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4658"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4660">
+              <path
+                 d="m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4662"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 120,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4664"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4666">
+            <g
+               transform="scale(0.83333333,1.3333333)"
+               id="g4668">
+              <path
+                 d="m 2.4,1.5 0,71.25 114,0 0,-70.5 -112.8,0 z"
+                 id="path4670"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2.4,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 1.25,-0.75 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-3.75 -0.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -2.55,0 z"
+                 stroke-miterlimit="10"
+                 id="path4672"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(114.4,744)"
+       id="g4674">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="15.1"
+         y="11"
+         id="text4676"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">D.Knuth &quot;Art of</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="15.6"
+         y="25"
+         id="text4678"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Programming&quot;</text>
+    </g>
+    <g
+       transform="translate(330,720)"
+       id="g4680">
+      <g
+         id="g4682">
+        <g
+           transform="scale(1,0.75)"
+           id="g4684">
+          <g
+             id="g4686">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4688"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4690">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4692"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4694"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4696">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4698">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4700"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4702"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(334,744)"
+       id="g4704">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="14"
+         y="11"
+         id="text4706"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Sedgewich</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="12.5"
+         y="25"
+         id="text4708"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">&quot;Algorithms&quot;</text>
+    </g>
+    <g
+       transform="translate(440,720)"
+       id="g4710">
+      <g
+         id="g4712">
+        <g
+           transform="scale(1,0.75)"
+           id="g4714">
+          <g
+             id="g4716">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4718"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4720">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4722"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4724"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4726">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4728">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4730"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4732"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(444,744)"
+       id="g4734">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2.5"
+         y="11"
+         id="text4736"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">N/Virth &quot;Struct +</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="10.5"
+         y="25"
+         id="text4738"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">Algs = Progr&quot;</text>
+    </g>
+    <g
+       transform="translate(490,477.5)"
+       id="g4740">
+      <g
+         id="g4742">
+        <g
+           transform="scale(1,0.75)"
+           id="g4744">
+          <g
+             id="g4746">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path4748"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4750">
+              <path
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path4752"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 100,0 q 0,0 0,0 l 0,75 q 0,0 0,0 L 0,75 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path4754"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+          <g
+             id="g4756">
+            <g
+               transform="scale(1,1.3333333)"
+               id="g4758">
+              <path
+                 d="m 2,1.5 0,71.25 95,0 0,-70.5 -94,0 z"
+                 id="path4760"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:#000000;fill-opacity:0;stroke:none" />
+              <path
+                 d="m 2,1.5 m 0,0 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0,2 0,4 m 0,0 m 0.75,1.25 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 m 2,0 4,0 m 0,0 M 97,71 97,67 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-4 m 0,0 m 0,-2 0,-2.75 -1.25,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -4,0 m 0,0 m -2,0 -0.75,0 z"
+                 stroke-miterlimit="10"
+                 id="path4762"
+                 inkscape:connector-curvature="0"
+                 style="opacity:0;fill:none;stroke:#3c7626;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(494,501.5)"
+       id="g4764">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="22.5"
+         y="11"
+         id="text4766"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">D.Knuth</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="25"
+         id="text4768"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">&quot;Concrete math&quot;</text>
+    </g>
+    <g
+       transform="translate(350,428)"
+       id="g4770">
+      <image
+         width="89"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABPCAYAAACAhGkpAAAC/0lEQVR4Xu3a0W0UMRAG4EsFkPdIHB2kgxwVABVwJZAKuHRABxwVhA5IOoAK2AfegQrC/0feyLuHjpHGHt9a/0qjO4Q99n2a9Xp3c7bSUV3grPoIGmAl5IAiELKQAwTKD7FFyheIz4iB6VXJ5ZHvkPIK8QrB70Iub/wIK+QKsHlKIVcGZnohCzlAIGAIVbKQAwQChlAlCzlAIGAIVbKQAwQChlAlByD/whjPEeeI33p2UUf8IaV9evimp3BloVnBrORJAQu5LPIbpLtF3CM2Y2ohl0XeI907xA1iJ+SyuMy2RvxIaV/icxByWWSuxV8Rlwi+dtrm6bVc+LEJ+ykBf09r8ePWTZXsw+XrJeLyQrdJqQjMCv42T31KlcxT7nWa9DqbvI+jfu8/GOJjikkFn1olf8CE3iMIvYSDW7QBcYf4gvgn7qkgE5X7yvGU4+Q5aZ5y/AFdHK2XC16RCcxTjutbN7B5dbRE3mEiXCYIvP7fKbfkkm6FzGWCG3d+Pv2lzZIhj829FfIWk+LecnKPL+SyAnuk4z3+NYLbn66PVpXMC9zk78V6Vm6FfPBgW8jlBYRc3vQgo5ArIXO7Nt5+zpHz/6s0fLu0UWsyn0vwxuMtghe9HHmDf/PWmm8TutxpRCHvEjKBefORI487jckrm3Z1V37kKGQuBwPiWULmMwseBOf3rm+to5AJmlczlwgevOPjfrnbKuaPjETOqzk/J7uu4mjkvJpz5K6ruAXyvJq7r+IWyPNq7r6KWyGzmn+m9eICn0ffj+XrylK/R174ciPuNMaqXqqded6tkMe30t1XcavlwlwBvTRsVcm9+Jl+h5BNTL5GQvb5mXoL2cTkayRkn5+pt5BNTL5GQvb5mXoL2cTkayRkn5+pt5BNTL5GQvb5mXoL2cTkayRkn5+pt5BNTL5GQvb5mXoL2cTkayRkn5+pt5BNTL5GQvb5mXoL2cTkayRkn5+pt5BNTL5GQvb5mXoL2cTkayRkn5+pt5BNTL5GQvb5mXoL2cTka/QXHJJuUF6BAdsAAAAASUVORK5CYII="
+         id="image4772" />
+    </g>
+    <g
+       transform="translate(401.07359,448.5)"
+       id="g4774">
+      <g
+         id="g4776">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4778"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4780"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(480.35281,428)"
+       id="g4782">
+      <image
+         width="89"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABPCAYAAACAhGkpAAAC40lEQVR4Xu3aMXLTQBgFYPsEkCp0ESdIOkpEzSEwNQWhokQpU0Fm0uMcgYYWU9JxA0SXdByB9zLSjKMxLLFXb7H+tzP/WI7G+1vfvKwtyfOZx+gC89E7uMHMyIIQGLkAco2eT1FfUStB/xAthklucNTvUGcobntkEDByBsTUFEZOCWXYb+QMiKkpjJwSyrDfyBkQU1MYOSWUYb+RMyCmpjBySijDfiNnQExNYeSUUIb9Rs6AmJrCyCmhDPuNnAExNcUQucYLvqB4qZPbHhkEhsgV5vyB+oU6yDC/p4DApjsjLf5+hHqGWllpd4FNyA2m5YV7AhPaY0eBTcgPMSfT/ADlOyQ7AvPlf7qRWmMfPwA5lqg3KK7THlsI/O1u9QLzfegSTWBir1A/Ud+36BX2JamfBJx00LyDvQ+jxZtkMQyf/pcwpJB72AobTHaN4pp9vA/iHTKXOqIXG/+KXOwN3rMxw8D/PoaBoeCHN0eD4od4kTE15CEicfl1lOMlallCeerINGWiP3a4j/HYqqEjINOUCX6BuurQpc5RkCuo8poMh/yY5Q2lEbrbjN/t+a1Ifk0mEjJPrF6j5JcKIiE3AC7yi9VIyKdAfo+6QHFbNiIh11AtctfHyII8TxmZ11i4PDDBPAkZJnmJv/EOEK9tjHpVccrIzGjbQfKUmtv9crHAdv+9efSzwKkjE5On1AQmdI/M57IzwKkjr6f5HE/eor6hnnRL8egpZp8IyH2ar3G8j1A3qEOU7DpGBOT1NHcBvn2QpDhKknmcfZp7ZFmKIyHzWLlccJmQpjga8isc8CXqM+r5+rox9naUNbl3bLFRo/goG9GQKzVwtOVCltxho2hJLgJtZAG7kY0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0+A3zC3FQCCfAJAAAAABJRU5ErkJggg=="
+         id="image4784" />
+    </g>
+    <g
+       transform="translate(502.92641,448.5)"
+       id="g4786">
+      <g
+         id="g4788">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4790"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4792"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(240,548)"
+       id="g4794">
+      <image
+         width="119"
+         height="82"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABSCAYAAABuWEsPAAAC6klEQVR4Xu2bgU3cMBiFYYMyAccG3QCYoB2BDUonACYAJqCdoGUCjg1ggtIJgAngf8g+OXdFopJj3718ln7lEJzj9768xEnM9hbN1oFtW2UI2wKu8UEAXOAaO+Aj7Sik7Eb9jHqQLJLrA3ceUvajDqP0Gbg+bN+AAtcIaCkFuKZgJQu4wDV2wFgayQWusQPG0kgucI0dMJZGcoFr7ICxNJILXGMHjKX9CW2zqL2oB+nkrZAP7ZckZcEUuMD1ccBUyUHouom6j/qcNZJcD9oXIeNb1GXUMXA9oErFpyhNprRdrMJgQuUB+CpkHEXdRun0vGicljcXsJJ6nsA+J7B3wN1coBq5JkxfEtRZbAVWyf29LGvdkqvBapGXtoNTzGbzqDb6ZU90KtYEapDYvLd1gatBnwD0QwfB3/iredSPtH33S+sAV1BP0wh1itHAdSRqSxs68F+e9Iab788k4SxKPz9BtI4DPeF+DQm/kozB/VkdafTSE25+i/E9JRYalR3oBTenVpODWWVNdJcc6AU3X2t1nc2TKaBUdqAXXM36Bv+0VFkX3YUDveA+xr71+GyH2fF4x2EvuCurBsaTON2egWvMHrjAre4Ap+Xqlq522Cq5mjzlZSB6vFjCXf5dA9nT2EUruHrXqHeQ+b62hKv7XL08uI7Sww1aJQdawT2I8Wp1nlK7F6VbITXdCv1z/U8lfZPuphVcmTyP0oMLpVdJVcufV9b/TJpKJfEt4Zbp1XVWTUleWbVXSdvku2kJt0xvaTypHekwbA03p7eUw7tcE7jL6SW1I4FVt62Tq32W6SW1ZnBzejPoEeVNu+seyS2hzqdt/7jqe8EdVxW9vzkAXOMDAbjANXbAWBrJBa6xA8bSSC5wjR0wlkZygWvsgLE0kgtcYweMpZFc4Bo7YCyN5ALX2AFjaSQXuMYOGEsjucA1dsBYGskFrrEDxtJILnCNHTCWRnKBa+yAsTSSC1xjB4ylkVzgGjtgLO0VM8xuU0KVh2cAAAAASUVORK5CYII="
+         id="image4796" />
+    </g>
+    <g
+       transform="translate(306.07359,569.75)"
+       id="g4798">
+      <g
+         id="g4800">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4802"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4804"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(140,670.5)"
+       id="g4806">
+      <image
+         width="103"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABPCAYAAAD2vtuiAAACt0lEQVR4Xu2awU3DQBRESQVQAAc6gA4IFQAVAB1ABYQKgApIB9AB0AEdwIE7UAH8idbRxjaJctkdxc/SFwYjeTLP8/fbzmiLzdaBka0yhG0Bx/giAA5wjB3wkXadpNw0kkiOD5zfJGXOBDjA8XHAWAnJAY6xA8bSSA5wjB0wlkZygGPsgLE0kgMcYweMpZEc4Bg7YCyN5JjC2QldX1E/UdqfbTz49KA1DhnPUa9R2geOB5eZisuo26j7tA8cIzhKjRJzETUlOT5kmpa2sN6w5tQHpMX/PUo/9Xp6kktiIKgHSIl5TGAWBgHaWnkoSsd+1EHUSVpjpEJg9Pt3W5JTciT+OIney8SXt7HMGbXG3LVbmWNb09eCNE7Ob8DK+FP0LILxltV01dlrJ0cw1HfHSagi/pQ+wMsq8Zt+vDacZr7XVaW+O3ggLm1tEkLUzgRGa0xnQdz0ZKz6fLWSk8/3RySmH1MtOOch5yGqd75fdUUN5XgtOJpUzqKuojROsvU4UAuOFv7DKFraksuyFpzOWz+i03UAOMZXBXCAM3NA43NzL9Nua/kxY7vKSiuVHD030w3nabqnyeGM4296hKP3GUxuGf9ScCYJjqY0TWg5nGZy67xsKnud+p2tFBy1rY+o7QRHz9S0CZT2eYTTc22UgqNT5+lRK9OmJwS63yE1leHk6cmlkJp/OmrJ5OTpyeWQGhM47fSQmiVzSOnktNNDaszgKD2fSdNu/OQlm0lba2RocmtStOTaGfahGm1NjjffsiE1Zm1t2HFY49PXSs4aEof7r8AxZg8c4Bg7YCyN5ADH2AFjaSQHOMYOGEsjOcAxdsBYGskBjrEDxtJIDnCMHTCWRnKAY+yAsTSSAxxjB4ylkRzgGDtgLI3kAMfYAWNpJAc4xg4YSyM5wDF2wFgayQGOsQPG0v4Ax/xgUNEDHd0AAAAASUVORK5CYII="
+         id="image4808" />
+    </g>
+    <g
+       transform="translate(198,691)"
+       id="g4810">
+      <g
+         id="g4812">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4814"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4816"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(290.35281,670.5)"
+       id="g4818">
+      <image
+         width="98"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABPCAYAAAAQlxDmAAADKElEQVR4Xu2a3VHjQBCETQQH71SdiQCIABMCERxEQBEBJgMyADK4DNBlcBngy+DugWfoxlJZlgXLVNEj1bm3asqy1jOz7m9Hq7+didsoFNgZxSg8iIlBjGQSGMRIQcwwrhPYL1g1kjFuxTC6FTHHv76G3cC47ZakgEEkCV1KYxAlhZL6DSJJ6FIagygplNRvEElCl9IYREmhpH6DSBK6lMYgSgol9RtEktClNAZRUiip3yCShC6lMYiSQkn9BpEkdClNF8QMDo8w3gbntluSAl0QU+R9gv2F7SWNwWmgQN8TugX2f4edwiqrlKNAH4g5UvPhECEQhluCAn0gdpGXVfEN5id1CRCY4r2XB2bo46LNdg+7gnHdcBMp8NFbHOfIeVtXBiEQSAX7A/stGs/Whi29TnNUw+CbHf9L46TiRGrsYQx/rASiGeMUG6yQGYxryOEYBv9FY1jU1c71cLD2WRCDDVCUmBOK1c7J1Uyqn9i+gA2yFm4riDZfQiEEniXy80wE/8OwBrGUh9VR1TB4hsiTlNRmECu5WRk8ZV/ADlIpIJlBrCtOCLy9w8MTD1NpzSDWpZ7j6yDv/hrEOojm8JT+GMAgDCLt8BtN9AKH9OcxrohNTATBlqpNarLo1Bzo9wYxkPA8U7qEHcN4+toGwcX7DsaLPOnprCtieXv/B4x3Yc87ICp8551n+QMyg5hMphCaL0yw8Yq62eZjYl5p/4PxN9KbgQaxBNCuClYHG68lUqqByQxiKXq7KmoObx8p1WAQbclXVdHeK18bmmSuiJXs3apIqwZXxHpFtNcKbqdVg0Fsgmiq4hld+zDpmVI7vQ9N/VWxwO75Zpduj0H0VwUrIa0afGjSTfBwZFdEWDKNg0FodA1HNYiwZBoHg9DoGo5qEGHJNA4GodE1HNUgwpJpHAxCo2s4qkGEJdM4GIRG13BUgwhLpnEwCI2u4agGEZZM42AQGl3DUQ0iLJnGwSA0uoajGkRYMo2DQWh0DUc1iLBkGgeD0OgajmoQYck0Dgah0TUc1SDCkmkcDEKjaziqQYQl0zgYhEbXcFSDCEumcTAIja7hqK//qHFQuDmJlgAAAABJRU5ErkJggg=="
+         id="image4820" />
+    </g>
+    <g
+       transform="translate(317.57107,691)"
+       id="g4822">
+      <g
+         id="g4824">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4826"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4828"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(400.35281,548)"
+       id="g4830">
+      <image
+         width="140"
+         height="202"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAADKCAYAAAB3wahPAAAGOElEQVR4Xu2ZMW4WZxCG7S4FEskJDBVlkhPYVKmQoKTC3CA5Ac4Jwg0IFSUg0dCZE0BLhbkBEk3KzEi7yKxM4M3/7izf+Flp9P/iH894nnn4vF7v73FBQCCwL+SSCoE9hEECiQDCSLhIXgpzFEgOI15FnIIHAksCS2FOIuFBxJ8R+Z4LAp8RQBiEkAggjISLZITBAYkAwki4SEYYHJAIIIyEi2SEwQGJAMJIuEhGGByQCCCMhItkhMEBiQDCSLhIRhgckAggjISLZITBAYkAwki4SEYYHJAIIIyEi2SEwQGJAMJIuEhGGByQCCCMhItkhMEBiQDCSLhIRhgckAggjISLZITBAYkAwki4SEYYHJAIIIyEi2SEwQGJAMJIuEhGGByQCCCMhItkhMEBiQDCSLhIRhgckAggjISLZITBAYkAwki4SEYYHJAIIIyEi2SEwQGJAMJIuEhGGByQCCCMhItkhMEBiQDCSLhIRhgckAggjISLZITBAYkAwki4SEYYHJAIIIyEi2SEwQGJAMJIuEhGGByQCCCMhItkhMEBiQDCSLhIRhgckAggjISLZITBAYkAwki4SEYYHJAIIIyEi2SEwQGJAMJIuEhGGByQCCCMhItkhMEBiQDCSLhIRhgckAggjISL5KUwtwPJ04jnEfmeCwKfEVgK80t8+jriLOI6rCCwJLAUJj//EHF1EibF4YLAJwIXCfN3fHov4nHEMawgcJ7ARcJci4R3U9KdeH0GMgjMBC4SJj/7PeKv6cfTH/Gapw4XBPa+JEyimX805fvTiIcRryaJQHdJCfyXMInkeBIlb4LnK2+K31xSXpVjJ+Oz6T/pd8P7a8IkoB8j8plMynNYSYxenwikOCcR+YvIpte3CLP8BlOgfF7DtS6BZJxxFHEwtcqT5mZEnvKbXP9HmE2+0UveNE/4vIdMcfK0+XUraRBmHBPzZD+N+DkiH3XkI4/yC2HKke/U8Fp8df5Yyl9C8pQpvxlGmJ32t8kXn0TXBxGbPIlHmE12vlPTPGXySXzey5T/gRhhdtrdZl+82R+IEWazne/UOG9+85lY/oqd78suhClDbW2EMFac/YshTP8dWydEGCvO/sUQpv+OrRMijBVn/2II03/H1gkRxoqzfzGE6b9j64QIY8XZvxjC9N+xdUKEseLsXwxh+u/YOiHCWHH2L4Yw/XdsnRBhrDj7F0OY/ju2TogwVpz9iyFM/x1bJ0QYK87+xRCm/46tEyKMFWf/YgjTf8fWCRHGirN/MYTpv2PrhAhjxdm/GML037F1QoSx4uxfDGH679g6IcJYcfYvhjD9d2ydEGGsOPsXQ5j+O7ZOiDBWnP2LIUz/HVsnRBgrzv7FEKb/jq0TIowVZ/9iCNN/x9YJEcaKs38xhOm/Y+uECGPF2b8YwvTfsXVChLHi7F8MYfrv2Dohwlhx9i+GMP13bJ0QYaw4+xdDmP47tk6IMFac/YshTP8dWydEGCvO/sUQpv+OrRMijBVn/2II03/H1gkRxoqzfzGE6b9j64QIY8XZvxjC9N+xdUKEseLsXwxh+u/YOiHCWHH2L4Yw/XdsnRBhrDj7F0OY/jveecKjqULKshTmePq3s527fKXA/toNqG8hcDuqPI1IIa4vhMl/ezd1+SleP1g6fqEIwqxJ11s7xTiIuB+RJ8phxM3p/b14fTy993ZdVEOYVfFai6ckj6ZT5v0kzN14fTJ1yZMnpVr1QphV8dqLz6fM26h8I+JlxG9Vp0tOgzD2na5acD5l/okuP5zrVHK6IMyqu12t+HzKzA1K7l3mZpwwq+11tcLzKTM3KDtdOGFW2+nqhT9GhysRLyJurd7tXANOmEravl7zKVN6unDC+Ba4RaWTaJpRenHClOIevxnCjL/D0gkQphT3+M0QZvwdlk6AMKW4x2+GMOPvsHQChCnFPX4zhBl/h6UTIEwp7vGbIcz4OyydAGFKcY/fDGHG32HpBAhTinv8Zggz/g5LJ0CYUtzjN0OY8XdYOgHClOIevxnCjL/D0gkQphT3+M0QZvwdlk6AMKW4x2+GMOPvsHQChCnFPX4zhBl/h6UTIEwp7vGbIcz4OyydAGFKcY/fDGHG32HpBAhTinv8Zggz/g5LJ/gXPedo2pRWexUAAAAASUVORK5CYII="
+         id="image4832" />
+    </g>
+    <g
+       transform="translate(448.28175,629.75)"
+       id="g4834">
+      <g
+         id="g4836">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4838"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4840"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(350,548)"
+       id="g4842">
+      <image
+         width="60"
+         height="202"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAADKCAYAAAD5NyN2AAACtklEQVR4Xu3V4W0UQRAFYTsDCIFIgAggE0LADoFMTASYSAgBMoAZcYdW5vd+Ldm10ujOsrR9Xa/27e3NC7tuX9i+Ny383BOfSvhugf29zr0GPLXwXnZffD4feFm0hZXaJYxIpzQC7Vuy0lLRTr0HS7iEzyXQe/hcvv/u3nsYge49rECntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rU0Ip3SCHQtrUCntCJdSyPSKY1A19IKdEor0rX0SaRfrft+WufLOr/WOSr99H8n/YS/t1UJP6xZH9a5X+fuycL778/rfF3n46nbwoXfrVnfLum+WZ8/L4u9Xp8/1tkpv1/n8bksvPfYy7y9pLwT3ddOfH//vs6GcvqllN6LHFPeie5rP88s3T1QLnxM+ZgkS3di4WvKx4XJs3sdqBN+mjJNdyLh47O8v9N0pxa+pnxd/vRmPg6YUPq46CPddqCl9X7/zZtKeGzxFh5DjwaXMAI9NqaEx9CjwSWMQI+NKeEx9GhwCSPQY2NKeAw9GlzCCPTYmBIeQ48GlzACPTamhMfQo8EljECPjSnhMfRocAkj0GNj/gBVRr/Lf8sBdwAAAABJRU5ErkJggg=="
+         id="image4844" />
+    </g>
+    <g
+       transform="translate(354.5,629.75)"
+       id="g4846">
+      <g
+         id="g4848">
+        <rect
+           x="-2"
+           y="-3"
+           width="55"
+           height="18"
+           id="rect4850"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4852"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">не очень</text>
+    </g>
+    <g
+       transform="translate(619,428)"
+       id="g4854">
+      <image
+         width="70"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABPCAYAAABWIbNMAAACg0lEQVR4Xu2ZzU3DQBCFnQqAOxKhAzogVABUQEqACggd0AFQAXQAdAAV4AN3oAJ4D+8maxMHzyE7K+WtNLIhVrz+8s3sj0eV2lICI3FZTkBgeswQGIFZWTSm+HQPcYeoeaWMaXg9IQ4RR+FcYIJHAtOTUAIjMLYJmoyRMTLGRkDG2HipxsgYGWMjIGNsvD5w+TZiB/GpReQC3nc4nS+qtbpuTKExLVEEpqpOQOQe8YyYRIkEpqpuAeMMcYWYCUxDYIx4CzD2cawFpqktj4gDBLc0pxFKq9ik/9yAc8K4CVBeQ235HaY30Rju6RIIi+0kACAUmvLSlaGk4ku1j0Onx0nn1yHwF770OkTLlNKMuUSHzhGEs67G4bhGPCEeEEuBlAKGIDiHiGqz8+w01eYDuDXvVOKoQChUm7nvCiP9FTzBzNARphChjP9TO7c6XmCYQpxY8Th/+5f74VfdzwvMFJ3iPKK1PhGYxfrkAjA4bBbXvIxhkW29RC+NjBeYPxtDAtMQEJgeEwQmAcOhOU7Du2DSz4rIqlw1husgTuZOESy8KZgJ/uaygDtoxYxQucDMAhhC4YQuBRNHqNbWorc2ucAwVWrEVgDDNRIbIfG8uGVBLjCEkFrD9GHjzJfzmaJsYcdygkmtSTOlOFtyg0mtScEUZ4sHmK41RdriAaZrTZG2eIGhNe8hl3ZxXLn3muZczvOcxTd9Lo5Q0Z6czzv4Xl5g4tuAIm3xSqXBv5rnhV7GeD7zoHsLTA8mgRGYQRk0v0jGyBgZYyMgY2y8VGNkjIyxEZAxNl6qMTJGxtgIyBgbL9UYGSNjbARkjI2XaoyMkTE2AjLGxks1RsbIGBsBGWPj9QOaUm5QjZuZhgAAAABJRU5ErkJggg=="
+         id="image4856" />
+    </g>
+    <g
+       transform="translate(660.57359,448.5)"
+       id="g4858">
+      <g
+         id="g4860">
+        <rect
+           x="-2"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4862"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4864"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(730.35281,428)"
+       id="g4866">
+      <image
+         width="69"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABPCAYAAAC9FghPAAACg0lEQVR4Xu2asTIEQRRF7RcgIjO+gExoxD7CigWIhEYoQpXc+gSJ1Apl/sDIyHyCe1V31dbs4Am655W+XXVrepWqnTl73tvuZrSgMUdgJCbzBASlxwpBMUCp8TvbyCMyLbW0uqY0AHGKnCGcFzkExVA+MgWQZIpMsbVImSJTZIqNgEyxcVJPkSkyxUZAptg4qacYTOHRwUM4OuC8yNE1pQKFF+QDWS6SSM+GkBxaZA3ZQaYlguk7jmwAggdNBEIwxY0+KEvBlkVcizyB++7gmk2WDZdjghyHPlOENT+d5o9B4BKhMWy8hMOSekWe/zOd3/7EsRnA8IQ/xWhDqRL2nRfYv0GJICpMaE6NsOdspCAUoLBUCWmwYYWS6gYJmzYSNqGzVDkahE1+kDE0lO5DEwaXAxz7yGQIKt6gkAGNuQkw1nFtc4PxCIUMaMgechsgZeXiFUoFCtyDcWS/x+xv+IePnGshfstl34N5hsKF4yGSfavhGUoDIIP8B4RnKEeAcoFcIZxnG56h1KAwyCmgoPT45wkK91QsFxrCRVvXlAl+xhNB7o2S7tI9QeFn1oYH5xKf81g+Y8zjuiX5KtcbFD48l/gEQjARCl9nW+F6gzJryzlenCBPyFYo/eSW8H08Qom2vOH+VpF3ZAXJtg/yCGXWliDI1yWLJV5N4X1FWyKUbJZ4hsJ7Y/mwbLJa4h3KAW7wGrlHdmfrKPXca0+Jz91iUiO8ZhveoVS5gXgvn2xmdN/IuymDgBGUHuyCIii2apQpMkWm2AjIFBsn9RSZIlNsBGSKjZN6ikyRKTYCMsXGST1FpsgUGwGZYuOkniJTZIqNgEyxcVJPkSkyxUZAptg4fQLXAnFQr7NJBAAAAABJRU5ErkJggg=="
+         id="image4868" />
+    </g>
+    <g
+       transform="translate(742.92641,448.5)"
+       id="g4870">
+      <g
+         id="g4872">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4874"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4876"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+    <g
+       transform="translate(1060.3528,303)"
+       id="g4878">
+      <image
+         width="119"
+         height="84"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABUCAYAAAC4AagSAAADaElEQVR4Xu2bMXIUMRRE7RMAEWQ2JwAiQsYxAXAClpiIiJAlJDJUkbM+AZCQsoRk3IANIeMG0A1S1dawRiZo/fmzrapfo/LY01/95kuz8uzhgdtsHTic7cg8sAPDnfFNYLh7BHfAWO8gPiHWMx73XgxtXLlLjPoZ4jmCfbfEDhhuYnit1A235VDi84abGF4rdcNtOZT4vOEmhtdK3XBbDiU+b7iJ4bVSN9yWQ4nPG25ieK3UDbflUOLzhpsYXit1w205lPi84SaG10rdcFsOJT5vuInhtVIfw13gD94gzhDsuyV2YAx3wFg+Ir4gbiUel1OHA7veofpZnLmC4w+7lNeBXXDfYTj3EH7VJi/X35nvglunZlbtSZmikw9zP9M/79XWFex4WMA+MuCcN8d5cC9jOGvEjbLuvsTxldfgXJD/9VI6ARMqK7g2PkVvXMl/QaYnDL7vPZl2kW8cDMh2MYI8mQFMMBE+kK4Q76Nzuwjc7RwJmhV9MzrxiekfF0+4jNW2RucBIuzj5P/CnZink0uHNz5nuSXiUgF7PQqw4Wruj+0H0rDdPsPVwOVVCZhgjxD8OLnSSe2+suFqHecUzX/EbBCcnrs2w9XbzQcqrr+ES8jdmuHqra579d2nZsPVw11CIuQ7z4ZruHoHZqxwH2N7i+COFfvdmitXb/UACb7dwn1n9rs1w9Vbbbh6j8MUDDfMer2w4eo97qbAbcfTsr5y42IMd4WfcUvyCYLbk7LmNVdj7aYA5MYF+/WBaoH+1yIp37EyXA1cQqx7ygRc4RI032w5Q/B3pM1wdfbW6n0BiaeIz4jbvaqWOoarg1ur9xskriG+I672qlrD1YGtV67Vu60kX2urmCtXC7hWb1XpstYarhbq9tU5LXM6ZutWtZ6W+wB+DJnXiA+Iu30k/6h4Wu7jNtfeAcFjt2a4faw+7g3WldsHbJiKKzfMer2w4eo9DlMw3DDr9cKGq/c4TMFww6zXCxuu3uMwBcMNs14vbLh6j8MUDDfMer2w4eo9DlMw3DDr9cKGq/c4TMFww6zXCxuu3uMwBcMNs14vbLh6j8MUDDfMer2w4eo9DlMw3DDr9cKGq/c4TMFww6zXCxuu3uMwBcMNs14vbLh6j8MUDDfMer2w4eo9DlMw3DDr9cKGq/c4TOEXjMV/VdCKFnMAAAAASUVORK5CYII="
+         id="image4880" />
+    </g>
+    <g
+       transform="translate(1100.9264,326)"
+       id="g4882">
+      <g
+         id="g4884">
+        <rect
+           x="-2.5"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4886"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-0.5"
+         y="11"
+         id="text4888"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(860,428)"
+       id="g4890">
+      <image
+         width="69"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABPCAYAAAC9FghPAAACiklEQVR4Xu2Z3TEEQRSFZyPAuyorAxlYESACGwIRWBnIwIqADOxmQATmwTsi4By6t3pmu9Z9oG+XOV11a8eYMt2f797+2VGjtkZgJCbrBAQlY4WgCEq2WExxdw9xi2j5hExpmgU4HCKOELwWlABCUHpJJFMyVUVQBMW2MpUpMkWm2AjIFBsn1RSZIlNsBDJPveLeNmIH8aa9zzehjwBqtTke+i6ZhtCUjiBDh3ICGneIJWISU2voUOYAcYa4QswEpWnGgPAcQOzjsx06FNaSB8QBgseQ0wikU1zSm//8miBuApCnUEu+puKhmcLjRsJgYZ2EwRMIDXnsS1BToaXSx6HT46Tzvy3uO/7gdYiOIbWZcokOnSMI5i8ap9wWsUDcI7IwaoFCCFwnRKXZeXaaSnMALs07fTgDEAiVZr67gUjpe0KZoSNMGwIZ/6R0SWW8oDBtuHDi5+qbuZID3/QuLyhTdIprhc6eY+hQ5gDAPccFgtNjVc3LFBbUzve3NVHxgrJ2sCMomdMuQRGUlQOcfuPyup8+6e/cpSlVU7iv4ULtFMEim0KZ4Gcu9Xn6VcVMVArKLEAhEC7WUihxJuocCXrqUgoK06NFbAUo3POwERCvq1rql4JCAKktTBk2rmi5XqnGEnaqJJTUljQ7qrKkNJTUlhRKVZZ4QOnbUp0lHlD6tlRniRcU2vIS8mcXnxvPS9M8K3VdstCmY+JMFK0pNVbze7ygxFP76izxSh/zf8zrQS9TvMZreq+gZDAJiqCYsqfo3sfWowqeUvoofWwayhSZIlNsBGSKjZNqikyRKTYCMsXGSTVFpsgUGwGZYuOkmiJTZIqNgEyxcVJNkSkyxUZAptg4qaZkOH0CQqVuUDMIWrAAAAAASUVORK5CYII="
+         id="image4892" />
+    </g>
+    <g
+       transform="translate(901.07359,448.5)"
+       id="g4894">
+      <g
+         id="g4896">
+        <rect
+           x="-2.5"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect4898"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-0.5"
+         y="11"
+         id="text4900"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">да</text>
+    </g>
+    <g
+       transform="translate(970.35281,428)"
+       id="g4902">
+      <image
+         width="89"
+         height="79"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABPCAYAAACAhGkpAAAC40lEQVR4Xu3aMXLTQBgFYPsEkCp0ESdIOkpEzSEwNQWhokQpU0Fm0uMcgYYWU9JxA0SXdByB9zLSjKMxLLFXb7H+tzP/WI7G+1vfvKwtyfOZx+gC89E7uMHMyIIQGLkAco2eT1FfUStB/xAthklucNTvUGcobntkEDByBsTUFEZOCWXYb+QMiKkpjJwSyrDfyBkQU1MYOSWUYb+RMyCmpjBySijDfiNnQExNYeSUUIb9Rs6AmJrCyCmhDPuNnAExNcUQucYLvqB4qZPbHhkEhsgV5vyB+oU6yDC/p4DApjsjLf5+hHqGWllpd4FNyA2m5YV7AhPaY0eBTcgPMSfT/ADlOyQ7AvPlf7qRWmMfPwA5lqg3KK7THlsI/O1u9QLzfegSTWBir1A/Ud+36BX2JamfBJx00LyDvQ+jxZtkMQyf/pcwpJB72AobTHaN4pp9vA/iHTKXOqIXG/+KXOwN3rMxw8D/PoaBoeCHN0eD4od4kTE15CEicfl1lOMlallCeerINGWiP3a4j/HYqqEjINOUCX6BuurQpc5RkCuo8poMh/yY5Q2lEbrbjN/t+a1Ifk0mEjJPrF6j5JcKIiE3AC7yi9VIyKdAfo+6QHFbNiIh11AtctfHyII8TxmZ11i4PDDBPAkZJnmJv/EOEK9tjHpVccrIzGjbQfKUmtv9crHAdv+9efSzwKkjE5On1AQmdI/M57IzwKkjr6f5HE/eor6hnnRL8egpZp8IyH2ar3G8j1A3qEOU7DpGBOT1NHcBvn2QpDhKknmcfZp7ZFmKIyHzWLlccJmQpjga8isc8CXqM+r5+rox9naUNbl3bLFRo/goG9GQKzVwtOVCltxho2hJLgJtZAG7kY0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0cJKNLBAQtHCSjSwQELRwko0sEBC0+A3zC3FQCCfAJAAAAABJRU5ErkJggg=="
+         id="image4904" />
+    </g>
+    <g
+       transform="translate(992.92641,448.5)"
+       id="g4906">
+      <g
+         id="g4908">
+        <rect
+           x="-2"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect4910"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text4912"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">нет</text>
+    </g>
+  </g>
+</svg>
