@@ -1,71 +1,82 @@
-\documentclass[11pt,a4paper,pdftex,sans]{moderncv}
+\documentclass[11pt,a4paper,roman]{moderncv}
 
 \usepackage{cmap}
 \usepackage[utf8]{inputenc}
+\usepackage{concrete}
 \usepackage[english]{babel}
 \usepackage{url}
 \usepackage{fullpage}
+\recomputelengths{}
 
 \pdfcompresslevel=9
 \usepackage[pdftex]{hyperref}
-\hypersetup{unicode=true,pdftitle={CV},pdfauthor={Michael Pogoda},
-            pdfcreator={pdflatex},pdfsubject={CV},pdfborder={0 0 0},
-            bookmarksopen,bookmarksnumbered,bookmarksopenlevel=2,
-            pdfkeywords={CV},colorlinks=true,citecolor=black,
-            filecolor=black,linkcolor=black,urlcolor=blue}
+\hypersetup{unicode=true,pdftitle={CV},pdfauthor={Michael Pogoda},pdfsubject={CV},pdfborder={0 0 0},bookmarksopen,bookmarksnumbered,bookmarksopenlevel=2,pdfkeywords={CV},colorlinks=true,citecolor=black,filecolor=black,linkcolor=black,urlcolor=blue}
 
-\moderncvstyle{classic}
-\moderncvcolor{blue}
+\moderncvstyle{casual}
+\moderncvcolor{orange}
 
-\firstname{Michael}
-\familyname{Pogoda}
-\address{prov. Kovalsky, 5}{Kyiv}
-\mobile{+380~(95)~140~63~76}
-\email{mpogoda@lavabit.com}
-\homepage{gplus.to/MPogoda}
+\name{Michael}{Pogoda}
+\address{Kyiv}{Ukraine}
+\phone[mobile]{+380~(95)~140~63~76}
+\email{mi.pogoda@gmail.com}
+\social[github]{MPogoda}
+\social[linkedin]{mpogoda}
 \photo[64pt][0.4pt]{photo}
 
 \begin{document}
-\makecvtitle
+\maketitle{}
 
 \section{Education}
-\cventry{2009--2013}{Bachelor}{NTUU ,,KPI''}{Kyiv}{}{Applied mathematics}
-\cventry{2011}{91\%}{\url{ai-class.org}}{Stanford's online class}{}{Introduction to Artificial
-Intelligence}
-\cventry{2011}{312/323}{\url{db-class.org}}{Stanford's online class}{}{Introduction to Databases}
-\cventry{2011}{78/80, 800/800}{\url{ml-class.org}}{Stanford's online class}{}{Machine
-Learning}
-\cventry{2012}{99\%}{\url{coursera.org}}{Princeton's online
-class}{}{Algorithms, Part I}
+    \cventry{2013--2015}{MS, Applied Mathematics}{Kyiv Polytechnic Institute}{}{}{}
+        \cvline{Advisor:}{\small Professor Oleg Chertov}
+    \cventry{2009--2013}{BS, Applied Mathematics}{Kyiv Polytechnic Institute}{}{}{}
 
 \section{Experience}
-\subsection{Miscellaneous}
-\cventry{2011}{Rumpy}{Developer}{\url{http://rubygems.org/gems/rumpy}}{}{Small
-framework to develop bots working under XMPP protocol}
-\cventry{2011}{Yatodo}{Developer}{\url{http://yatodo.net}}{}{XMPP-bot +
-website providing simple way to manage your TODOs list}
-\cventry{2011}{Noty}{Developer}{\url{http://github.com/Ximik/Noty}}{}{XMPP-bot
-that keeps track of your notifications}
+    \cventry{2013--Present}{Lead Engineer}{Samsung R\&D Institute Ukraine}{Kyiv}{}{%
+        Project leadership, software design and development for new components for Security subsystem in SmartTVs.
+        \newline
+        \begin{itemize}
+            \item \textbf{2013--2014}. Software development using \texttt{C++/Bash/LUA} for *nix systems.
+            \item \textbf{2014}. Project leader for security subsystem.
+                Managed team of 4 engineers that was porting security solution to Tizen platform.
+                Following technologies was used in development: \texttt{C++11, Qt5, QML, LuaJIT,
+                    boost-programoptions}.
+            \item \textbf{2015}. Was involved in research project that analysed security threats and mitigation steps
+                for TizenTVs.
+                Various proof-of-concepts applications was developed using \texttt{Qt5, QtQuick, C++14,
+                    boost-programoptions, boost-log, sysdig, reverse engineering, valgrind, taint analysis}.
+                Was involved for 1 month in fixing issues for Samsung Medical Application, written in
+                \texttt{C++11/Qt4}.
+            \item \textbf{2016}. Project leader for security tools, used internally by Security Assessment engineers.
+                Managing team of 10 engineers.
+        \end{itemize}
+    }
 
-\section{Languages}
-\cvitemwithcomment{Russian}{Native}{}
-\cvitemwithcomment{Ukranian}{Near-native}{}
-\cvitemwithcomment{English}{Intermediate}{Bad pronunciation, good understanding of
-documentation etc.}
+    \cventry{2012--2013}{Engineer}{Samsung R\&D Institute Ukraine}{Kyiv}{}{%
+        Software design, development and testing for new components in DRM and Security subsystems in SmartTVs.
+        \newline
+        Following stack of technologies was used: \texttt{C++03, CMake, LUA, boost-build, boost-log, boost-filesystem,
+            boost-spirit, openssl, shell-scripts}.
+    }
 
-\section{Skills}
-\cvitemwithcomment{GNU/Linux}{Advanced user}{Using since 2007}
-\cvitemwithcomment{Vim}{Basic/Advanced}{Highly customized for myself}
-\cvitemwithcomment{Bash}{Basic}{Wrote couple of utilities for myself}
-\cvitemwithcomment{C}{Good}{}
-\cvitemwithcomment{C++}{Basic/Good}{Almost no experience with third-party
-libraries}
-\cvitemwithcomment{Qt}{Basic/Good}{}
-\cvitemwithcomment{Ruby}{Good}{}
-\cvitemwithcomment{PROLOG, LISP, Haskell}{Basic}{}
-\cvitemwithcomment{Octave}{Good}{}
-\cvitemwithcomment{Java}{Basic}{Almost no experience with third-party
-libraries}
-\cvitemwithcomment{\LaTeX{}}{Basic/Good}{}
+    \subsection{Miscellaneous}
+        \cventry{2011--Present}{Various projects}{}{\url{https://github.com/MPogoda}}{}{%
+            Various small projects, that was developed during education.\newline
+            Includes laboratory works, course works, \LaTeX{} sources for documentation, open-source projects.
+        }
 
+        \cventry{2011}{Rumpy}{Developer}{\url{http://rubygems.org/gems/rumpy}}{}{%
+            Small framework to develop bots working under XMPP protocol
+        }
+
+\section{Technical Experience}
+    \subsection{Proficient with}
+        \cvline{languages}{C++, Shell, GNU Octave/MATLAB, \LaTeX{}, CMake, SQL}
+        \cvline{technologies}{Qt4, Qt5, QtQuick, boost-spirit, boost-log, boost-multiprecision, sysdig, shell
+            scripting, GNU/Linux, google-test, google-benchmark, boost-test, DFD, UML, TDD}
+        \cvline{tools}{vim, zsh, valgrind, git, make, google-perftools}
+    \subsection{Have Experience with}
+        \cvline{languagues}{C, Ruby, Python, LUA, Haskell, PROLOG, Scheme, Java, PL/SQL}
+        \cvline{technologies}{PostgreSQL, Oracle, sqlite, openssl, threat modeling, docker, RabbitMQ, Ruby on Rails,
+            xmpp}
 \end{document}
